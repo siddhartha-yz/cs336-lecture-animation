@@ -136,6 +136,7 @@ def main():
     p.add_argument("--device",choices=["cuda","cpu"],default="cuda")
     p.add_argument("--idle-timeout",type=float,default=1800)
     a=p.parse_args()
+    (AUDIO/"staging_qa").mkdir(exist_ok=True)
     if a.only and any(not CANDIDATE.fullmatch(k) for k in a.only):p.error("invalid take id")
     last=time.monotonic(); model=None
     while not STOP.exists() and time.monotonic()-last<a.idle_timeout:

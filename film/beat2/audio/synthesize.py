@@ -79,6 +79,7 @@ def main():
     p.add_argument("--only",nargs="+",help="process specific draft or retake IDs and exit")
     p.add_argument("--idle-timeout",type=float,default=1800)
     a=p.parse_args()
+    (AUDIO/"staging").mkdir(exist_ok=True)
     if a.only and any(not CANDIDATE.fullmatch(k) for k in a.only):
         p.error("invalid take identifier")
     if a.only and any(not (SCRIPT/f"script_{k[0]}.json").is_file() for k in a.only):

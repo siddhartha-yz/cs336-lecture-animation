@@ -14,7 +14,7 @@ python fish_speech/models/text2semantic/inference.py \
   --checkpoint-path checkpoints/drama-3 \
   --prompt-audio "$REF_WAV" --prompt-text "$(cat "$REF_TXT")" \
   --text "<|speaker:0|>$(cat "$FILM_ROOT/film/drama3/opening-zh.txt")" \
-  --device cuda:0 --output opening-audition.wav
+  --single-chunk --device cuda:0 --output opening-audition.wav
 ```
 
 按整段生成，听第一句“分数上去了，模型做新题却更差了”的转折，再听后面的长句有没有突然断气。约 30 秒是试听长度，不为卡秒改词或把声音拉慢。试听选定前不覆盖现有音轨。
