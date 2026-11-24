@@ -1,0 +1,15 @@
+{
+  "source": "https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k",
+  "viewer_row": 162,
+  "license": "CC BY 4.0",
+  "prompt": "Write a short story about a robot.",
+  "response_paraphrases": [
+    "A lamppost-polishing robot loses its job.",
+    "A maintenance robot finds a plant in an empty mall."
+  ],
+  "id": "305a4d3b-1e1c-4b38-b48e-84d87ed78b46",
+  "timestamp": "2025-07-08T15:08:29.664217",
+  "model_a": "gemini-2.5-pro",
+  "model_b": "claude-opus-4-20250514-thinking-16k",
+  "winner": "model_b"
+}

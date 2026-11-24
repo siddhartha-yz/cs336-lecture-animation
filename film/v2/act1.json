@@ -1,0 +1,111 @@
+[
+  {
+    "parts": [
+      ["Blue gives the right text better odds five times in a row.", "前五格，蓝模型都给了原文更高的概率。"],
+      ["Then it has to finish two plus two.", "轮到填二加二的答案。"],
+      ["Blue picks five.", "蓝模型选了五。"],
+      ["So who won?", "所以，谁赢了？"]
+    ],
+    "hold": 1.6
+  },
+  {
+    "parts": [
+      ["Keep that last tile in sight while we rewind.", "盯住最后那格，往回走。"],
+      ["What does it mean to guess the next piece of text?", "猜下一块文字，究竟在猜什么？"],
+      ["Both models see exactly the same prefix.", "两个模型读到同一段前缀。"],
+      ["Each divides a whole bar among possible next tokens.", "每个模型把整条概率分给候选词元。"],
+      ["We keep the slice for the word the author actually wrote.", "只留下分给原文的那一截。"],
+      ["It goes on the rail, and the real word slides into place.", "记下概率，把原文词元推回纸带。"],
+      ["Even if Blue guessed wrong, its guess never becomes the next prefix.", "哪怕蓝模型猜错，下一步也仍然读原文。"],
+      ["The two models get the same view all the way down.", "两个模型始终看到同样的上下文。"]
+    ],
+    "hold": 1.55
+  },
+  {
+    "parts": [
+      ["Take a tiny sentence with just two tiles.", "先拿一个只有两格的短句。"],
+      ["The model gives the first correct tile half the bar.", "第一格的正确词元拿到一半。"],
+      ["Once that tile is in place,", "接对第一格之后，"],
+      ["the second gets an eighth of what survived.", "第二格再取剩下的八分之一。"],
+      ["Turn those cuts at right angles.", "把两次切分转成直角。"],
+      ["The gold corner keeps the probability of both steps together.", "金色一角，就是两步都接对的概率。"],
+      ["Copy the sentence and start from the same beginning.", "复制一份短句，从同样的起点再测。"],
+      ["Each step is just as easy, but the joint probability shrinks again.", "每格难度没变，乘积却又缩小。"]
+    ],
+    "hold": 1.75
+  },
+  {
+    "parts": [
+      ["How do we make the length of the paper stop deciding the score?", "怎么去掉纸带长短对分数的影响？"],
+      ["Give both steps the same width.", "把两步的概率拉成等宽。"],
+      ["Squeeze one side, stretch the other, and keep the area fixed.", "一边收窄、一边拉长，面积保持不变。"],
+      ["The square's edge is the equivalent probability per token.", "正方形的边长，就是等效的单词元概率。"],
+      ["Flip it: this is like choosing one tile out of four equally likely ones.", "取倒数：相当于在四个等可能选项里猜一个。"],
+      ["That equivalent number is perplexity.", "这个等效选项数，就是困惑度。"],
+      ["Four boxes measure difficulty. The actual vocabulary can be enormous.", "四格只是刻度；实际词表可以很大。"]
+    ],
+    "hold": 1.9
+  },
+  {
+    "parts": [
+      ["For a book, the product gets too small for the computer to hold.", "到了整本书，乘积会小得存不下。"],
+      ["Trade each probability for its surprise.", "把每个概率换成它对应的惊讶值。"],
+      ["Every time the probability halves, add one bit.", "概率每减半，惊讶值就多一比特。"],
+      ["That turns multiplication into stacking.", "概率相乘，变成对数损失相加。"],
+      ["Stack a bit here. Three more there.", "这里一块，那边再来三块。"],
+      ["Spread the stack equally across the two positions.", "把整摞平均分给两格。"],
+      ["Raise two to that average and you're back on the perplexity scale.", "用二的这个平均值次方，换回困惑度。"],
+      ["A single nearly impossible token makes a very tall stack.", "一个极难预测的词元，就能堆得很高。"]
+    ],
+    "hold": 1.7
+  },
+  {
+    "parts": [
+      ["Now swing back to our six tiles.", "现在转回开头的六个词块。"],
+      ["Blue takes a smaller hit on each of the first five.", "前五格，蓝模型每次的损失都更小。"],
+      ["On the last tile its loss jumps.", "到最后一格，它的损失突然跳高。"],
+      ["That jump can't erase the five small advantages.", "这一下还没抵消积攒的优势。"],
+      ["So Blue has lower perplexity on the whole sentence.", "因此蓝模型的整句困惑度更低。"],
+      ["Now look straight down the answer slot.", "沿着答案那格看进去。"],
+      ["Here we score what the model picks.", "这次只给模型选的答案打分。"],
+      ["Purple lands on four. The same probabilities give us two different winners.", "紫模型选中四。同样的概率，评出两个赢家。"]
+    ],
+    "hold": 1.85
+  },
+  {
+    "parts": [
+      ["Hold the text still. Slide two token rulers over it.", "固定原文，滑来两把分词尺。"],
+      ["One sees two pieces. The other sees four.", "一把切成两块，另一把切成四块。"],
+      ["A per-token score now has a different unit on each side.", "每词元的分数，分母单位已经不同。"],
+      ["Use the same tokenizer, or divide total surprise by the same raw bytes.", "用同一套分词，或把总损失摊到同一原文的字节。"],
+      ["The mix of material matters, too.", "材料配比也会改变结果。"],
+      ["Blue handles conversation better. Purple handles math better.", "蓝模型更擅长对话，紫模型更擅长数学。"],
+      ["Shift the mix and you can flip the winner again.", "拨动配比，领先者又能换边。"],
+      ["Paloma takes those separate domain measurements seriously.", "Paloma 就按不同语域分别测量。"]
+    ],
+    "hold": 1.6
+  },
+  {
+    "parts": [
+      ["Suppose you're buying a system to sort customer mail.", "假设你要采购一套客服邮件分拣系统。"],
+      ["Purple gets more right. Blue costs less per letter.", "紫模型更准，蓝模型每封处理得更便宜。"],
+      ["Slide a budget limit across the floor.", "把预算线沿地面推过来。"],
+      ["The best score can end up outside it.", "分最高的方案可能被划到预算外。"],
+      ["That comparison helps you buy a system.", "这场比较能帮你选系统。"],
+      ["For a claim about the algorithm, open the machines.", "要比较算法，就把两台机器拆开。"],
+      ["Feed both the same training data and compute budget.", "给两边相同的训练数据与算力预算。"],
+      ["Change the machinery you actually want to test.", "只动你真正想测的那一件零件。"]
+    ],
+    "hold": 1.75
+  },
+  {
+    "parts": [
+      ["Back to that gold answer tile.", "回到那块金色答案砖。"],
+      ["Imagine the rail carries a thousand of them.", "想象轨道上有一千块答案砖。"],
+      ["Check each answer and you've got a test score.", "逐个对答案，就得到考试分数。"],
+      ["Now watch both models climb almost to the ceiling.", "看，两个模型都快顶到满分。"],
+      ["Where does a better model go from there?", "更强的模型，还能在哪儿拉开差距？"]
+    ],
+    "hold": 1.85
+  }
+]

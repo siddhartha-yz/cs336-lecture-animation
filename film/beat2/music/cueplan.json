@@ -1,0 +1,52 @@
+[
+  {
+    "title": "One Little Triumph",
+    "file": "one-little-triumph.mp3",
+    "begin": 0.26,
+    "end": 42.9,
+    "rms_db": -30.0,
+    "fade_in": 0.77,
+    "fade_out": 1.15,
+    "in": 85.4
+  },
+  {
+    "title": "A Certain Lightness",
+    "file": "a-certain-lightness.mp3",
+    "begin": 44.0,
+    "end": 104.17,
+    "rms_db": -29.1,
+    "fade_in": 0.77,
+    "fade_out": 1.15,
+    "in": 71.1
+  },
+  {
+    "title": "Tuck and Point",
+    "file": "tuck-and-point.mp3",
+    "begin": 105.3,
+    "end": 163.58,
+    "rms_db": -30.4,
+    "fade_in": 0.77,
+    "fade_out": 1.15,
+    "in": 60.5
+  },
+  {
+    "title": "A Certain Lightness",
+    "file": "a-certain-lightness.mp3",
+    "begin": 165.4,
+    "end": 219.22,
+    "rms_db": -29.1,
+    "fade_in": 0.77,
+    "fade_out": 1.15,
+    "in": 164.2
+  },
+  {
+    "title": "One Little Triumph",
+    "file": "one-little-triumph.mp3",
+    "begin": 220.45,
+    "end": 253.58,
+    "rms_db": -29.1,
+    "fade_in": 0.77,
+    "fade_out": 1.15,
+    "in": 29.45
+  }
+]

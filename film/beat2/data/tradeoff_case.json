@@ -1,0 +1,215 @@
+{
+  "text": "Choose one: nine minus seven is either two or three. Answer: two",
+  "prefix": "Choose one: nine minus seven is either two or three. Answer:",
+  "answer": "two",
+  "tokens": [
+    "Choose",
+    " one",
+    ":",
+    " nine",
+    " minus",
+    " seven",
+    " is",
+    " either",
+    " two",
+    " or",
+    " three",
+    ".",
+    " Answer",
+    ":",
+    " two"
+  ],
+  "token_ids": [
+    21197,
+    582,
+    42,
+    7462,
+    18253,
+    4962,
+    314,
+    2267,
+    827,
+    355,
+    1296,
+    30,
+    19842,
+    42,
+    827
+  ],
+  "bos_id": 0,
+  "answer_index": 14,
+  "sampled_lines": 335,
+  "preceding_positions_a_lower": 6,
+  "models": [
+    {
+      "model": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "name": "SmolLM2-135M · base",
+      "probabilities": [
+        4.141294375690883e-05,
+        0.040051542214363314,
+        0.045525941480353646,
+        4.858710008620065e-06,
+        0.00018474723736571175,
+        0.05862058060400757,
+        0.060323064494391725,
+        0.001001526233866638,
+        0.006672109108028376,
+        0.6967591683324494,
+        0.2726613663755481,
+        0.33903596319371976,
+        0.0014115111802040425,
+        0.5747571144179298,
+        0.14464629243134774
+      ],
+      "nll": [
+        10.091917074865123,
+        3.2175880989841015,
+        3.089472973069319,
+        12.234737585609825,
+        8.596521951613331,
+        2.8366694392106107,
+        2.808040752620796,
+        6.906230208626697,
+        5.009819260937643,
+        0.36131545399485054,
+        1.2995246699569178,
+        1.0816490911112535,
+        6.563094389505753,
+        0.553807737132847,
+        1.9334638791961352
+      ],
+      "mean_nll": 4.438923504429013,
+      "ppl": 84.68373092737599,
+      "top": [
+        {
+          "id": 1296,
+          "token": " three",
+          "p": 0.17164923298259513
+        },
+        {
+          "id": 827,
+          "token": " two",
+          "p": 0.14464629243134774
+        },
+        {
+          "id": 8696,
+          "token": " Three",
+          "p": 0.10056268535671564
+        },
+        {
+          "id": 5713,
+          "token": " Two",
+          "p": 0.08705332495929063
+        },
+        {
+          "id": 216,
+          "token": " ",
+          "p": 0.03891713825043468
+        },
+        {
+          "id": 15442,
+          "token": " ",
+          "p": 0.035196412349600255
+        },
+        {
+          "id": 198,
+          "token": "\n",
+          "p": 0.030569142696416664
+        },
+        {
+          "id": 7462,
+          "token": " nine",
+          "p": 0.026859599039443793
+        }
+      ]
+    },
+    {
+      "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+      "source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+      "name": "SmolLM2-135M · instruct",
+      "probabilities": [
+        8.217441568805549e-06,
+        0.04506466354071306,
+        0.007981161864506548,
+        1.4231748089413024e-05,
+        0.0005628197222279643,
+        0.057992005136482734,
+        0.1114754261400757,
+        0.00019483682278055475,
+        0.009872836916465462,
+        0.29783725317582765,
+        0.14148326775208306,
+        0.408723783780393,
+        0.0015245191822325006,
+        0.8382518907659695,
+        0.25179946412555004
+      ],
+      "nll": [
+        11.709251642013719,
+        3.099656853090328,
+        4.830671281062684,
+        11.160035308051587,
+        7.4825511902890565,
+        2.8474501204113003,
+        2.1939511057346994,
+        8.543348155971891,
+        4.617968038623003,
+        1.211208071942651,
+        1.9555738179927076,
+        0.8947156963678969,
+        6.486076208976555,
+        0.1764366380272848,
+        1.379122285549095
+      ],
+      "mean_nll": 4.572534427606964,
+      "ppl": 96.7891041590709,
+      "top": [
+        {
+          "id": 827,
+          "token": " two",
+          "p": 0.25179946412555004
+        },
+        {
+          "id": 1296,
+          "token": " three",
+          "p": 0.12978595117195438
+        },
+        {
+          "id": 216,
+          "token": " ",
+          "p": 0.10411720388183235
+        },
+        {
+          "id": 198,
+          "token": "\n",
+          "p": 0.061619079544336604
+        },
+        {
+          "id": 5713,
+          "token": " Two",
+          "p": 0.05089475408109474
+        },
+        {
+          "id": 7462,
+          "token": " nine",
+          "p": 0.04050847691742064
+        },
+        {
+          "id": 8696,
+          "token": " Three",
+          "p": 0.0335539589946735
+        },
+        {
+          "id": 4962,
+          "token": " seven",
+          "p": 0.02304500723869273
+        }
+      ]
+    }
+  ],
+  "selection": "Illustrative selected continuation, not a benchmark over the models. Both orderings searched on the same set of template-generated simple arithmetic lines; require wrong numeric open argmax for lower full-line perplexity and correct open argmax for the other model.",
+  "protocol": "Same literal plain text and token IDs, common <|endoftext|> document separator as initial context, no chat template, causal teacher-forced token likelihood, float32 CPU forward and float64 log softmax, natural logarithm, all visible tokens scored, full-vocabulary top-1 next token."
+}

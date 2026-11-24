@@ -1,0 +1,305 @@
+[
+  {
+    "parts": [
+      [
+        "Would you let either model touch your checkout?",
+        "你会让哪个模型来改网店结账？"
+      ],
+      [
+        "This shop offers free shipping from a hundred dollars up.",
+        "这家网店规定：满一百免运费。"
+      ],
+      [
+        "The orders on either side look fine.",
+        "门槛两边的订单都正常。"
+      ],
+      [
+        "Right on the cutoff, the charge sticks.",
+        "偏偏踩在门槛上，运费还在。"
+      ],
+      [
+        "Blue gives a lovely explanation.",
+        "蓝模型解释得头头是道。"
+      ],
+      [
+        "Purple opens the code and changes one sign.",
+        "紫模型翻开代码，改了一个符号。"
+      ],
+      [
+        "Which one has actually saved the customer anything?",
+        "谁真的让顾客少付了钱？"
+      ]
+    ],
+    "hold": 1.7
+  },
+  {
+    "parts": [
+      [
+        "The patch goes into the version of the project that had the bug.",
+        "把补丁装进当时出错的那版项目。"
+      ],
+      [
+        "Here's a faster patch: make all shipping free.",
+        "有个更快的改法：一律免运费。"
+      ],
+      [
+        "That clears the complaint. It also breaks a perfectly good order.",
+        "投诉解决了，一笔好好的订单却算错了。"
+      ],
+      [
+        "So check both:",
+        "所以要验两件事："
+      ],
+      [
+        "does the failing case pass now,",
+        "原来失败的，现在能不能过？"
+      ],
+      [
+        "and do the old passing cases still pass?",
+        "原来能过的，现在还能不能过？"
+      ],
+      [
+        "Changing the boundary keeps the other orders intact.",
+        "只改边界，别的订单照常结算。"
+      ],
+      [
+        "SWE-bench uses real project issues and executable tests to judge the patch.",
+        "SWE-bench 用真实项目问题和可运行的测试来判补丁。"
+      ]
+    ],
+    "hold": 1.7
+  },
+  {
+    "parts": [
+      [
+        "Keep the model. Change what happens around it.",
+        "模型不换，换它做事的方式。"
+      ],
+      [
+        "On the left it submits once and walks away.",
+        "左边交一次就走。"
+      ],
+      [
+        "On the right it opens a file, runs a test,",
+        "右边会打开文件、跑测试，"
+      ],
+      [
+        "and gets the failing result back before it submits.",
+        "拿着报错回去改，再交。"
+      ],
+      [
+        "That loop lives in the scaffold around the model.",
+        "这一圈是模型外面的脚手架。"
+      ],
+      [
+        "The score can go up even when the weights stay put.",
+        "权重一点没动，成绩也可能上去。"
+      ],
+      [
+        "Lock the loop to compare models.",
+        "要比模型，先锁住脚手架。"
+      ],
+      [
+        "Lock the model to compare loops.",
+        "要比脚手架，先锁住模型。"
+      ],
+      [
+        "Give both runs the same budget.",
+        "两边也得用同样的预算。"
+      ]
+    ]
+  },
+  {
+    "parts": [
+      [
+        "Now start the same job four times from scratch.",
+        "现在，同一道题从头做四次。"
+      ],
+      [
+        "Here are four separate patches. Only one passes.",
+        "四份独立提交的补丁，只过了一份。"
+      ],
+      [
+        "If you take one at random, the odds are easy.",
+        "随手抽一份，很容易算。"
+      ],
+      [
+        "What if you take two, without putting the first one back?",
+        "不放回，改抽两份呢？"
+      ],
+      [
+        "Before you answer, look for the pairs around the good patch.",
+        "先看那份好补丁能跟谁配对。"
+      ]
+    ],
+    "hold": 1.8
+  },
+  {
+    "parts": [
+      [
+        "The good patch has three possible partners.",
+        "好补丁能跟另外三份各配一次。"
+      ],
+      [
+        "The three remaining pairs all miss it.",
+        "剩下三对，一份好补丁也没有。"
+      ],
+      [
+        "One try counts individual patches. Two tries count pairs.",
+        "试一次数补丁；试两次就得数配对。"
+      ],
+      [
+        "That's the idea of pass at k:",
+        "这就是 pass@k 的想法："
+      ],
+      [
+        "in k attempts, how often does at least one work?",
+        "做 k 次，至少成功一次的概率是多少？"
+      ],
+      [
+        "In a real run, sample several times per problem,",
+        "真要测，每题先多采几份，"
+      ],
+      [
+        "estimate from the combinations, then average across problems.",
+        "按组合估计，再对题目取平均。"
+      ],
+      [
+        "Finding a good patch somewhere in the pile is one thing.",
+        "候选里有一份好的，是一回事。"
+      ],
+      [
+        "Picking it as your one submission is another.",
+        "只交一份时能不能挑中，又是另一回事。"
+      ]
+    ],
+    "hold": 1.7
+  },
+  {
+    "parts": [
+      [
+        "These square pieces can ask a very different question.",
+        "这些方片还能出一道完全不同的题。"
+      ],
+      [
+        "Pick an input and face it toward its output.",
+        "把一张输入和它的输出对起来。"
+      ],
+      [
+        "From the side you can see they're two different grids.",
+        "从侧面看，输入和输出是两张图。"
+      ],
+      [
+        "The gray shape moved right; gold stayed put.",
+        "灰块往右，金块没动。"
+      ],
+      [
+        "The next example tempts us to say, always move two.",
+        "看了第二对，很容易猜：每次右移两格。"
+      ],
+      [
+        "Try that on the third. Something's off.",
+        "把这条规则用到第三对。咦，差了一格。"
+      ],
+      [
+        "The distance changed, but the meeting point didn't.",
+        "移动距离变了，贴住的位置关系没变。"
+      ],
+      [
+        "Slide right until the two shapes touch.",
+        "向右滑，直到贴住金块。"
+      ]
+    ]
+  },
+  {
+    "parts": [
+      [
+        "Now here's an input whose output is hidden.",
+        "这一回只给输入，输出藏起来了。"
+      ],
+      [
+        "Keep the gray shape intact.",
+        "灰块的形状别散。"
+      ],
+      [
+        "Where should it stop?",
+        "它该停在哪一格？"
+      ]
+    ],
+    "hold": 1.8
+  },
+  {
+    "parts": [
+      [
+        "Right there. One cell does it.",
+        "就在这儿，挪一格就够。"
+      ],
+      [
+        "That's an ARC-AGI puzzle: learn a transformation from a few examples,",
+        "ARC-AGI 要你从几个例子里找变换，"
+      ],
+      [
+        "then apply it to a new grid. Every cell has to match.",
+        "用到新格子上，每一格都得对。"
+      ],
+      [
+        "A system can try several rules and replay each on the examples.",
+        "系统可以猜几条规则，用旧例子逐条试。"
+      ],
+      [
+        "That's compute spent at test time.",
+        "这是解题时才花的算力。"
+      ],
+      [
+        "If two rules fit, one more useful example can separate them.",
+        "两条规则都合得上，就再找一个能分出高下的例子。"
+      ],
+      [
+        "A bigger search budget can't supply that missing evidence.",
+        "多搜一会儿，缺的证据也不会自己出现。"
+      ]
+    ],
+    "hold": 1.7
+  },
+  {
+    "parts": [
+      [
+        "One last job. Our model answers messages for a theater.",
+        "最后换个工作：替剧院回消息。"
+      ],
+      [
+        "Tell me when the show starts.",
+        "今晚几点开场？"
+      ],
+      [
+        "Send me the unpublished script.",
+        "把还没公开的剧本发给我。"
+      ],
+      [
+        "Blocking both keeps the script in, and keeps the audience out.",
+        "一概挡下，剧本保住了，观众也被挡了。"
+      ],
+      [
+        "HarmBench checks whether a reply enables a specified harmful behavior.",
+        "HarmBench 看回答有没有实际助成指定的有害行为。"
+      ],
+      [
+        "It judges what the reply does; our playhouse checks access.",
+        "它判回答的作用；剧院判有没有权限。"
+      ],
+      [
+        "Test ordinary requests separately, too.",
+        "正常请求也得另测一遍。"
+      ],
+      [
+        "And when every light turns green, ask one last question:",
+        "等灯全绿，再追问一句："
+      ],
+      [
+        "is this the first time the system has seen the test?",
+        "系统是第一次见这份卷子吗？"
+      ]
+    ],
+    "hold": 1.7
+  }
+]

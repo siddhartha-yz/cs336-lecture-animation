@@ -1,0 +1,851 @@
+{
+  "id": "i",
+  "candidate": "i",
+  "heard": "If perplexity sits at the heart of pre-training, is driving it down enough to capture everything we mean by capability? Imagine for a moment that your model knew the true joint distribution of questions and answers. Conditioning on a question would give you the right probabilities for its answers. With a rule for what counts as a good decision, you could act on those probabilities. There is a big distance between that ideal and the models we can actually build. Perplexity puts the same weight on every target token. A predictable bit of grammar takes up exactly as much room in the average as the answer does. Look at this one arithmetic sequence. One model saves enough loss on the earlier tokens to win on the whole line. But at the answer slot, it gives the wrong choice its highest probability. The other model loses on the average and gets that one decision right.",
+  "words": [
+    {
+      "word": "If",
+      "start": 0.0,
+      "end": 0.1
+    },
+    {
+      "word": "perplexity",
+      "start": 0.1,
+      "end": 0.7
+    },
+    {
+      "word": "sits",
+      "start": 0.7,
+      "end": 0.92
+    },
+    {
+      "word": "at",
+      "start": 0.92,
+      "end": 1.16
+    },
+    {
+      "word": "the",
+      "start": 1.16,
+      "end": 1.24
+    },
+    {
+      "word": "heart",
+      "start": 1.24,
+      "end": 1.5
+    },
+    {
+      "word": "of",
+      "start": 1.5,
+      "end": 1.68
+    },
+    {
+      "word": "pre",
+      "start": 1.68,
+      "end": 1.92
+    },
+    {
+      "word": "-training,",
+      "start": 1.92,
+      "end": 2.24
+    },
+    {
+      "word": "is",
+      "start": 2.42,
+      "end": 2.98
+    },
+    {
+      "word": "driving",
+      "start": 2.98,
+      "end": 3.38
+    },
+    {
+      "word": "it",
+      "start": 3.38,
+      "end": 3.54
+    },
+    {
+      "word": "down",
+      "start": 3.54,
+      "end": 3.72
+    },
+    {
+      "word": "enough",
+      "start": 3.72,
+      "end": 4.08
+    },
+    {
+      "word": "to",
+      "start": 4.08,
+      "end": 4.24
+    },
+    {
+      "word": "capture",
+      "start": 4.24,
+      "end": 4.58
+    },
+    {
+      "word": "everything",
+      "start": 4.58,
+      "end": 4.98
+    },
+    {
+      "word": "we",
+      "start": 4.98,
+      "end": 5.3
+    },
+    {
+      "word": "mean",
+      "start": 5.3,
+      "end": 5.56
+    },
+    {
+      "word": "by",
+      "start": 5.56,
+      "end": 5.74
+    },
+    {
+      "word": "capability?",
+      "start": 5.74,
+      "end": 6.14
+    },
+    {
+      "word": "Imagine",
+      "start": 6.94,
+      "end": 7.54
+    },
+    {
+      "word": "for",
+      "start": 7.54,
+      "end": 7.78
+    },
+    {
+      "word": "a",
+      "start": 7.78,
+      "end": 7.9
+    },
+    {
+      "word": "moment",
+      "start": 7.9,
+      "end": 8.18
+    },
+    {
+      "word": "that",
+      "start": 8.18,
+      "end": 8.34
+    },
+    {
+      "word": "your",
+      "start": 8.34,
+      "end": 8.46
+    },
+    {
+      "word": "model",
+      "start": 8.46,
+      "end": 8.84
+    },
+    {
+      "word": "knew",
+      "start": 8.84,
+      "end": 9.14
+    },
+    {
+      "word": "the",
+      "start": 9.14,
+      "end": 9.72
+    },
+    {
+      "word": "true",
+      "start": 9.72,
+      "end": 10.08
+    },
+    {
+      "word": "joint",
+      "start": 10.08,
+      "end": 10.52
+    },
+    {
+      "word": "distribution",
+      "start": 10.52,
+      "end": 10.94
+    },
+    {
+      "word": "of",
+      "start": 10.94,
+      "end": 11.34
+    },
+    {
+      "word": "questions",
+      "start": 11.34,
+      "end": 11.62
+    },
+    {
+      "word": "and",
+      "start": 11.62,
+      "end": 11.98
+    },
+    {
+      "word": "answers.",
+      "start": 11.98,
+      "end": 12.28
+    },
+    {
+      "word": "Conditioning",
+      "start": 13.24,
+      "end": 13.84
+    },
+    {
+      "word": "on",
+      "start": 13.84,
+      "end": 13.9
+    },
+    {
+      "word": "a",
+      "start": 13.9,
+      "end": 13.96
+    },
+    {
+      "word": "question",
+      "start": 13.96,
+      "end": 14.3
+    },
+    {
+      "word": "would",
+      "start": 14.3,
+      "end": 14.74
+    },
+    {
+      "word": "give",
+      "start": 14.74,
+      "end": 15.0
+    },
+    {
+      "word": "you",
+      "start": 15.0,
+      "end": 15.16
+    },
+    {
+      "word": "the",
+      "start": 15.16,
+      "end": 15.28
+    },
+    {
+      "word": "right",
+      "start": 15.28,
+      "end": 15.52
+    },
+    {
+      "word": "probabilities",
+      "start": 15.52,
+      "end": 16.22
+    },
+    {
+      "word": "for",
+      "start": 16.22,
+      "end": 16.74
+    },
+    {
+      "word": "its",
+      "start": 16.74,
+      "end": 16.94
+    },
+    {
+      "word": "answers.",
+      "start": 16.94,
+      "end": 17.3
+    },
+    {
+      "word": "With",
+      "start": 17.88,
+      "end": 18.48
+    },
+    {
+      "word": "a",
+      "start": 18.48,
+      "end": 18.56
+    },
+    {
+      "word": "rule",
+      "start": 18.56,
+      "end": 18.76
+    },
+    {
+      "word": "for",
+      "start": 18.76,
+      "end": 19.0
+    },
+    {
+      "word": "what",
+      "start": 19.0,
+      "end": 19.2
+    },
+    {
+      "word": "counts",
+      "start": 19.2,
+      "end": 19.56
+    },
+    {
+      "word": "as",
+      "start": 19.56,
+      "end": 19.7
+    },
+    {
+      "word": "a",
+      "start": 19.7,
+      "end": 19.78
+    },
+    {
+      "word": "good",
+      "start": 19.78,
+      "end": 20.02
+    },
+    {
+      "word": "decision,",
+      "start": 20.02,
+      "end": 20.44
+    },
+    {
+      "word": "you",
+      "start": 20.72,
+      "end": 21.3
+    },
+    {
+      "word": "could",
+      "start": 21.3,
+      "end": 21.64
+    },
+    {
+      "word": "act",
+      "start": 21.64,
+      "end": 22.08
+    },
+    {
+      "word": "on",
+      "start": 22.08,
+      "end": 22.34
+    },
+    {
+      "word": "those",
+      "start": 22.34,
+      "end": 22.52
+    },
+    {
+      "word": "probabilities.",
+      "start": 22.52,
+      "end": 22.96
+    },
+    {
+      "word": "There",
+      "start": 23.62,
+      "end": 24.22
+    },
+    {
+      "word": "is",
+      "start": 24.22,
+      "end": 24.34
+    },
+    {
+      "word": "a",
+      "start": 24.34,
+      "end": 24.46
+    },
+    {
+      "word": "big",
+      "start": 24.46,
+      "end": 24.78
+    },
+    {
+      "word": "distance",
+      "start": 24.78,
+      "end": 25.26
+    },
+    {
+      "word": "between",
+      "start": 25.26,
+      "end": 25.64
+    },
+    {
+      "word": "that",
+      "start": 25.64,
+      "end": 26.02
+    },
+    {
+      "word": "ideal",
+      "start": 26.02,
+      "end": 26.5
+    },
+    {
+      "word": "and",
+      "start": 26.5,
+      "end": 27.16
+    },
+    {
+      "word": "the",
+      "start": 27.16,
+      "end": 27.28
+    },
+    {
+      "word": "models",
+      "start": 27.28,
+      "end": 27.68
+    },
+    {
+      "word": "we",
+      "start": 27.68,
+      "end": 27.84
+    },
+    {
+      "word": "can",
+      "start": 27.84,
+      "end": 27.96
+    },
+    {
+      "word": "actually",
+      "start": 27.96,
+      "end": 28.24
+    },
+    {
+      "word": "build.",
+      "start": 28.24,
+      "end": 28.66
+    },
+    {
+      "word": "Perplexity",
+      "start": 29.34,
+      "end": 29.94
+    },
+    {
+      "word": "puts",
+      "start": 29.94,
+      "end": 30.1
+    },
+    {
+      "word": "the",
+      "start": 30.1,
+      "end": 30.32
+    },
+    {
+      "word": "same",
+      "start": 30.32,
+      "end": 30.64
+    },
+    {
+      "word": "weight",
+      "start": 30.64,
+      "end": 30.98
+    },
+    {
+      "word": "on",
+      "start": 30.98,
+      "end": 31.24
+    },
+    {
+      "word": "every",
+      "start": 31.24,
+      "end": 31.76
+    },
+    {
+      "word": "target",
+      "start": 31.76,
+      "end": 32.18
+    },
+    {
+      "word": "token.",
+      "start": 32.18,
+      "end": 32.58
+    },
+    {
+      "word": "A",
+      "start": 33.06,
+      "end": 33.66
+    },
+    {
+      "word": "predictable",
+      "start": 33.66,
+      "end": 34.16
+    },
+    {
+      "word": "bit",
+      "start": 34.16,
+      "end": 34.48
+    },
+    {
+      "word": "of",
+      "start": 34.48,
+      "end": 34.62
+    },
+    {
+      "word": "grammar",
+      "start": 34.62,
+      "end": 34.94
+    },
+    {
+      "word": "takes",
+      "start": 34.94,
+      "end": 35.54
+    },
+    {
+      "word": "up",
+      "start": 35.54,
+      "end": 35.76
+    },
+    {
+      "word": "exactly",
+      "start": 35.76,
+      "end": 36.2
+    },
+    {
+      "word": "as",
+      "start": 36.2,
+      "end": 36.64
+    },
+    {
+      "word": "much",
+      "start": 36.64,
+      "end": 36.82
+    },
+    {
+      "word": "room",
+      "start": 36.82,
+      "end": 37.14
+    },
+    {
+      "word": "in",
+      "start": 37.14,
+      "end": 37.3
+    },
+    {
+      "word": "the",
+      "start": 37.3,
+      "end": 37.36
+    },
+    {
+      "word": "average",
+      "start": 37.36,
+      "end": 37.68
+    },
+    {
+      "word": "as",
+      "start": 37.68,
+      "end": 37.94
+    },
+    {
+      "word": "the",
+      "start": 37.94,
+      "end": 38.06
+    },
+    {
+      "word": "answer",
+      "start": 38.06,
+      "end": 38.32
+    },
+    {
+      "word": "does.",
+      "start": 38.32,
+      "end": 38.62
+    },
+    {
+      "word": "Look",
+      "start": 38.82,
+      "end": 39.32
+    },
+    {
+      "word": "at",
+      "start": 39.32,
+      "end": 39.44
+    },
+    {
+      "word": "this",
+      "start": 39.44,
+      "end": 39.58
+    },
+    {
+      "word": "one",
+      "start": 39.58,
+      "end": 39.76
+    },
+    {
+      "word": "arithmetic",
+      "start": 39.76,
+      "end": 40.32
+    },
+    {
+      "word": "sequence.",
+      "start": 40.32,
+      "end": 40.84
+    },
+    {
+      "word": "One",
+      "start": 41.48,
+      "end": 42.08
+    },
+    {
+      "word": "model",
+      "start": 42.08,
+      "end": 42.38
+    },
+    {
+      "word": "saves",
+      "start": 42.38,
+      "end": 42.7
+    },
+    {
+      "word": "enough",
+      "start": 42.7,
+      "end": 43.16
+    },
+    {
+      "word": "loss",
+      "start": 43.16,
+      "end": 43.64
+    },
+    {
+      "word": "on",
+      "start": 43.64,
+      "end": 43.84
+    },
+    {
+      "word": "the",
+      "start": 43.84,
+      "end": 43.92
+    },
+    {
+      "word": "earlier",
+      "start": 43.92,
+      "end": 44.2
+    },
+    {
+      "word": "tokens",
+      "start": 44.2,
+      "end": 44.68
+    },
+    {
+      "word": "to",
+      "start": 44.68,
+      "end": 45.06
+    },
+    {
+      "word": "win",
+      "start": 45.06,
+      "end": 45.32
+    },
+    {
+      "word": "on",
+      "start": 45.32,
+      "end": 45.46
+    },
+    {
+      "word": "the",
+      "start": 45.46,
+      "end": 45.54
+    },
+    {
+      "word": "whole",
+      "start": 45.54,
+      "end": 45.76
+    },
+    {
+      "word": "line.",
+      "start": 45.76,
+      "end": 46.12
+    },
+    {
+      "word": "But",
+      "start": 46.54,
+      "end": 47.14
+    },
+    {
+      "word": "at",
+      "start": 47.14,
+      "end": 47.26
+    },
+    {
+      "word": "the",
+      "start": 47.26,
+      "end": 47.3
+    },
+    {
+      "word": "answer",
+      "start": 47.3,
+      "end": 47.6
+    },
+    {
+      "word": "slot,",
+      "start": 47.6,
+      "end": 47.9
+    },
+    {
+      "word": "it",
+      "start": 48.1,
+      "end": 48.36
+    },
+    {
+      "word": "gives",
+      "start": 48.36,
+      "end": 48.58
+    },
+    {
+      "word": "the",
+      "start": 48.58,
+      "end": 48.76
+    },
+    {
+      "word": "wrong",
+      "start": 48.76,
+      "end": 49.06
+    },
+    {
+      "word": "choice",
+      "start": 49.06,
+      "end": 49.52
+    },
+    {
+      "word": "its",
+      "start": 49.52,
+      "end": 49.76
+    },
+    {
+      "word": "highest",
+      "start": 49.76,
+      "end": 50.06
+    },
+    {
+      "word": "probability.",
+      "start": 50.06,
+      "end": 50.52
+    },
+    {
+      "word": "The",
+      "start": 51.4,
+      "end": 52.0
+    },
+    {
+      "word": "other",
+      "start": 52.0,
+      "end": 52.22
+    },
+    {
+      "word": "model",
+      "start": 52.22,
+      "end": 52.5
+    },
+    {
+      "word": "loses",
+      "start": 52.5,
+      "end": 52.88
+    },
+    {
+      "word": "on",
+      "start": 52.88,
+      "end": 53.12
+    },
+    {
+      "word": "the",
+      "start": 53.12,
+      "end": 53.24
+    },
+    {
+      "word": "average",
+      "start": 53.24,
+      "end": 53.58
+    },
+    {
+      "word": "and",
+      "start": 53.58,
+      "end": 54.14
+    },
+    {
+      "word": "gets",
+      "start": 54.14,
+      "end": 54.4
+    },
+    {
+      "word": "that",
+      "start": 54.4,
+      "end": 54.58
+    },
+    {
+      "word": "one",
+      "start": 54.58,
+      "end": 54.82
+    },
+    {
+      "word": "decision",
+      "start": 54.82,
+      "end": 55.2
+    },
+    {
+      "word": "right.",
+      "start": 55.2,
+      "end": 55.62
+    }
+  ],
+  "seconds": 55.788375,
+  "wpm": 165.62590324597193,
+  "target_seconds": 58.8,
+  "fit_ratio": 0.9487818877551021,
+  "normalized_word_match": 1.0,
+  "word_changes": [],
+  "peak": 0.80859375,
+  "rms": 0.0896056741476059,
+  "pitch": {
+    "median_hz": 145.45454545454547,
+    "central_range_st": 11.320997659603592
+  },
+  "pauses": [
+    {
+      "seconds": 0.8,
+      "after": "capability?",
+      "before": "Imagine",
+      "start": 6.14
+    },
+    {
+      "seconds": 0.96,
+      "after": "answers.",
+      "before": "Conditioning",
+      "start": 12.28
+    },
+    {
+      "seconds": 0.58,
+      "after": "answers.",
+      "before": "With",
+      "start": 17.3
+    },
+    {
+      "seconds": 0.66,
+      "after": "probabilities.",
+      "before": "There",
+      "start": 22.96
+    },
+    {
+      "seconds": 0.68,
+      "after": "build.",
+      "before": "Perplexity",
+      "start": 28.66
+    },
+    {
+      "seconds": 0.48,
+      "after": "token.",
+      "before": "A",
+      "start": 32.58
+    },
+    {
+      "seconds": 0.64,
+      "after": "sequence.",
+      "before": "One",
+      "start": 40.84
+    },
+    {
+      "seconds": 0.42,
+      "after": "line.",
+      "before": "But",
+      "start": 46.12
+    },
+    {
+      "seconds": 0.88,
+      "after": "probability.",
+      "before": "The",
+      "start": 50.52
+    }
+  ],
+  "script": "script_i.json"
+}

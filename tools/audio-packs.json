@@ -1,0 +1,790 @@
+{
+  "beats": {
+    "film/beats_zh/audio/mix.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration_ts": 10963200,
+      "source_mtime": 1795515636
+    },
+    "film/beats_zh/audio/dry.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 5481600,
+      "source_mtime": 1795515633
+    },
+    "film/beats_zh/audio/takes/a.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 586513,
+      "source_mtime": 1795515365
+    },
+    "film/beats_zh/audio/takes/b.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1008797,
+      "source_mtime": 1795515390
+    },
+    "film/beats_zh/audio/takes/c.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 885718,
+      "source_mtime": 1795515242
+    },
+    "film/beats_zh/audio/takes/d.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1126022,
+      "source_mtime": 1795515269
+    },
+    "film/beats_zh/audio/takes/e.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1360285,
+      "source_mtime": 1795515436
+    },
+    "film/beats_zh/audio/takes/f.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1160605,
+      "source_mtime": 1795515557
+    },
+    "film/beat2/audio/mix.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration_ts": 12240000,
+      "source_mtime": 1795512226
+    },
+    "film/beat2/dry.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 6120000,
+      "source_mtime": 1795512084
+    },
+    "film/beat2/audio/takes/g.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1187487,
+      "source_mtime": 1795511790
+    },
+    "film/beat2/audio/takes/h.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1352380,
+      "source_mtime": 1795511962
+    },
+    "film/beat2/audio/takes/i.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1338921,
+      "source_mtime": 1795511855
+    },
+    "film/beat2/audio/takes/j.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1225577,
+      "source_mtime": 1795512008
+    },
+    "film/beat2/audio/takes/k.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 914843,
+      "source_mtime": 1795511908
+    },
+    "film/beats_final/audio/mix.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration_ts": 10742400,
+      "source_mtime": 1795511214
+    },
+    "film/beats_final/audio/dry.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 5371200,
+      "source_mtime": 1795511214
+    }
+  },
+  "full": {
+    "film/voice_master.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 28800000,
+      "source_mtime": 1795483548
+    },
+    "film/mixed.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration_ts": 57600000,
+      "source_mtime": 1795483555
+    },
+    "film/v2/dry.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 28800000,
+      "source_mtime": 1795486087
+    },
+    "film/v2/mix.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration_ts": 57600000,
+      "source_mtime": 1795486246
+    },
+    "film/voice/1-00.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 259181,
+      "source_mtime": 1795481491
+    },
+    "film/voice/1-01.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 541440,
+      "source_mtime": 1795481503
+    },
+    "film/voice/1-02.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 552953,
+      "source_mtime": 1795481515
+    },
+    "film/voice/1-03.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 591360,
+      "source_mtime": 1795481528
+    },
+    "film/voice/1-04.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 689216,
+      "source_mtime": 1795481543
+    },
+    "film/voice/1-05.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 648858,
+      "source_mtime": 1795481556
+    },
+    "film/voice/1-06.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 572160,
+      "source_mtime": 1795482404
+    },
+    "film/voice/1-07.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 566400,
+      "source_mtime": 1795481582
+    },
+    "film/voice/1-08.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 577920,
+      "source_mtime": 1795481595
+    },
+    "film/voice/1-09.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 581760,
+      "source_mtime": 1795481608
+    },
+    "film/voice/1-10.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 460800,
+      "source_mtime": 1795481618
+    },
+    "film/voice/1-11.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 599040,
+      "source_mtime": 1795481630
+    },
+    "film/voice/1-12.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 597120,
+      "source_mtime": 1795481642
+    },
+    "film/voice/1-13.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 524160,
+      "source_mtime": 1795481652
+    },
+    "film/voice/1-14.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 602880,
+      "source_mtime": 1795481664
+    },
+    "film/voice/1-15.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 353280,
+      "source_mtime": 1795481670
+    },
+    "film/voice/2-00.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 472320,
+      "source_mtime": 1795481679
+    },
+    "film/voice/2-01.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 629760,
+      "source_mtime": 1795481691
+    },
+    "film/voice/2-02.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 668160,
+      "source_mtime": 1795481703
+    },
+    "film/voice/2-03.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 865920,
+      "source_mtime": 1795481719
+    },
+    "film/voice/2-04.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 597120,
+      "source_mtime": 1795481729
+    },
+    "film/voice/2-05.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 612380,
+      "source_mtime": 1795481740
+    },
+    "film/voice/2-06.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 549120,
+      "source_mtime": 1795481750
+    },
+    "film/voice/2-07.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 585600,
+      "source_mtime": 1795481760
+    },
+    "film/voice/2-08.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 641112,
+      "source_mtime": 1795481772
+    },
+    "film/voice/2-09.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 629760,
+      "source_mtime": 1795481783
+    },
+    "film/voice/2-10.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 604800,
+      "source_mtime": 1795481794
+    },
+    "film/voice/2-11.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 875369,
+      "source_mtime": 1795481810
+    },
+    "film/voice/2-12.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 744960,
+      "source_mtime": 1795481827
+    },
+    "film/voice/2-13.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 635520,
+      "source_mtime": 1795481842
+    },
+    "film/voice/3-00.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 458880,
+      "source_mtime": 1795481852
+    },
+    "film/voice/3-01.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 884988,
+      "source_mtime": 1795481871
+    },
+    "film/voice/3-02.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 589319,
+      "source_mtime": 1795481883
+    },
+    "film/voice/3-03.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 735360,
+      "source_mtime": 1795481900
+    },
+    "film/voice/3-04.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 429898,
+      "source_mtime": 1795481910
+    },
+    "film/voice/3-05.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 1038530,
+      "source_mtime": 1795481934
+    },
+    "film/voice/3-06.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 424130,
+      "source_mtime": 1795481944
+    },
+    "film/voice/3-07.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 731520,
+      "source_mtime": 1795481962
+    },
+    "film/voice/3-08.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 754560,
+      "source_mtime": 1795483539
+    },
+    "film/voice/3-09.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 677594,
+      "source_mtime": 1795481996
+    },
+    "film/voice/3-10.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 610560,
+      "source_mtime": 1795482010
+    },
+    "film/voice/3-11.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 675840,
+      "source_mtime": 1795482027
+    },
+    "film/voice/3-12.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 518400,
+      "source_mtime": 1795482039
+    },
+    "film/voice/4-00.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 483840,
+      "source_mtime": 1795482049
+    },
+    "film/voice/4-01.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 635520,
+      "source_mtime": 1795482420
+    },
+    "film/voice/4-02.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 625920,
+      "source_mtime": 1795482076
+    },
+    "film/voice/4-03.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 693120,
+      "source_mtime": 1795482093
+    },
+    "film/voice/4-04.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 547036,
+      "source_mtime": 1795482106
+    },
+    "film/voice/4-05.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 637364,
+      "source_mtime": 1795482436
+    },
+    "film/voice/4-06.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 672000,
+      "source_mtime": 1795482139
+    },
+    "film/voice/4-07.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 520320,
+      "source_mtime": 1795482449
+    },
+    "film/voice/4-08.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 785280,
+      "source_mtime": 1795482468
+    },
+    "film/voice/4-09.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 739189,
+      "source_mtime": 1795482486
+    },
+    "film/voice/4-10.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 570240,
+      "source_mtime": 1795482197
+    },
+    "film/voice/4-11.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 526080,
+      "source_mtime": 1795482499
+    },
+    "film/v2/voice/1-00.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 216719,
+      "source_mtime": 1795485285
+    },
+    "film/v2/voice/1-01.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 677760,
+      "source_mtime": 1795485300
+    },
+    "film/v2/voice/1-02.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 685440,
+      "source_mtime": 1795485316
+    },
+    "film/v2/voice/1-03.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 802560,
+      "source_mtime": 1795485334
+    },
+    "film/v2/voice/1-04.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 681600,
+      "source_mtime": 1795486031
+    },
+    "film/v2/voice/1-05.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 664320,
+      "source_mtime": 1795485369
+    },
+    "film/v2/voice/1-06.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 744960,
+      "source_mtime": 1795485386
+    },
+    "film/v2/voice/1-07.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 683520,
+      "source_mtime": 1795485402
+    },
+    "film/v2/voice/1-08.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 401280,
+      "source_mtime": 1795485411
+    },
+    "film/v2/voice/2-00.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 691200,
+      "source_mtime": 1795485428
+    },
+    "film/v2/voice/2-01.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 529920,
+      "source_mtime": 1795485440
+    },
+    "film/v2/voice/2-02.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 909863,
+      "source_mtime": 1795485462
+    },
+    "film/v2/voice/2-03.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 589278,
+      "source_mtime": 1795485475
+    },
+    "film/v2/voice/2-04.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 794776,
+      "source_mtime": 1795485494
+    },
+    "film/v2/voice/2-05.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 529898,
+      "source_mtime": 1795485506
+    },
+    "film/v2/voice/2-06.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 506859,
+      "source_mtime": 1795485518
+    },
+    "film/v2/voice/2-07.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 738853,
+      "source_mtime": 1795485535
+    },
+    "film/v2/voice/2-08.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 529748,
+      "source_mtime": 1795485547
+    },
+    "film/v2/voice/3-00.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 754560,
+      "source_mtime": 1795485564
+    },
+    "film/v2/voice/3-01.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 758170,
+      "source_mtime": 1795485582
+    },
+    "film/v2/voice/3-02.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 656640,
+      "source_mtime": 1795485598
+    },
+    "film/v2/voice/3-03.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 476160,
+      "source_mtime": 1795485609
+    },
+    "film/v2/voice/3-04.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 744960,
+      "source_mtime": 1795485627
+    },
+    "film/v2/voice/3-05.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 681600,
+      "source_mtime": 1795485643
+    },
+    "film/v2/voice/3-06.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 151680,
+      "source_mtime": 1795485647
+    },
+    "film/v2/voice/3-07.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 652800,
+      "source_mtime": 1795485662
+    },
+    "film/v2/voice/3-08.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 856277,
+      "source_mtime": 1795485682
+    },
+    "film/v2/voice/4-00.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 558720,
+      "source_mtime": 1795485727
+    },
+    "film/v2/voice/4-01.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 616093,
+      "source_mtime": 1795485742
+    },
+    "film/v2/voice/4-02.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 579647,
+      "source_mtime": 1795485756
+    },
+    "film/v2/voice/4-03.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 581760,
+      "source_mtime": 1795485771
+    },
+    "film/v2/voice/4-04.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 645120,
+      "source_mtime": 1795485788
+    },
+    "film/v2/voice/4-05.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 535680,
+      "source_mtime": 1795485802
+    },
+    "film/v2/voice/4-06.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 723556,
+      "source_mtime": 1795485819
+    },
+    "film/v2/voice/4-07.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 917760,
+      "source_mtime": 1795486052
+    },
+    "film/v2/voice/4-08.wav": {
+      "codec_name": "pcm_s24le",
+      "sample_rate": "24000",
+      "channels": 1,
+      "duration_ts": 439680,
+      "source_mtime": 1795485848
+    }
+  }
+}

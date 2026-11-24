@@ -1,0 +1,18 @@
+{
+  "engine": "Qwen3-TTS 12Hz 1.7B CustomVoice (local)",
+  "character": "Aiden",
+  "original_preset": true,
+  "id": "h",
+  "candidate": "h-r1",
+  "script": "script_h.json",
+  "text": "Before comparing two models on perplexity, watch what happens to the exact same sentence under two tokenizers. The words stay put; only the cuts move. Hold the total surprise fixed and split the passage into more pieces. The per-token average falls, even though the score for the text as a whole hasn't changed. Count bits, divide by the raw UTF-eight bytes, and you have bits per byte. Same text, same denominator. The models can still give it different probabilities. For a long time, language modeling benchmarks asked you to train and test on splits of the same corpus, like Penn Treebank or WikiText one oh three. GPT-two took a different route: pretrain on broad web text, then measure zero-shot perplexity on those benchmark corpora, without fitting a model to each one.",
+  "raw": "Before comparing two models on perplexity, watch what happens to the exact same sentence under two tokenizers. The words stay put; only the cuts move. Hold the total surprise fixed and split the passage into more pieces. The per-token average falls, even though the score for the text as a whole hasn't changed. Count bits, divide by the raw you tee eff eight bytes, and you have bits per byte. Same text, same denominator. The models can still give it different probabilities. For a long time, language modeling benchmarks asked you to train and test on splits of the same corpus, like Penn Treebank or Wiki Text one oh three. GPT-two took a different route: pretrain on broad web text, then measure zero-shot perplexity on those benchmark corpora, without fitting a model to each one.",
+  "seconds": 56.34916666666667,
+  "target_seconds": 49.2,
+  "fit_ratio": 1.1453082655826559,
+  "wpm": 143.74658010322543,
+  "sample_rate": 24000,
+  "seed": 22367,
+  "direction": "Warm adult American English male speaking to a few students, not projecting into a hall. Begin conversationally, and let an unexpected fact change the voice naturally: brief curiosity, then a lucid explanation. Use distinct logical stresses and connected sentences. Maintain an easy, measured teaching pace, brisk but unhurried. Keep momentum through sentences with ordinary breathing room around the main question; about 165 words per minute. Thoughtful rather than an announcer. Pronounce the encoding name as the four distinct sounds you, tee, eff, eight. Continue at an active natural pace; lightly stress only the cuts move and same denominator, with short connected pauses.",
+  "synthesis_seconds": 37.027890898054466
+}

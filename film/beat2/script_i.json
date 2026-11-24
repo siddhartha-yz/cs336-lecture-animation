@@ -1,0 +1,29 @@
+{
+  "id": "i",
+  "module": "tradeoff",
+  "beat": 0,
+  "duration": 60,
+  "hold": 1.2,
+  "parts": [
+    [
+      "If perplexity sits at the heart of pretraining, is driving it down enough to capture everything we mean by capability?",
+      "既然困惑度是预训练的核心，把它降下去，就能量到我们在意的所有能力吗？"
+    ],
+    [
+      "Imagine for a moment that your model knew the true joint distribution of questions and answers. Conditioning on a question would give you the right probabilities for its answers. With a rule for what counts as a good decision, you could act on those probabilities.",
+      "先想一个理想情况：模型知道题目和答案的真实联合分布。给定题目，就拿到了答案的真实条件概率；再按得分规则作决策。"
+    ],
+    [
+      "There is a big distance between that ideal and the models we can actually build. Perplexity puts the same weight on every target token. A predictable bit of grammar takes up exactly as much room in the average as the answer does.",
+      "但真实模型离这个理想还很远。困惑度平均时给每个词元同样的权重。一处词法和一道题的答案，在平均数里占的份额一样。"
+    ],
+    [
+      "Look at this one arithmetic sequence. One model saves enough loss on the earlier tokens to win on the whole line. But at the answer slot it gives the wrong choice its highest probability. The other model loses on the average and gets that one decision right.",
+      "看这条算术题序列。一个模型在前面省下的损失，足以赢下整行的平均分；可到了答案格，它概率最高的选择是错的。另一个模型平均分输了，这一步却答对了。"
+    ]
+  ],
+  "thinking": {
+    "after_part": 0,
+    "seconds": 1.65
+  }
+}

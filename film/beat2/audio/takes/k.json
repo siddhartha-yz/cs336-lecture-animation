@@ -1,0 +1,18 @@
+{
+  "engine": "Qwen3-TTS 12Hz 1.7B CustomVoice (local)",
+  "character": "Aiden",
+  "original_preset": true,
+  "id": "k",
+  "candidate": "k",
+  "script": "script_k.json",
+  "text": "Even with the units aligned, the domains split out, and the probabilities verified, perplexity still grades the whole stream of text. A hard question often has just one spot where the answer matters. Standardized exams put that spot at the center: a known answer, automatic grading, and questions across dozens of subjects. That gives us a different ruler. For a while, the ruler gave us clear steps upward. But as the strongest models crowded toward the top, the gaps became harder to read. That's benchmark saturation.",
+  "raw": "Even with the units aligned, the domains split out, and the probabilities verified, perplexity still grades the whole stream of text. A hard question often has just one spot where the answer matters. Standardized exams put that spot at the center: a known answer, automatic grading, and questions across dozens of subjects. That gives us a different ruler. For a while, the ruler gave us clear steps upward. But as the strongest models crowded toward the top, the gaps became harder to read. That's benchmark saturation.",
+  "seconds": 38.118458333333336,
+  "target_seconds": 33.6,
+  "fit_ratio": 1.1344779265873017,
+  "wpm": 135.3674892850467,
+  "sample_rate": 24000,
+  "seed": 21519,
+  "direction": "Warm adult American English male speaking to a few students, not projecting into a hall. Begin conversationally, and let an unexpected fact change the voice naturally: brief curiosity, then a lucid explanation. Use distinct logical stresses and connected sentences. Maintain an easy, measured teaching pace, brisk but unhurried. Keep momentum through sentences with ordinary breathing room around the main question; about 165 words per minute. Thoughtful rather than an announcer.",
+  "synthesis_seconds": 22.657685984042473
+}

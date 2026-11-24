@@ -1,0 +1,305 @@
+[
+  {
+    "hold": 1.75,
+    "parts": [
+      [
+        "Take that passing test and turn it over.",
+        "把那张通过的试卷翻过来。"
+      ],
+      [
+        "There is an old copy tucked behind it.",
+        "后面夹着一份旧卷。"
+      ],
+      [
+        "Same question. Same answer, right down to the last symbol.",
+        "同一道题，答案连最后一个符号都相同。"
+      ],
+      [
+        "Suppose Blue saw that copy in training.",
+        "假如蓝模型训练时见过它，"
+      ],
+      [
+        "Our green check still tells us what it answered.",
+        "绿勾仍能说明它答对了。"
+      ],
+      [
+        "The interesting question is what happens",
+        "真正的问题是："
+      ],
+      [
+        "when we pull the copy away.",
+        "拿走旧卷，它还会做吗？"
+      ]
+    ],
+    "delivery": "Begin quietly as if you turned over a real test paper, lift gently on the last question."
+  },
+  {
+    "hold": 1.65,
+    "parts": [
+      [
+        "Go back to the shipping rule.",
+        "回到那个免邮规则。"
+      ],
+      [
+        "At a hundred dollars, memorizing zero buys you the point.",
+        "一百美元那题，背个零也能得分。"
+      ],
+      [
+        "Now slide the threshold to one twenty.",
+        "现在把门槛挪到一百二十美元。"
+      ],
+      [
+        "Try an order for one nineteen.",
+        "拿一百一十九美元的订单试试。"
+      ],
+      [
+        "The old shortcut still says free.",
+        "照搬旧答案，还是免邮。"
+      ],
+      [
+        "The new rule says eight dollars.",
+        "按新规则，运费是八美元。"
+      ],
+      [
+        "When test material gets into training, we call that contamination.",
+        "测试材料混进训练集，就叫数据污染。"
+      ],
+      [
+        "A fresh case gives those two explanations a chance to disagree.",
+        "换道新题，两种解释才有机会分开。"
+      ]
+    ]
+  },
+  {
+    "hold": 1.65,
+    "parts": [
+      [
+        "With the training data in hand, we can go looking for a copy.",
+        "有训练数据，就能回头找副本。"
+      ],
+      [
+        "Put a little window over three neighboring tokens.",
+        "拿个小窗口罩住三个相邻词元。"
+      ],
+      [
+        "Slide it along the test item.",
+        "沿着试题滑动，"
+      ],
+      [
+        "Look for those exact runs in the corpus.",
+        "在语料中找完全一样的片段。"
+      ],
+      [
+        "The lecture's thirteen-token window works the same way.",
+        "讲义中的十三词元窗口也是这个道理。"
+      ],
+      [
+        "A shared heading can light up by accident.",
+        "两篇文章共用页眉，也会亮灯。"
+      ],
+      [
+        "A paraphrase can slip right through.",
+        "试题一旦改写，又可能完全对不上。"
+      ],
+      [
+        "The match tells you where to look; you decide what to remove.",
+        "匹配给出线索，再决定删片段还是删整篇。"
+      ]
+    ]
+  },
+  {
+    "hold": 1.55,
+    "parts": [
+      [
+        "What if all we can see is the model's output probabilities?",
+        "如果只能看到模型给出的概率呢？"
+      ],
+      [
+        "Take three independent test questions.",
+        "取三道相互独立的测试题。"
+      ],
+      [
+        "Keep each answer stuck to its own question.",
+        "每道题和自己的答案贴在一起。"
+      ],
+      [
+        "Now shuffle the cards, not the answers.",
+        "打乱卡片顺序，题和答案仍成对。"
+      ],
+      [
+        "Give the model the whole stack as a sequence of text.",
+        "把整叠卡当成一段文本。"
+      ],
+      [
+        "We can score how much probability it puts on that sequence.",
+        "再看模型给这个顺序分了多少概率。"
+      ],
+      [
+        "Do the same for the published order.",
+        "原来公开的顺序，也算一次。"
+      ]
+    ]
+  },
+  {
+    "hold": 1.8,
+    "parts": [
+      [
+        "Add more cards and score a bunch of shuffles.",
+        "再加几张卡，多打乱几次。"
+      ],
+      [
+        "Most land in this little cluster.",
+        "大部分重排落在这一小团。"
+      ],
+      [
+        "The published order is the gold dot. Why is it way out there?",
+        "金点是公开顺序，为什么它孤零零在右边？"
+      ],
+      [
+        "A model that remembers the stack has a reason to like it.",
+        "背过整叠的模型，当然更认这个顺序。"
+      ],
+      [
+        "But these questions have to be exchangeable under the fresh-data assumption.",
+        "这里有个条件：没见过时，题目次序应当可交换。"
+      ],
+      [
+        "Put dates on the cards, and chronological order gets an advantage for free.",
+        "给卡片加日期，按时间排序就天然更顺。"
+      ],
+      [
+        "Now the shuffle is answering a different question.",
+        "这时打乱顺序，测的就成了另一件事。"
+      ]
+    ]
+  },
+  {
+    "hold": 0.7,
+    "parts": [
+      [
+        "You can save yourself some detective work by designing for freshness up front.",
+        "在出卷时就考虑新鲜度，能少做不少排查。"
+      ],
+      [
+        "Freeze the model version and mark its training cutoff.",
+        "固定模型版本，标出训练截止点。"
+      ],
+      [
+        "Put the test on the far side of that line.",
+        "到线的另一侧找题。"
+      ],
+      [
+        "LiveCodeBench dates its programming problems, so you can pick a later window.",
+        "LiveCodeBench 按发布日期挑选较新的编程题。"
+      ],
+      [
+        "Keep another set out of public circulation for a final check.",
+        "另留一套未公开的题做最后验收。"
+      ],
+      [
+        "On the next run, write down which model and which test you actually used.",
+        "下次跑分，记清模型和题库的版本。"
+      ]
+    ]
+  },
+  {
+    "hold": 1.7,
+    "parts": [
+      [
+        "A fresh exam can still be the wrong exam.",
+        "题是新的，也可能考错了东西。"
+      ],
+      [
+        "My shop needs a shipping spreadsheet someone can use tomorrow.",
+        "网店要的是店员明天能用的运费表。"
+      ],
+      [
+        "There are coupons, partial refunds, and files other people have to open.",
+        "里面有优惠券、部分退款，还有要交付的文件。"
+      ],
+      [
+        "That distance between the test and the real job is what ecological validity is about.",
+        "生态效度问的是：这场考试离真实工作有多远？"
+      ],
+      [
+        "GDPval starts from professional deliverables.",
+        "GDPval 从实际职业交付件出题。"
+      ],
+      [
+        "MedHELM separates jobs like drafting a clinical note and supporting a decision.",
+        "MedHELM 把整理临床记录和支持决策分开测。"
+      ],
+      [
+        "A score goes further when its task looks like yours.",
+        "考的活儿越像你的，分数就越有用。"
+      ]
+    ]
+  },
+  {
+    "hold": 1.65,
+    "parts": [
+      [
+        "So give both systems the same tools, time limit, and unseen orders.",
+        "给两套系统相同的工具、时限和新订单。"
+      ],
+      [
+        "Set aside the orders right on the boundary.",
+        "把踩着门槛的订单单独列出来。"
+      ],
+      [
+        "Then add a nasty one: refund half of a one-twenty order.",
+        "再出道难的：一百二十美元的订单退一半。"
+      ],
+      [
+        "Write the rule before either model gets to work.",
+        "模型开始做之前，先把规则定好。"
+      ],
+      [
+        "Recompute shipping on the amount left.",
+        "按退款后的金额重算运费。"
+      ],
+      [
+        "Maybe Blue is quicker. Purple gets the boundary right.",
+        "蓝模型可能更快，紫模型却把边界做对了。"
+      ],
+      [
+        "Both miss the refund case.",
+        "退款这题，两个都错。"
+      ],
+      [
+        "Now you know what to fix and what to keep with a person.",
+        "现在知道该修哪类题，哪类先交给人。"
+      ]
+    ]
+  },
+  {
+    "hold": 2.0,
+    "parts": [
+      [
+        "Bring back the first six tiles.",
+        "把开头那六个词元拿回来。"
+      ],
+      [
+        "Blue really is better at predicting the lead-in.",
+        "蓝模型的确更擅长预测前面几格。"
+      ],
+      [
+        "For arithmetic, the tile you hired it to fill is the last one.",
+        "可要它答算术题，你要的是最后一格。"
+      ],
+      [
+        "A score can be exactly right about the tile it measures.",
+        "分数可以把它量的那格说得很准。"
+      ],
+      [
+        "Before you let it pick a model for you, look beside it.",
+        "拿它选模型之前，再往旁边看看。"
+      ],
+      [
+        "Which tile never made it onto the test?",
+        "哪一格压根没进考卷？"
+      ]
+    ],
+    "delivery": "Quiet concentration, with a clear beat before the final question and a warm ending."
+  }
+]

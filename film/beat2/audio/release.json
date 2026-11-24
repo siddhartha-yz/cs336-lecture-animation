@@ -1,0 +1,62 @@
+{
+  "engine": "Local Qwen3-TTS 12Hz 1.7B CustomVoice, Aiden original English preset; complete takes",
+  "notes": {
+    "g": "Numeric display aliases 100,000 and 10.",
+    "h": "Verified UTF-8, WikiText 103 and GPT-2; spelling/number aliases only.",
+    "i": "Unmodified first question gap 0.80s.",
+    "j": "Verified Paloma, softmax and logits; pronunciation-only low-jits alias.",
+    "k": "Matched whole text."
+  },
+  "takes": {
+    "g": {
+      "candidate": "g",
+      "native_seconds": 49.478625,
+      "source_words_per_minute": 155.21854133982097,
+      "pitch": {
+        "median_hz": 123.07692307692308,
+        "central_range_st": 11.212939900469081
+      },
+      "words_timed": 127
+    },
+    "h": {
+      "candidate": "h-r1",
+      "native_seconds": 56.34916666666667,
+      "source_words_per_minute": 139.48742217424098,
+      "pitch": {
+        "median_hz": 148.14814814814815,
+        "central_range_st": 11.944422615220251
+      },
+      "words_timed": 134
+    },
+    "i": {
+      "candidate": "i",
+      "native_seconds": 55.788375,
+      "source_words_per_minute": 165.62590324597193,
+      "pitch": {
+        "median_hz": 145.45454545454547,
+        "central_range_st": 11.320997659603592
+      },
+      "words_timed": 155
+    },
+    "j": {
+      "candidate": "j-r1",
+      "native_seconds": 51.06570833333333,
+      "source_words_per_minute": 173.89360276832872,
+      "pitch": {
+        "median_hz": 131.14754098360655,
+        "central_range_st": 12.0
+      },
+      "words_timed": 148
+    },
+    "k": {
+      "candidate": "k",
+      "native_seconds": 38.118458333333336,
+      "source_words_per_minute": 135.3674892850467,
+      "pitch": {
+        "median_hz": 133.33333333333334,
+        "central_range_st": 12.0
+      },
+      "words_timed": 86
+    }
+  }
+}

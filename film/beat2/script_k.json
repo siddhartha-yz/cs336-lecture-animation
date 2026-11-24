@@ -1,0 +1,21 @@
+{
+  "id": "k",
+  "module": "domains",
+  "beat": 1,
+  "duration": 35,
+  "hold": 1.4,
+  "parts": [
+    [
+      "Even with the units aligned, the domains split out, and the probabilities verified, perplexity still grades the whole stream of text. A hard question often has just one spot where the answer matters.",
+      "单位对齐、分领域看过、概率也核验了，困惑度判的仍是一整段文。遇到难题，决定对错的往往只是一个答案格。"
+    ],
+    [
+      "Standardized exams put that spot at the center: a known answer, automatic grading, and questions across dozens of subjects. That gives us a different ruler.",
+      "标准化考试把答案格放到中心：有标准答案，能自动评分，也能覆盖几十门学科。这样我们就换了一把尺。"
+    ],
+    [
+      "For a while, the ruler gave us clear steps upward. But as the strongest models crowded toward the top, the gaps became harder to read. That's benchmark saturation.",
+      "一开始，这把尺能看出进步。但最强的模型都挤到顶端之后，差距越来越难量。这就是基准饱和。"
+    ]
+  ]
+}

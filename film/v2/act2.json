@@ -1,0 +1,111 @@
+[
+  {
+    "parts": [
+      ["All right. Let's give those two models the same quiz.", "好，给这两个模型同一张小测。"],
+      ["Ten little sums. Nothing fancy.", "十道简单加法。"],
+      ["One finishes. The other finishes.", "一个做完了，另一个也做完了。"],
+      ["Both hit the ceiling. Where would a better model go?", "都碰到天花板了。更强的模型往哪儿放？"],
+      ["Now slide in a few questions they actually have to think about.", "换上几道真得动脑的题。"],
+      ["The scores can move apart again.", "分数终于拉开了。"],
+      ["That's benchmark saturation: the test has run out of room at the top.", "这叫基准饱和：卷子顶上没空间了。"]
+    ],
+    "hold": 1.85
+  },
+  {
+    "parts": [
+      ["Hold on to that little sum.", "先留住刚才那道小题。"],
+      ["Suppose I have no idea and pick a tile at random.", "假设我完全不会，随手点一格。"],
+      ["Only the gold one pays out.", "只有金色那格能得分。"],
+      ["Now watch what happens when six wrong answers slide in.", "看，六个错答案插了进来。"],
+      ["Same sum. Same correct tile.", "算式没变，正确选项也没变。"],
+      ["The gold slice takes up less of the space I can land in.", "能蒙中的那片却变窄了。"],
+      ["We've changed the odds of a lucky guess, while the arithmetic stayed put.", "变的是蒙对的机会，算的还是同一道题。"]
+    ],
+    "hold": 1.75
+  },
+  {
+    "parts": [
+      ["M M L U spread multiple-choice questions across dozens of subjects.", "MMLU 的选择题横跨几十个学科。"],
+      ["Its Pro version made the choice sets bigger and the questions harder.", "Pro 版增加选项，也提高难度。"],
+      ["It cleaned up ambiguous questions, too.", "它还清掉了有歧义的题。"],
+      ["The authors compared answering directly with working through the problem first.", "作者比较了直接答和先推理再答。"],
+      ["Working it through helped more on the new test.", "在新版里，先推理更有帮助。"],
+      ["G P Q A brought in subject experts to write questions a quick search couldn't settle.", "GPQA 请学科专家出题，搜一下也难答。"],
+      ["Humanity's Last Exam screened submissions against strong models.", "人类最后考试用强模型筛选来稿。"],
+      ["Some of the questions that survived even need a picture.", "有些留下来的题，还得看图才能做。"]
+    ],
+    "hold": 1.45
+  },
+  {
+    "parts": [
+      ["Now try a job from my phone. Help me cancel today's appointment.", "换成手机上的活儿：帮我取消今天的预约。"],
+      ["Both replies get the cancellation across.", "两份回答都把取消说清楚了。"],
+      ["One leaves room to pick another day.", "有一份还顺手问了要不要改天。"],
+      ["I might like that. You might just want to get on with your day.", "我也许喜欢，你也许只想赶紧办完。"],
+      ["So hide the names and ask which reply people would actually use.", "先盖住名字，再问大家真想用哪份。"],
+      ["People can pick either one, or call it a tie.", "可以选任意一份，也可以打平。"],
+      ["That's the idea behind Chatbot Arena.", "Chatbot Arena 就是这么收集偏好的。"]
+    ],
+    "hold": 1.55
+  },
+  {
+    "parts": [
+      ["Each vote connects just two models.", "每张票只连起两个模型。"],
+      ["Blue beats purple. Purple beats gray. Gray can still beat blue.", "蓝赢紫，紫赢灰，灰也能赢蓝。"],
+      ["We keep all three results.", "三场结果都留下。"],
+      ["Fit scores so their gaps predict the pattern of wins as well as possible.", "给模型拟合分数，让分差尽量解释胜负。"],
+      ["Close scores mean a tight match, for this crowd and these questions.", "对这群人、这类问题而言，分近就难分胜负。"],
+      ["Waiting for people is slow when you're testing changes all day.", "要是一天改好几版，等真人投票就慢了。"],
+      ["So give a model the judge's seat. How does it decide?", "那就请模型坐上裁判席。它会怎么判？"]
+    ],
+    "hold": 1.25
+  },
+  {
+    "parts": [
+      ["Give it a job: check that the cancellation is clear.", "给裁判一条规则：看看有没有说清取消。"],
+      ["And check for any promise the reply just made up.", "再看看有没有凭空作承诺。"],
+      ["The judge picks the first reply on the left.", "第一轮，裁判选左边。"],
+      ["Watch the two slips. Keep every word; swap the order.", "盯住两张纸：字不动，互换顺序。"],
+      ["It picks left again.", "它又选了左边。"],
+      ["That's a different reply! The vote followed the seat.", "可回答换了！票是跟着座位走的。"],
+      ["Judge both orders and keep track of the flips.", "两种顺序都判，单独记下翻票。"]
+    ],
+    "hold": 1.8
+  },
+  {
+    "parts": [
+      ["Leave the slips where they are now.", "这回，纸条的位置固定。"],
+      ["Pad the reply on the right. Just repeat what it already says.", "给右边加点字，只把原意再说一遍。"],
+      ["And the vote swings over.", "票居然转过去了。"],
+      ["Train against that score and the model has a shortcut.", "用这分数训练，模型就找到了一条捷径。"],
+      ["Say the same thing, then say it again.", "同一件事，说完再说一遍。"],
+      ["There's your length bias.", "这就是长度偏差。"],
+      ["What if we cut every answer down to the same size? Hold that thought.", "把所有答案剪得一样长？先等一下。"]
+    ],
+    "hold": 1.45
+  },
+  {
+    "parts": [
+      ["Keep the answers intact. Put length difference along the floor.", "先保留原答案，把长度差放在横轴。"],
+      ["Now lift the estimated win rate above it.", "纵向抬起来的是估计胜率。"],
+      ["Alpaca Eval learns the pattern from many comparisons.", "AlpacaEval 从许多对照里估计关系。"],
+      ["It accounts for the model and the question, as well as the length.", "长度之外，也考虑模型和题目。"],
+      ["Walk back to zero. What win rate does the fit predict at equal length?", "走回零：一样长时，估计胜率是多少？"],
+      ["Average those predictions across questions.", "把各道题的预测胜率取平均。"],
+      ["If the extra line gives me a new appointment time, people might want it.", "多出来的是改约时间，真人可能真需要。"],
+      ["So check that kind of change with people, too.", "这种有用的变化，也交给真人试一试。"]
+    ],
+    "hold": 1.85
+  },
+  {
+    "parts": [
+      ["By the way, I'm about to close that chat.", "说起来，我正要把聊天关掉。"],
+      ["The cancellation message reads beautifully.", "那句取消通知写得挺漂亮。"],
+      ["Look behind it. The appointment is still in my calendar.", "看看后面：日历上的预约还在。"],
+      ["We judged what the model wrote.", "刚才我们判的是它写了什么。"],
+      ["Now I want to know what it can get done.", "现在要看它能把什么事办成。"],
+      ["Give it the tools, stand back, and check what actually changed.", "把工具递给它，再看看事情到底变没变。"]
+    ],
+    "hold": 1.85
+  }
+]

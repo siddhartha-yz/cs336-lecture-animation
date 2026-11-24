@@ -1,0 +1,68 @@
+{
+  "engine": "Qwen3-TTS 12Hz 1.7B CustomVoice (local)",
+  "preset": "Dylan",
+  "language": "zh",
+  "recording": "single full-utterance dry takes",
+  "takes": {
+    "a": {
+      "candidate": "a-r1",
+      "seconds": 24.438041666666667,
+      "mandarin_characters_per_minute": 230.8,
+      "pitch": {
+        "median_hz": 166.66666666666666,
+        "central_range_st": 14.375272531342908
+      },
+      "marks": 90
+    },
+    "b": {
+      "candidate": "b-r1",
+      "seconds": 42.033208333333334,
+      "mandarin_characters_per_minute": 217.0,
+      "pitch": {
+        "median_hz": 164.96598639455783,
+        "central_range_st": 16.7825925178833
+      },
+      "marks": 142
+    },
+    "c": {
+      "candidate": "c",
+      "seconds": 36.904916666666665,
+      "mandarin_characters_per_minute": 221.1,
+      "pitch": {
+        "median_hz": 126.98412698412699,
+        "central_range_st": 15.956465345748981
+      },
+      "marks": 128
+    },
+    "d": {
+      "candidate": "d",
+      "seconds": 46.91758333333333,
+      "mandarin_characters_per_minute": 232.7,
+      "pitch": {
+        "median_hz": 164.96598639455783,
+        "central_range_st": 14.801881562637345
+      },
+      "marks": 178
+    },
+    "e": {
+      "candidate": "e-r1",
+      "seconds": 56.67854166666667,
+      "mandarin_characters_per_minute": 228.7,
+      "pitch": {
+        "median_hz": 153.84615384615384,
+        "central_range_st": 16.290624055417005
+      },
+      "marks": 199
+    },
+    "f": {
+      "candidate": "f-r2",
+      "seconds": 48.35854166666667,
+      "mandarin_characters_per_minute": 206.0,
+      "pitch": {
+        "median_hz": 153.84615384615384,
+        "central_range_st": 15.276221932876993
+      },
+      "marks": 169
+    }
+  }
+}

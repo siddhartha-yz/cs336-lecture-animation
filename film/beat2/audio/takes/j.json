@@ -1,0 +1,18 @@
+{
+  "engine": "Qwen3-TTS 12Hz 1.7B CustomVoice (local)",
+  "character": "Aiden",
+  "original_preset": true,
+  "id": "j",
+  "candidate": "j-r1",
+  "script": "script_j.json",
+  "text": "A global average can hide trouble across domains, too. A model can do well on one kind of writing and turn out to be much less sure somewhere else. Paloma keeps those slices visible. Give each domain its own column and you can see where the probability assignments hold up, and where they don't. A pooled score puts that detail back into one number. There is another problem when the only thing a leaderboard receives is a score. The bars are supposed to be probabilities, and all their mass together has to be exactly one. A claimed score gives you no way to check that. So run the forward pass in a controlled sandbox, apply softmax to the logits, and check the total probability mass. Then compute the loss yourself. Checking the sum is a useful guard, but the score still has to come from the actual model.",
+  "raw": "A global average can hide trouble across domains, too. A model can do well on one kind of writing and turn out to be much less sure somewhere else. Paloma keeps those slices visible. Give each domain its own column and you can see where the probability assignments hold up, and where they don't. A pooled score puts that detail back into one number. There is another problem when the only thing a leaderboard receives is a score. The bars are supposed to be probabilities, and all their mass together has to be exactly one. A claimed score gives you no way to check that. So run the forward pass in a controlled sandbox, apply softmax to the low-jits, and check the total probability mass. Then compute the loss yourself. Checking the sum is a useful guard, but the score still has to come from the actual model.",
+  "seconds": 51.06570833333333,
+  "target_seconds": 54.2,
+  "fit_ratio": 0.9421717404674046,
+  "wpm": 173.89360276832872,
+  "sample_rate": 24000,
+  "seed": 22621,
+  "direction": "Warm adult American English male speaking to a few students, not projecting into a hall. Begin conversationally, and let an unexpected fact change the voice naturally: brief curiosity, then a lucid explanation. Use distinct logical stresses and connected sentences. Maintain an easy, measured teaching pace, brisk but unhurried. Keep momentum through sentences with ordinary breathing room around the main question; about 165 words per minute. Thoughtful rather than an announcer. Pronounce Paloma as puh-LOH-muh, flowing as a single name, and low-jits as a single term. Build momentum toward the actual model line with distinct thought groups but connected sentences.",
+  "synthesis_seconds": 34.740108500933275
+}

@@ -1,0 +1,61 @@
+{
+  "film_duration": 223.8,
+  "peak_dbfs": -0.9016136042072226,
+  "old_mix_assessment_max_pcm16_residual": 3.0536783881540686e-05,
+  "patches": {
+    "d": {
+      "voice_start": 110.504,
+      "voice_end": 111.802,
+      "voice_samples": [
+        2652096,
+        2683248
+      ],
+      "mixed_support_samples": [
+        5304120,
+        5366568
+      ],
+      "tempo": 0.9637904468412943,
+      "gain_db": -1.8800879302136355,
+      "source_take": "d3",
+      "source_crop": [
+        2.925,
+        4.176
+      ],
+      "phrase": "Elo rating system",
+      "first_active_second": 110.529,
+      "last_active_second": 111.77258333333333,
+      "low_energy_join_dbfs": [
+        -61.82143106525234,
+        -61.31767812892597
+      ],
+      "join_max_step": 0.001194915529230592
+    },
+    "f": {
+      "voice_start": 195.158,
+      "voice_end": 198.522,
+      "voice_samples": [
+        4683792,
+        4764528
+      ],
+      "mixed_support_samples": [
+        9367512,
+        9529128
+      ],
+      "tempo": 0.9453032104637337,
+      "gain_db": -1.8994875346295017,
+      "source_take": "f2",
+      "source_crop": [
+        2.662,
+        5.842
+      ],
+      "phrase": "keep the FineWeb training token stream in a fixed order",
+      "first_active_second": 195.184,
+      "last_active_second": 198.40729166666668,
+      "low_energy_join_dbfs": [
+        -65.49081354957553,
+        -81.85056070451961
+      ],
+      "join_max_step": 0.00026050671837365194
+    }
+  }
+}

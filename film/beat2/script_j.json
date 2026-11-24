@@ -1,0 +1,25 @@
+{
+  "id": "j",
+  "module": "domains",
+  "beat": 0,
+  "duration": 55,
+  "hold": 0.8,
+  "parts": [
+    [
+      "A global average can hide trouble across domains, too. A model can do well on one kind of writing and turn out to be much less sure somewhere else.",
+      "总平均也会遮住领域差异。模型在一类文本上很有把握，换一种写法，表现可能就变了。"
+    ],
+    [
+      "Paloma keeps those slices visible. Give each domain its own column and you can see where the probability assignments hold up, and where they don't. A pooled score puts that detail back into one number.",
+      "Paloma 把这些切片保留下来。每个领域各占一列，就看得到模型在哪儿预测得稳，在哪儿掉下去。合在一起，这些差别又进了一个数。"
+    ],
+    [
+      "There is another problem when the only thing a leaderboard receives is a score. The bars are supposed to be probabilities, and all their mass together has to be exactly one. A claimed score gives you no way to check that.",
+      "如果榜单只收一个分数，还有个问题。预测的柱子应该是概率，加起来必须是 1。光看提交的分数，验不了这一点。"
+    ],
+    [
+      "So run the forward pass in a controlled sandbox, apply softmax to the logits, and check the total probability mass. Then compute the loss yourself. Checking the sum is a useful guard, but the score still has to come from the actual model.",
+      "所以要在受控沙箱里独立前向，用 softmax 把 logits 化为概率，检查总和，再自行计算损失。归一化是一道检查，分数还必须来自实际模型。"
+    ]
+  ]
+}

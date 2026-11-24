@@ -1,0 +1,25 @@
+When we evaluate a language model, the natural instinct is to treat it like a final exam—a single number at the end of training to see who won. But evaluation isn't just a scoreboard; it quietly acts as the optimization target for the entire field. Whatever ruler you choose dictates what tens of thousands of GPUs spend their compute learning.
+
+And that brings us to a fundamental geometric trade-off. The capabilities we actually care about—multi-step reasoning, nuanced dialogue, autonomous planning—live in a high-dimensional space. But any practical benchmark forces us to project that entire space down onto a single, scalar axis.
+
+Two wildly different models can end up casting the exact same shadow on that axis. Worse still, the moment the community rallies around that single number, Goodhart's law takes over: optimizing directly for the shadow stretches the model along the measured axis, while the unmeasured dimensions quietly collapse.
+
+So how do we escape the trap of a single misleading score?
+
+The first thing to recognize is that capability is never independent of cost. If you take frontier models and plot their intelligence against inference cost on a logarithmic scale, an unmistakable boundary takes shape. Under any real-world budget, you don't just pick the highest model on the board; you trace out the Pareto frontier—the elite curve where no cheaper model matches its performance, and no stronger model beats its price.
+
+But what about tasks where there isn't a clean, objective answer key?
+
+Think about drafting a persuasive essay, explaining a complex bug, or adjusting tone. This is where Chatbot Arena changes the rules. Instead of grading against a rigid rubric, it collects millions of blind, pairwise human votes. By fitting those binary choices into an Elo rating system, subjective human preference turns into a statistically grounded capability scale.
+
+Look what happens when you compare the exact same model across raw benchmark accuracy, budget-constrained Pareto efficiency, blind human preference, and actual paid API volume. The rankings shift across every single ruler. The question is never "which model is best," but "which trade-off are you optimizing for?"
+
+But even if you pick the right ruler, a single scoreboard hides an even deeper ambiguity: are we evaluating a method, or are we evaluating a system?
+
+In classical machine learning, we built benchmarks around methods. On ImageNet or SQuAD, every participant trained on the exact same public data and tested on the exact same split. If model A won, you knew for a fact that its architecture or optimizer was superior.
+
+In modern foundation models, that scientific control is completely gone. Training sets, data curation recipes, and compute budgets are proprietary secrets. When a commercial model tops the leaderboard, it's impossible to tell whether it discovered a brilliant new attention mechanism—or simply ingested ten times more code and math during pre-training.
+
+System benchmarks are great for procurement, but they blind us to fundamental algorithmic progress. And that is what makes Andrej Karpathy's NanoGPT speedrun so compelling. It brings back strict scientific control: keep the FineWeb training token stream in a fixed order, lock the hardware to eight H100 GPUs, and set a fixed target validation loss of 3.28. The only metric is wall-clock time. Every single minute shaved off that clock represents a genuine algorithmic or systems victory.
+
+And notice what sits at the heart of this benchmark: driving down validation loss. That brings us directly to the foundational metric of all language modeling—perplexity.

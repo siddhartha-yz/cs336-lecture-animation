@@ -1,0 +1,716 @@
+{
+  "id": "g",
+  "candidate": "g",
+  "heard": "Start right here. With the probabilities a model assigns to the actual tokens as it reads from left to right. Multiply those probabilities and the product shrinks with length. Eventually, ordinary floating-point arithmetic can even round it to zero. So take the negative log probability of each token instead. Average those losses across the test set, then exponentiate. That number is perplexity. There is a neat way to picture it, an effective number of choices, with a vocabulary of 100,000 tokens. Uniform guessing gives you a perplexity of 100,000. Bring it down to 10, and you pay the same average loss as a model guessing uniformly among 10 options at each step. The actual number of plausible options can change from word to word.",
+  "words": [
+    {
+      "word": "Start",
+      "start": 0.0,
+      "end": 0.18
+    },
+    {
+      "word": "right",
+      "start": 0.18,
+      "end": 0.48
+    },
+    {
+      "word": "here.",
+      "start": 0.48,
+      "end": 0.76
+    },
+    {
+      "word": "With",
+      "start": 0.94,
+      "end": 1.52
+    },
+    {
+      "word": "the",
+      "start": 1.52,
+      "end": 1.58
+    },
+    {
+      "word": "probabilities",
+      "start": 1.58,
+      "end": 2.16
+    },
+    {
+      "word": "a",
+      "start": 2.16,
+      "end": 2.52
+    },
+    {
+      "word": "model",
+      "start": 2.52,
+      "end": 2.78
+    },
+    {
+      "word": "assigns",
+      "start": 2.78,
+      "end": 3.46
+    },
+    {
+      "word": "to",
+      "start": 3.46,
+      "end": 3.56
+    },
+    {
+      "word": "the",
+      "start": 3.56,
+      "end": 3.68
+    },
+    {
+      "word": "actual",
+      "start": 3.68,
+      "end": 4.12
+    },
+    {
+      "word": "tokens",
+      "start": 4.12,
+      "end": 4.7
+    },
+    {
+      "word": "as",
+      "start": 4.7,
+      "end": 5.08
+    },
+    {
+      "word": "it",
+      "start": 5.08,
+      "end": 5.18
+    },
+    {
+      "word": "reads",
+      "start": 5.18,
+      "end": 5.6
+    },
+    {
+      "word": "from",
+      "start": 5.6,
+      "end": 5.92
+    },
+    {
+      "word": "left",
+      "start": 5.92,
+      "end": 6.22
+    },
+    {
+      "word": "to",
+      "start": 6.22,
+      "end": 6.4
+    },
+    {
+      "word": "right.",
+      "start": 6.4,
+      "end": 6.66
+    },
+    {
+      "word": "Multiply",
+      "start": 6.92,
+      "end": 7.54
+    },
+    {
+      "word": "those",
+      "start": 7.54,
+      "end": 7.74
+    },
+    {
+      "word": "probabilities",
+      "start": 7.74,
+      "end": 8.3
+    },
+    {
+      "word": "and",
+      "start": 8.3,
+      "end": 8.94
+    },
+    {
+      "word": "the",
+      "start": 8.94,
+      "end": 9.06
+    },
+    {
+      "word": "product",
+      "start": 9.06,
+      "end": 9.36
+    },
+    {
+      "word": "shrinks",
+      "start": 9.36,
+      "end": 9.94
+    },
+    {
+      "word": "with",
+      "start": 9.94,
+      "end": 10.14
+    },
+    {
+      "word": "length.",
+      "start": 10.14,
+      "end": 10.48
+    },
+    {
+      "word": "Eventually,",
+      "start": 10.8,
+      "end": 11.42
+    },
+    {
+      "word": "ordinary",
+      "start": 11.6,
+      "end": 12.4
+    },
+    {
+      "word": "floating",
+      "start": 12.4,
+      "end": 12.96
+    },
+    {
+      "word": "-point",
+      "start": 12.96,
+      "end": 13.36
+    },
+    {
+      "word": "arithmetic",
+      "start": 13.36,
+      "end": 14.02
+    },
+    {
+      "word": "can",
+      "start": 14.02,
+      "end": 14.6
+    },
+    {
+      "word": "even",
+      "start": 14.6,
+      "end": 14.82
+    },
+    {
+      "word": "round",
+      "start": 14.82,
+      "end": 15.22
+    },
+    {
+      "word": "it",
+      "start": 15.22,
+      "end": 15.4
+    },
+    {
+      "word": "to",
+      "start": 15.4,
+      "end": 15.56
+    },
+    {
+      "word": "zero.",
+      "start": 15.56,
+      "end": 15.9
+    },
+    {
+      "word": "So",
+      "start": 16.18,
+      "end": 16.8
+    },
+    {
+      "word": "take",
+      "start": 16.8,
+      "end": 16.96
+    },
+    {
+      "word": "the",
+      "start": 16.96,
+      "end": 17.18
+    },
+    {
+      "word": "negative",
+      "start": 17.18,
+      "end": 17.48
+    },
+    {
+      "word": "log",
+      "start": 17.48,
+      "end": 17.82
+    },
+    {
+      "word": "probability",
+      "start": 17.82,
+      "end": 18.38
+    },
+    {
+      "word": "of",
+      "start": 18.38,
+      "end": 18.8
+    },
+    {
+      "word": "each",
+      "start": 18.8,
+      "end": 19.02
+    },
+    {
+      "word": "token",
+      "start": 19.02,
+      "end": 19.4
+    },
+    {
+      "word": "instead.",
+      "start": 19.4,
+      "end": 19.74
+    },
+    {
+      "word": "Average",
+      "start": 20.02,
+      "end": 20.64
+    },
+    {
+      "word": "those",
+      "start": 20.64,
+      "end": 20.98
+    },
+    {
+      "word": "losses",
+      "start": 20.98,
+      "end": 21.54
+    },
+    {
+      "word": "across",
+      "start": 21.54,
+      "end": 21.84
+    },
+    {
+      "word": "the",
+      "start": 21.84,
+      "end": 22.16
+    },
+    {
+      "word": "test",
+      "start": 22.16,
+      "end": 22.42
+    },
+    {
+      "word": "set,",
+      "start": 22.42,
+      "end": 22.64
+    },
+    {
+      "word": "then",
+      "start": 22.78,
+      "end": 23.22
+    },
+    {
+      "word": "exponentiate.",
+      "start": 23.22,
+      "end": 24.02
+    },
+    {
+      "word": "That",
+      "start": 24.22,
+      "end": 24.7
+    },
+    {
+      "word": "number",
+      "start": 24.7,
+      "end": 25.0
+    },
+    {
+      "word": "is",
+      "start": 25.0,
+      "end": 25.16
+    },
+    {
+      "word": "perplexity.",
+      "start": 25.16,
+      "end": 25.9
+    },
+    {
+      "word": "There",
+      "start": 25.98,
+      "end": 26.5
+    },
+    {
+      "word": "is",
+      "start": 26.5,
+      "end": 26.62
+    },
+    {
+      "word": "a",
+      "start": 26.62,
+      "end": 26.7
+    },
+    {
+      "word": "neat",
+      "start": 26.7,
+      "end": 26.86
+    },
+    {
+      "word": "way",
+      "start": 26.86,
+      "end": 27.08
+    },
+    {
+      "word": "to",
+      "start": 27.08,
+      "end": 27.22
+    },
+    {
+      "word": "picture",
+      "start": 27.22,
+      "end": 27.52
+    },
+    {
+      "word": "it,",
+      "start": 27.52,
+      "end": 27.76
+    },
+    {
+      "word": "an",
+      "start": 27.8,
+      "end": 28.26
+    },
+    {
+      "word": "effective",
+      "start": 28.26,
+      "end": 28.52
+    },
+    {
+      "word": "number",
+      "start": 28.52,
+      "end": 28.92
+    },
+    {
+      "word": "of",
+      "start": 28.92,
+      "end": 29.14
+    },
+    {
+      "word": "choices,",
+      "start": 29.14,
+      "end": 29.48
+    },
+    {
+      "word": "with",
+      "start": 29.72,
+      "end": 30.3
+    },
+    {
+      "word": "a",
+      "start": 30.3,
+      "end": 30.36
+    },
+    {
+      "word": "vocabulary",
+      "start": 30.36,
+      "end": 30.8
+    },
+    {
+      "word": "of",
+      "start": 30.8,
+      "end": 31.3
+    },
+    {
+      "word": "100",
+      "start": 31.3,
+      "end": 31.62
+    },
+    {
+      "word": ",000",
+      "start": 31.62,
+      "end": 32.24
+    },
+    {
+      "word": "tokens.",
+      "start": 32.24,
+      "end": 32.6
+    },
+    {
+      "word": "Uniform",
+      "start": 33.14,
+      "end": 33.66
+    },
+    {
+      "word": "guessing",
+      "start": 33.66,
+      "end": 34.02
+    },
+    {
+      "word": "gives",
+      "start": 34.02,
+      "end": 34.42
+    },
+    {
+      "word": "you",
+      "start": 34.42,
+      "end": 34.7
+    },
+    {
+      "word": "a",
+      "start": 34.7,
+      "end": 34.8
+    },
+    {
+      "word": "perplexity",
+      "start": 34.8,
+      "end": 35.48
+    },
+    {
+      "word": "of",
+      "start": 35.48,
+      "end": 35.7
+    },
+    {
+      "word": "100",
+      "start": 35.7,
+      "end": 35.98
+    },
+    {
+      "word": ",000.",
+      "start": 35.98,
+      "end": 36.62
+    },
+    {
+      "word": "Bring",
+      "start": 36.82,
+      "end": 37.34
+    },
+    {
+      "word": "it",
+      "start": 37.34,
+      "end": 37.52
+    },
+    {
+      "word": "down",
+      "start": 37.52,
+      "end": 37.64
+    },
+    {
+      "word": "to",
+      "start": 37.64,
+      "end": 37.84
+    },
+    {
+      "word": "10,",
+      "start": 37.84,
+      "end": 38.12
+    },
+    {
+      "word": "and",
+      "start": 38.28,
+      "end": 38.86
+    },
+    {
+      "word": "you",
+      "start": 38.86,
+      "end": 38.98
+    },
+    {
+      "word": "pay",
+      "start": 38.98,
+      "end": 39.12
+    },
+    {
+      "word": "the",
+      "start": 39.12,
+      "end": 39.28
+    },
+    {
+      "word": "same",
+      "start": 39.28,
+      "end": 39.6
+    },
+    {
+      "word": "average",
+      "start": 39.6,
+      "end": 40.12
+    },
+    {
+      "word": "loss",
+      "start": 40.12,
+      "end": 40.54
+    },
+    {
+      "word": "as",
+      "start": 40.54,
+      "end": 40.8
+    },
+    {
+      "word": "a",
+      "start": 40.8,
+      "end": 40.9
+    },
+    {
+      "word": "model",
+      "start": 40.9,
+      "end": 41.24
+    },
+    {
+      "word": "guessing",
+      "start": 41.24,
+      "end": 41.64
+    },
+    {
+      "word": "uniformly",
+      "start": 41.64,
+      "end": 42.26
+    },
+    {
+      "word": "among",
+      "start": 42.26,
+      "end": 42.8
+    },
+    {
+      "word": "10",
+      "start": 42.8,
+      "end": 43.14
+    },
+    {
+      "word": "options",
+      "start": 43.14,
+      "end": 43.74
+    },
+    {
+      "word": "at",
+      "start": 44.08,
+      "end": 44.4
+    },
+    {
+      "word": "each",
+      "start": 44.4,
+      "end": 44.64
+    },
+    {
+      "word": "step.",
+      "start": 44.64,
+      "end": 44.98
+    },
+    {
+      "word": "The",
+      "start": 45.14,
+      "end": 45.66
+    },
+    {
+      "word": "actual",
+      "start": 45.66,
+      "end": 45.9
+    },
+    {
+      "word": "number",
+      "start": 45.9,
+      "end": 46.22
+    },
+    {
+      "word": "of",
+      "start": 46.22,
+      "end": 46.5
+    },
+    {
+      "word": "plausible",
+      "start": 46.5,
+      "end": 46.76
+    },
+    {
+      "word": "options",
+      "start": 46.76,
+      "end": 47.36
+    },
+    {
+      "word": "can",
+      "start": 47.36,
+      "end": 47.74
+    },
+    {
+      "word": "change",
+      "start": 47.74,
+      "end": 48.12
+    },
+    {
+      "word": "from",
+      "start": 48.12,
+      "end": 48.44
+    },
+    {
+      "word": "word",
+      "start": 48.44,
+      "end": 48.76
+    },
+    {
+      "word": "to",
+      "start": 48.76,
+      "end": 48.96
+    },
+    {
+      "word": "word.",
+      "start": 48.96,
+      "end": 49.28
+    }
+  ],
+  "seconds": 49.478625,
+  "wpm": 155.21854133982097,
+  "target_seconds": 54.1,
+  "fit_ratio": 0.9145771719038817,
+  "normalized_word_match": 0.9689922480620154,
+  "word_changes": [
+    {
+      "action": "replace",
+      "expected": [
+        "a"
+      ],
+      "observed": [
+        "one"
+      ],
+      "observed_index": 80
+    },
+    {
+      "action": "replace",
+      "expected": [
+        "thousand"
+      ],
+      "observed": [
+        "zero"
+      ],
+      "observed_index": 82
+    },
+    {
+      "action": "replace",
+      "expected": [
+        "a"
+      ],
+      "observed": [
+        "one"
+      ],
+      "observed_index": 91
+    },
+    {
+      "action": "replace",
+      "expected": [
+        "thousand"
+      ],
+      "observed": [
+        "zero"
+      ],
+      "observed_index": 93
+    }
+  ],
+  "peak": 0.81640625,
+  "rms": 0.07977425307035446,
+  "pitch": {
+    "median_hz": 123.07692307692308,
+    "central_range_st": 11.212939900469081
+  },
+  "pauses": [
+    {
+      "seconds": 0.32,
+      "after": "length.",
+      "before": "Eventually,",
+      "start": 10.48
+    },
+    {
+      "seconds": 0.54,
+      "after": "tokens.",
+      "before": "Uniform",
+      "start": 32.6
+    },
+    {
+      "seconds": 0.34,
+      "after": "options",
+      "before": "at",
+      "start": 43.74
+    }
+  ],
+  "script": "script_g.json"
+}

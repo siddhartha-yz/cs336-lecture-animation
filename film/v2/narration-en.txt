@@ -1,0 +1,120 @@
+The Missing Tile: Evaluation and Benchmarks
+CS336 Lecture 12 — English narration script
+Running time: 20:00. Timecodes mark the corresponding passages in the current cut.
+
+ACT 1 — The missing tile
+
+[00:00.00–00:10.73 | 1-00]
+Blue gives the right text better odds five times in a row. Then it has to finish two plus two. Blue picks five. So who won?
+
+[00:10.73–00:49.63 | 1-01]
+Keep that last tile in sight while we rewind. What does it mean to guess the next piece of text? Both models see exactly the same prefix. Each divides a whole bar among possible next tokens. We keep the slice for the word the author actually wrote. It goes on the rail, and the real word slides into place. Even if Blue guessed wrong, its guess never becomes the next prefix. The two models get the same view all the way down.
+
+[00:49.63–01:25.73 | 1-02]
+Take a tiny sentence with just two tiles. The model gives the first correct tile half the bar. Once that tile is in place, the second gets an eighth of what survived. Turn those cuts at right angles. The gold corner keeps the probability of both steps together. Copy the sentence and start from the same beginning. Each step is just as easy, but the joint probability shrinks again.
+
+[01:25.73–02:04.37 | 1-03]
+How do we make the length of the paper stop deciding the score? Give both steps the same width. Squeeze one side, stretch the other, and keep the area fixed. The square's edge is the equivalent probability per token. Flip it: this is like choosing one tile out of four equally likely ones. That equivalent number is perplexity. Four boxes measure difficulty. The actual vocabulary can be enormous.
+
+[02:04.37–02:40.33 | 1-04]
+For a book, the product gets too small for the computer to hold. Trade each probability for its surprise. Every time the probability halves, add one bit. That turns multiplication into stacking. Stack a bit here. Three more there. Spread the stack equally across the two positions. Raise two to that average and you're back on the perplexity scale. A single nearly impossible token makes a very tall stack.
+
+[02:40.33–03:15.77 | 1-05]
+Now swing back to our six tiles. Blue takes a smaller hit on each of the first five. On the last tile its loss jumps. That jump can't erase the five small advantages. So Blue has lower perplexity on the whole sentence. Now look straight down the answer slot. Here we score what the model picks. Purple lands on four. The same probabilities give us two different winners.
+
+[03:15.77–03:54.40 | 1-06]
+Hold the text still. Slide two token rulers over it. One sees two pieces. The other sees four. A per-token score now has a different unit on each side. Use the same tokenizer, or divide total surprise by the same raw bytes. The mix of material matters, too. Blue handles conversation better. Purple handles math better. Shift the mix and you can flip the winner again. Paloma takes those separate domain measurements seriously.
+
+[03:54.40–04:29.67 | 1-07]
+Suppose you're buying a system to sort customer mail. Purple gets more right. Blue costs less per letter. Slide a budget limit across the floor. The best score can end up outside it. That comparison helps you buy a system. For a claim about the algorithm, open the machines. Feed both the same training data and compute budget. Change the machinery you actually want to test.
+
+[04:29.67–04:51.63 | 1-08]
+Back to that gold answer tile. Imagine the rail carries a thousand of them. Check each answer and you've got a test score. Now watch both models climb almost to the ceiling. Where does a better model go from there?
+
+ACT 2 — The exam and the judge
+
+[04:51.63–05:25.83 | 2-00]
+All right. Let's give those two models the same quiz. Ten little sums. Nothing fancy. One finishes. The other finishes. Both hit the ceiling. Where would a better model go? Now slide in a few questions they actually have to think about. The scores can move apart again. That's benchmark saturation: the test has run out of room at the top.
+
+[05:25.83–05:56.83 | 2-01]
+Hold on to that little sum. Suppose I have no idea and pick a tile at random. Only the gold one pays out. Now watch what happens when six wrong answers slide in. Same sum. Same correct tile. The gold slice takes up less of the space I can land in. We've changed the odds of a lucky guess, while the arithmetic stayed put.
+
+[05:56.83–06:41.80 | 2-02]
+M M L U spread multiple-choice questions across dozens of subjects. Its Pro version made the choice sets bigger and the questions harder. It cleaned up ambiguous questions, too. The authors compared answering directly with working through the problem first. Working it through helped more on the new test. G P Q A brought in subject experts to write questions a quick search couldn't settle. Humanity's Last Exam screened submissions against strong models. Some of the questions that survived even need a picture.
+
+[06:41.80–07:14.83 | 2-03]
+Now try a job from my phone. Help me cancel today's appointment. Both replies get the cancellation across. One leaves room to pick another day. I might like that. You might just want to get on with your day. So hide the names and ask which reply people would actually use. People can pick either one, or call it a tie. That's the idea behind Chatbot Arena.
+
+[07:14.83–07:53.20 | 2-04]
+Each vote connects just two models. Blue beats purple. Purple beats gray. Gray can still beat blue. We keep all three results. Fit scores so their gaps predict the pattern of wins as well as possible. Close scores mean a tight match, for this crowd and these questions. Waiting for people is slow when you're testing changes all day. So give a model the judge's seat. How does it decide?
+
+[07:53.20–08:23.53 | 2-05]
+Give it a job: check that the cancellation is clear. And check for any promise the reply just made up. The judge picks the first reply on the left. Watch the two slips. Keep every word; swap the order. It picks left again. That's a different reply! The vote followed the seat. Judge both orders and keep track of the flips.
+
+[08:23.53–08:52.70 | 2-06]
+Leave the slips where they are now. Pad the reply on the right. Just repeat what it already says. And the vote swings over. Train against that score and the model has a shortcut. Say the same thing, then say it again. There's your length bias. What if we cut every answer down to the same size? Hold that thought.
+
+[08:52.70–09:33.23 | 2-07]
+Keep the answers intact. Put length difference along the floor. Now lift the estimated win rate above it. Alpaca Eval learns the pattern from many comparisons. It accounts for the model and the question, as well as the length. Walk back to zero. What win rate does the fit predict at equal length? Average those predictions across questions. If the extra line gives me a new appointment time, people might want it. So check that kind of change with people, too.
+
+[09:33.23–10:01.07 | 2-08]
+By the way, I'm about to close that chat. The cancellation message reads beautifully. Look behind it. The appointment is still in my calendar. We judged what the model wrote. Now I want to know what it can get done. Give it the tools, stand back, and check what actually changed.
+
+ACT 3 — The system has to act
+
+[10:01.07–10:34.13 | 3-00]
+Would you let either model touch your checkout? This shop offers free shipping from a hundred dollars up. The orders on either side look fine. Right on the cutoff, the charge sticks. Blue gives a lovely explanation. Purple opens the code and changes one sign. Which one has actually saved the customer anything?
+
+[10:34.13–11:12.10 | 3-01]
+The patch goes into the version of the project that had the bug. Here's a faster patch: make all shipping free. That clears the complaint. It also breaks a perfectly good order. So check both: does the failing case pass now, and do the old passing cases still pass? Changing the boundary keeps the other orders intact. SWE-bench uses real project issues and executable tests to judge the patch.
+
+[11:12.10–11:47.63 | 3-02]
+Keep the model. Change what happens around it. On the left it submits once and walks away. On the right it opens a file, runs a test, and gets the failing result back before it submits. That loop lives in the scaffold around the model. The score can go up even when the weights stay put. Lock the loop to compare models. Lock the model to compare loops. Give both runs the same budget.
+
+[11:47.63–12:13.67 | 3-03]
+Now start the same job four times from scratch. Here are four separate patches. Only one passes. If you take one at random, the odds are easy. What if you take two, without putting the first one back? Before you answer, look for the pairs around the good patch.
+
+[12:13.67–12:52.93 | 3-04]
+The good patch has three possible partners. The three remaining pairs all miss it. One try counts individual patches. Two tries count pairs. That's the idea of pass at k: in k attempts, how often does at least one work? In a real run, sample several times per problem, estimate from the combinations, then average across problems. Finding a good patch somewhere in the pile is one thing. Picking it as your one submission is another.
+
+[12:52.93–13:27.53 | 3-05]
+These square pieces can ask a very different question. Pick an input and face it toward its output. From the side you can see they're two different grids. The gray shape moved right; gold stayed put. The next example tempts us to say, always move two. Try that on the third. Something's off. The distance changed, but the meeting point didn't. Slide right until the two shapes touch.
+
+[13:27.53–13:37.60 | 3-06]
+Now here's an input whose output is hidden. Keep the gray shape intact. Where should it stop?
+
+[13:37.60–14:12.60 | 3-07]
+Right there. One cell does it. That's an ARC-AGI puzzle: learn a transformation from a few examples, then apply it to a new grid. Every cell has to match. A system can try several rules and replay each on the examples. That's compute spent at test time. If two rules fit, one more useful example can separate them. A bigger search budget can't supply that missing evidence.
+
+[14:12.60–14:55.00 | 3-08]
+One last job. Our model answers messages for a theater. Tell me when the show starts. Send me the unpublished script. Blocking both keeps the script in, and keeps the audience out. HarmBench checks whether a reply enables a specified harmful behavior. It judges what the reply does; our playhouse checks access. Test ordinary requests separately, too. And when every light turns green, ask one last question: is this the first time the system has seen the test?
+
+ACT 4 — Where did the test come from?
+
+[14:55.00–15:24.20 | 4-00]
+Take that passing test and turn it over. There is an old copy tucked behind it. Same question. Same answer, right down to the last symbol. Suppose Blue saw that copy in training. Our green check still tells us what it answered. The interesting question is what happens when we pull the copy away.
+
+[15:24.20–15:56.73 | 4-01]
+Go back to the shipping rule. At a hundred dollars, memorizing zero buys you the point. Now slide the threshold to one twenty. Try an order for one nineteen. The old shortcut still says free. The new rule says eight dollars. When test material gets into training, we call that contamination. A fresh case gives those two explanations a chance to disagree.
+
+[15:56.73–16:30.37 | 4-02]
+With the training data in hand, we can go looking for a copy. Put a little window over three neighboring tokens. Slide it along the test item. Look for those exact runs in the corpus. The lecture's thirteen-token window works the same way. A shared heading can light up by accident. A paraphrase can slip right through. The match tells you where to look; you decide what to remove.
+
+[16:30.37–17:01.47 | 4-03]
+What if all we can see is the model's output probabilities? Take three independent test questions. Keep each answer stuck to its own question. Now shuffle the cards, not the answers. Give the model the whole stack as a sequence of text. We can score how much probability it puts on that sequence. Do the same for the published order.
+
+[17:01.47–17:37.63 | 4-04]
+Add more cards and score a bunch of shuffles. Most land in this little cluster. The published order is the gold dot. Why is it way out there? A model that remembers the stack has a reason to like it. But these questions have to be exchangeable under the fresh-data assumption. Put dates on the cards, and chronological order gets an advantage for free. Now the shuffle is answering a different question.
+
+[17:37.63–18:08.93 | 4-05]
+You can save yourself some detective work by designing for freshness up front. Freeze the model version and mark its training cutoff. Put the test on the far side of that line. LiveCodeBench dates its programming problems, so you can pick a later window. Keep another set out of public circulation for a final check. On the next run, write down which model and which test you actually used.
+
+[18:08.93–18:46.90 | 4-06]
+A fresh exam can still be the wrong exam. My shop needs a shipping spreadsheet someone can use tomorrow. There are coupons, partial refunds, and files other people have to open. That distance between the test and the real job is what ecological validity is about. GDPval starts from professional deliverables. MedHELM separates jobs like drafting a clinical note and supporting a decision. A score goes further when its task looks like yours.
+
+[18:46.90–19:29.47 | 4-07]
+So give both systems the same tools, time limit, and unseen orders. Set aside the orders right on the boundary. Then add a nasty one: refund half of a one-twenty order. Write the rule before either model gets to work. Recompute shipping on the amount left. Maybe Blue is quicker. Purple gets the boundary right. Both miss the refund case. Now you know what to fix and what to keep with a person.
+
+[19:29.47–20:00.00 | 4-08]
+Bring back the first six tiles. Blue really is better at predicting the lead-in. For arithmetic, the tile you hired it to fill is the last one. A score can be exactly right about the tile it measures. Before you let it pick a model for you, look beside it. Which tile never made it onto the test?
+

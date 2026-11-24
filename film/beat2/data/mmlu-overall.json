@@ -1,0 +1,12 @@
+{
+  "dataset": "MMLU",
+  "subjects": 57,
+  "dataset_source": "https://github.com/hendrycks/test",
+  "reported_results": "https://github.com/openai/simple-evals/blob/main/README.md",
+  "protocol": "OpenAI simple-evals, assistant prompt; zero-shot chain of thought. Overall accuracy, not per-subject.",
+  "scores": [
+    {"short": "GPT-4", "model": "gpt-4-1106-preview", "accuracy_percent": 84.7},
+    {"short": "GPT-4o", "model": "gpt-4o-2024-08-06", "accuracy_percent": 88.7},
+    {"short": "GPT-4.1", "model": "gpt-4.1-2025-04-14", "accuracy_percent": 90.2}
+  ]
+}

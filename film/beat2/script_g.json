@@ -1,0 +1,29 @@
+{
+  "id": "g",
+  "module": "opening2",
+  "beat": 0,
+  "duration": 55,
+  "hold": 0.9,
+  "parts": [
+    [
+      "Start right here, with the probabilities a model assigns to the actual tokens as it reads from left to right.",
+      "就从眼前这排概率接着看：模型从左往右读，给原文词元逐一分配概率。"
+    ],
+    [
+      "Multiply those probabilities and the product shrinks with length. Eventually, ordinary floating-point arithmetic can even round it to zero.",
+      "把概率连乘，序列越长，乘积通常越小。用普通浮点数计算，最后甚至会舍入成零。"
+    ],
+    [
+      "So take the negative log probability of each token instead. Average those losses across the test set, then exponentiate. That number is perplexity.",
+      "换个做法：逐词元取负对数概率，求整个测试集的平均，再取指数。这就是困惑度。"
+    ],
+    [
+      "There is a neat way to picture it: an effective number of choices. With a vocabulary of a hundred thousand tokens, uniform guessing gives you a perplexity of a hundred thousand.",
+      "它可以想成一个等效的候选数。词表有十万项时，均匀乱猜的困惑度就是十万。"
+    ],
+    [
+      "Bring it down to ten and you pay the same average loss as a model guessing uniformly among ten options at each step. The actual number of plausible options can change from word to word.",
+      "把它降到十，平均损失就相当于每步在十项里均匀猜。实际的候选数可以随词变化。"
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "engine": "Qwen3-TTS 12Hz 1.7B CustomVoice (local)",
+  "character": "Aiden",
+  "original_preset": true,
+  "id": "g",
+  "candidate": "g",
+  "script": "script_g.json",
+  "text": "Start right here, with the probabilities a model assigns to the actual tokens as it reads from left to right. Multiply those probabilities and the product shrinks with length. Eventually, ordinary floating-point arithmetic can even round it to zero. So take the negative log probability of each token instead. Average those losses across the test set, then exponentiate. That number is perplexity. There is a neat way to picture it: an effective number of choices. With a vocabulary of a hundred thousand tokens, uniform guessing gives you a perplexity of a hundred thousand. Bring it down to ten and you pay the same average loss as a model guessing uniformly among ten options at each step. The actual number of plausible options can change from word to word.",
+  "raw": "Start right here, with the probabilities a model assigns to the actual tokens as it reads from left to right. Multiply those probabilities and the product shrinks with length. Eventually, ordinary floating-point arithmetic can even round it to zero. So take the negative log probability of each token instead. Average those losses across the test set, then exponentiate. That number is perplexity. There is a neat way to picture it: an effective number of choices. With a vocabulary of a hundred thousand tokens, uniform guessing gives you a perplexity of a hundred thousand. Bring it down to ten and you pay the same average loss as a model guessing uniformly among ten options at each step. The actual number of plausible options can change from word to word.",
+  "seconds": 49.478625,
+  "target_seconds": 54.1,
+  "fit_ratio": 0.9145771719038817,
+  "wpm": 155.21854133982097,
+  "sample_rate": 24000,
+  "seed": 21011,
+  "direction": "Warm adult American English male speaking to a few students, not projecting into a hall. Begin conversationally, and let an unexpected fact change the voice naturally: brief curiosity, then a lucid explanation. Use distinct logical stresses and connected sentences. Maintain an easy, measured teaching pace, brisk but unhurried. Keep momentum through sentences with ordinary breathing room around the main question; about 165 words per minute. Thoughtful rather than an announcer.",
+  "synthesis_seconds": 33.37275665299967
+}

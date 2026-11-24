@@ -1,0 +1,29 @@
+{
+  "id": "h",
+  "module": "opening2",
+  "beat": 1,
+  "duration": 50,
+  "hold": 0.8,
+  "parts": [
+    [
+      "Before comparing two models on perplexity, watch what happens to the exact same sentence under two tokenizers. The words stay put; only the cuts move.",
+      "拿困惑度比两个模型之前，看看同一句话进了两套分词器。字一个没动，变的是切的位置。"
+    ],
+    [
+      "Hold the total surprise fixed and split the passage into more pieces. The per-token average falls, even though the score for the text as a whole hasn't changed.",
+      "固定总信息量，把句子切得更碎。每个词元的平均损失就降了，整句话的总损失却没变。"
+    ],
+    [
+      "Count bits, divide by the raw UTF-eight bytes, and you have bits per byte. Same text, same denominator. The models can still give it different probabilities.",
+      "用总比特数除以原文的 UTF-8 字节数，得到每字节比特数。分母一样，模型给出的概率仍可能不同。"
+    ],
+    [
+      "For a long time, language modeling benchmarks asked you to train and test on splits of the same corpus, like Penn Treebank or WikiText one oh three.",
+      "早期语言模型基准常让你在同一语料的不同划分上训练和测试，比如 Penn Treebank 或 WikiText-103。"
+    ],
+    [
+      "GPT-two took a different route: pretrain on broad web text, then measure zero-shot perplexity on those benchmark corpora, without fitting a model to each one.",
+      "GPT-2 换了一条路：先在广泛的网页文本上预训练，再直接到这些基准语料上测零样本困惑度。"
+    ]
+  ]
+}

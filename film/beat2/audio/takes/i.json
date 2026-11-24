@@ -1,0 +1,18 @@
+{
+  "engine": "Qwen3-TTS 12Hz 1.7B CustomVoice (local)",
+  "character": "Aiden",
+  "original_preset": true,
+  "id": "i",
+  "candidate": "i",
+  "script": "script_i.json",
+  "text": "If perplexity sits at the heart of pretraining, is driving it down enough to capture everything we mean by capability? Imagine for a moment that your model knew the true joint distribution of questions and answers. Conditioning on a question would give you the right probabilities for its answers. With a rule for what counts as a good decision, you could act on those probabilities. There is a big distance between that ideal and the models we can actually build. Perplexity puts the same weight on every target token. A predictable bit of grammar takes up exactly as much room in the average as the answer does. Look at this one arithmetic sequence. One model saves enough loss on the earlier tokens to win on the whole line. But at the answer slot it gives the wrong choice its highest probability. The other model loses on the average and gets that one decision right.",
+  "raw": "If perplexity sits at the heart of pretraining, is driving it down enough to capture everything we mean by capability? Imagine for a moment that your model knew the true joint distribution of questions and answers. Conditioning on a question would give you the right probabilities for its answers. With a rule for what counts as a good decision, you could act on those probabilities. There is a big distance between that ideal and the models we can actually build. Perplexity puts the same weight on every target token. A predictable bit of grammar takes up exactly as much room in the average as the answer does. Look at this one arithmetic sequence. One model saves enough loss on the earlier tokens to win on the whole line. But at the answer slot it gives the wrong choice its highest probability. The other model loses on the average and gets that one decision right.",
+  "seconds": 55.788375,
+  "target_seconds": 58.8,
+  "fit_ratio": 0.9487818877551021,
+  "wpm": 165.62590324597193,
+  "sample_rate": 24000,
+  "seed": 21265,
+  "direction": "Warm adult American English male speaking to a few students, not projecting into a hall. Begin conversationally, and let an unexpected fact change the voice naturally: brief curiosity, then a lucid explanation. Use distinct logical stresses and connected sentences. Maintain an easy, measured teaching pace, brisk but unhurried. Keep momentum through sentences with ordinary breathing room around the main question; about 165 words per minute. Thoughtful rather than an announcer.",
+  "synthesis_seconds": 33.204280881094746
+}

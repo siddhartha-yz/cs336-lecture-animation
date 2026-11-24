@@ -1,0 +1,80 @@
+{
+  "benchmark": "Paloma",
+  "paper": "xLSTM: Extended Long Short-Term Memory, NeurIPS 2024",
+  "source": "https://papers.nips.cc/paper_files/paper/2024/file/c2ce2f2701c10a2b2f2ea0bfa43cfaa3-Paper-Conference.pdf",
+  "benchmark_paper": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/760b2d94398aa61468aa3bc11506d9ea-Abstract-Datasets_and_Benchmarks_Track.html",
+  "tables": [
+    "8 (C4 English)",
+    "10 (all other selected data slices)"
+  ],
+  "tokenizer": "Hugging Face GPT-2",
+  "training": "300B SlimPajama tokens",
+  "models": [
+    "Llama",
+    "Mamba"
+  ],
+  "size_class": "1.3B",
+  "params_millions": [
+    1420.4,
+    1475.3
+  ],
+  "domains": [
+    {
+      "name": "Python",
+      "id": "dolma_100_proglang_val_06_python",
+      "values": [
+        2.35,
+        2.39
+      ]
+    },
+    {
+      "name": "Math",
+      "id": "m2d2_wikipedia_unsplit_val_Mathematics_and_logic__Mathematics",
+      "values": [
+        12.9,
+        12.51
+      ]
+    },
+    {
+      "name": "arXiv",
+      "id": "redpajama_val_arxiv",
+      "values": [
+        5.15,
+        5.28
+      ]
+    },
+    {
+      "name": "WikiText",
+      "id": "wikitext_103_val",
+      "values": [
+        11.74,
+        11.76
+      ]
+    },
+    {
+      "name": "Web",
+      "id": "C4 English · aggregate, Table 8",
+      "values": [
+        13.93,
+        13.35
+      ]
+    },
+    {
+      "name": "Books",
+      "id": "dolma-v1_5_val_books",
+      "values": [
+        13.0,
+        12.44
+      ]
+    }
+  ],
+  "aggregate": {
+    "name": "Equal-domain PPL",
+    "formula": "exp(mean(log(PPL)))",
+    "values": [
+      8.3209177256078,
+      8.21926564205769
+    ],
+    "note": "Computed from the six shown rounded PPLs; equal domain weights, not official pooled score."
+  }
+}

@@ -1,0 +1,822 @@
+{
+  "id": "j",
+  "candidate": "j-r1",
+  "heard": "A global average can hide trouble across domains, too. A model can do well on one kind of writing and turn out to be much less sure somewhere else. Paloma keeps those slices visible. Give each domain its own column, and you can see where the probability assignments hold up and where they don't. A pooled score puts that detail back into one number. There is another problem when the only thing a leaderboard receives is a score. The bars are supposed to be probabilities, and all their mass together has to be exactly 1. A claimed score gives you no way to check that, so run the forward pass in a controlled sandbox, apply softmax to the logits, and check the total probability mass, then compute the loss yourself. Checking the sum is a useful guard, but the score still has to come from the actual model.",
+  "words": [
+    {
+      "word": "A",
+      "start": 0.0,
+      "end": 0.08
+    },
+    {
+      "word": "global",
+      "start": 0.08,
+      "end": 0.24
+    },
+    {
+      "word": "average",
+      "start": 0.24,
+      "end": 0.64
+    },
+    {
+      "word": "can",
+      "start": 0.64,
+      "end": 1.0
+    },
+    {
+      "word": "hide",
+      "start": 1.0,
+      "end": 1.28
+    },
+    {
+      "word": "trouble",
+      "start": 1.28,
+      "end": 1.56
+    },
+    {
+      "word": "across",
+      "start": 1.56,
+      "end": 1.82
+    },
+    {
+      "word": "domains,",
+      "start": 1.82,
+      "end": 2.26
+    },
+    {
+      "word": "too.",
+      "start": 2.6,
+      "end": 2.82
+    },
+    {
+      "word": "A",
+      "start": 3.08,
+      "end": 3.52
+    },
+    {
+      "word": "model",
+      "start": 3.52,
+      "end": 3.8
+    },
+    {
+      "word": "can",
+      "start": 3.8,
+      "end": 3.96
+    },
+    {
+      "word": "do",
+      "start": 3.96,
+      "end": 4.1
+    },
+    {
+      "word": "well",
+      "start": 4.1,
+      "end": 4.34
+    },
+    {
+      "word": "on",
+      "start": 4.34,
+      "end": 4.54
+    },
+    {
+      "word": "one",
+      "start": 4.54,
+      "end": 4.7
+    },
+    {
+      "word": "kind",
+      "start": 4.7,
+      "end": 4.92
+    },
+    {
+      "word": "of",
+      "start": 4.92,
+      "end": 5.16
+    },
+    {
+      "word": "writing",
+      "start": 5.16,
+      "end": 5.44
+    },
+    {
+      "word": "and",
+      "start": 5.44,
+      "end": 5.96
+    },
+    {
+      "word": "turn",
+      "start": 5.96,
+      "end": 6.2
+    },
+    {
+      "word": "out",
+      "start": 6.2,
+      "end": 6.4
+    },
+    {
+      "word": "to",
+      "start": 6.4,
+      "end": 6.48
+    },
+    {
+      "word": "be",
+      "start": 6.48,
+      "end": 6.58
+    },
+    {
+      "word": "much",
+      "start": 6.58,
+      "end": 6.88
+    },
+    {
+      "word": "less",
+      "start": 6.88,
+      "end": 7.12
+    },
+    {
+      "word": "sure",
+      "start": 7.12,
+      "end": 7.4
+    },
+    {
+      "word": "somewhere",
+      "start": 7.4,
+      "end": 7.78
+    },
+    {
+      "word": "else.",
+      "start": 7.78,
+      "end": 8.2
+    },
+    {
+      "word": "Paloma",
+      "start": 8.64,
+      "end": 9.2
+    },
+    {
+      "word": "keeps",
+      "start": 9.2,
+      "end": 9.54
+    },
+    {
+      "word": "those",
+      "start": 9.54,
+      "end": 9.92
+    },
+    {
+      "word": "slices",
+      "start": 9.92,
+      "end": 10.32
+    },
+    {
+      "word": "visible.",
+      "start": 10.32,
+      "end": 10.8
+    },
+    {
+      "word": "Give",
+      "start": 11.52,
+      "end": 11.86
+    },
+    {
+      "word": "each",
+      "start": 11.86,
+      "end": 12.08
+    },
+    {
+      "word": "domain",
+      "start": 12.08,
+      "end": 12.48
+    },
+    {
+      "word": "its",
+      "start": 12.48,
+      "end": 12.74
+    },
+    {
+      "word": "own",
+      "start": 12.74,
+      "end": 12.98
+    },
+    {
+      "word": "column,",
+      "start": 12.98,
+      "end": 13.46
+    },
+    {
+      "word": "and",
+      "start": 13.58,
+      "end": 14.04
+    },
+    {
+      "word": "you",
+      "start": 14.04,
+      "end": 14.12
+    },
+    {
+      "word": "can",
+      "start": 14.12,
+      "end": 14.24
+    },
+    {
+      "word": "see",
+      "start": 14.24,
+      "end": 14.52
+    },
+    {
+      "word": "where",
+      "start": 14.52,
+      "end": 14.7
+    },
+    {
+      "word": "the",
+      "start": 14.7,
+      "end": 14.88
+    },
+    {
+      "word": "probability",
+      "start": 14.88,
+      "end": 15.28
+    },
+    {
+      "word": "assignments",
+      "start": 15.28,
+      "end": 15.78
+    },
+    {
+      "word": "hold",
+      "start": 15.78,
+      "end": 16.3
+    },
+    {
+      "word": "up",
+      "start": 16.3,
+      "end": 16.66
+    },
+    {
+      "word": "and",
+      "start": 16.66,
+      "end": 17.0
+    },
+    {
+      "word": "where",
+      "start": 17.0,
+      "end": 17.18
+    },
+    {
+      "word": "they",
+      "start": 17.18,
+      "end": 17.34
+    },
+    {
+      "word": "don't.",
+      "start": 17.34,
+      "end": 17.76
+    },
+    {
+      "word": "A",
+      "start": 17.88,
+      "end": 18.4
+    },
+    {
+      "word": "pooled",
+      "start": 18.4,
+      "end": 18.7
+    },
+    {
+      "word": "score",
+      "start": 18.7,
+      "end": 18.94
+    },
+    {
+      "word": "puts",
+      "start": 18.94,
+      "end": 19.36
+    },
+    {
+      "word": "that",
+      "start": 19.36,
+      "end": 19.6
+    },
+    {
+      "word": "detail",
+      "start": 19.6,
+      "end": 20.06
+    },
+    {
+      "word": "back",
+      "start": 20.06,
+      "end": 20.46
+    },
+    {
+      "word": "into",
+      "start": 20.46,
+      "end": 20.7
+    },
+    {
+      "word": "one",
+      "start": 20.7,
+      "end": 20.94
+    },
+    {
+      "word": "number.",
+      "start": 20.94,
+      "end": 21.3
+    },
+    {
+      "word": "There",
+      "start": 21.66,
+      "end": 22.1
+    },
+    {
+      "word": "is",
+      "start": 22.1,
+      "end": 22.22
+    },
+    {
+      "word": "another",
+      "start": 22.22,
+      "end": 22.42
+    },
+    {
+      "word": "problem",
+      "start": 22.42,
+      "end": 22.92
+    },
+    {
+      "word": "when",
+      "start": 22.92,
+      "end": 23.18
+    },
+    {
+      "word": "the",
+      "start": 23.18,
+      "end": 23.32
+    },
+    {
+      "word": "only",
+      "start": 23.32,
+      "end": 23.64
+    },
+    {
+      "word": "thing",
+      "start": 23.64,
+      "end": 24.0
+    },
+    {
+      "word": "a",
+      "start": 24.0,
+      "end": 24.18
+    },
+    {
+      "word": "leaderboard",
+      "start": 24.18,
+      "end": 24.62
+    },
+    {
+      "word": "receives",
+      "start": 24.62,
+      "end": 25.1
+    },
+    {
+      "word": "is",
+      "start": 25.1,
+      "end": 25.5
+    },
+    {
+      "word": "a",
+      "start": 25.5,
+      "end": 25.6
+    },
+    {
+      "word": "score.",
+      "start": 25.6,
+      "end": 25.9
+    },
+    {
+      "word": "The",
+      "start": 25.9,
+      "end": 26.88
+    },
+    {
+      "word": "bars",
+      "start": 26.88,
+      "end": 27.16
+    },
+    {
+      "word": "are",
+      "start": 27.16,
+      "end": 27.42
+    },
+    {
+      "word": "supposed",
+      "start": 27.42,
+      "end": 27.72
+    },
+    {
+      "word": "to",
+      "start": 27.72,
+      "end": 28.0
+    },
+    {
+      "word": "be",
+      "start": 28.0,
+      "end": 28.14
+    },
+    {
+      "word": "probabilities,",
+      "start": 28.14,
+      "end": 28.66
+    },
+    {
+      "word": "and",
+      "start": 29.18,
+      "end": 29.68
+    },
+    {
+      "word": "all",
+      "start": 29.68,
+      "end": 29.82
+    },
+    {
+      "word": "their",
+      "start": 29.82,
+      "end": 30.0
+    },
+    {
+      "word": "mass",
+      "start": 30.0,
+      "end": 30.26
+    },
+    {
+      "word": "together",
+      "start": 30.26,
+      "end": 30.56
+    },
+    {
+      "word": "has",
+      "start": 30.56,
+      "end": 30.92
+    },
+    {
+      "word": "to",
+      "start": 30.92,
+      "end": 31.08
+    },
+    {
+      "word": "be",
+      "start": 31.08,
+      "end": 31.24
+    },
+    {
+      "word": "exactly",
+      "start": 31.24,
+      "end": 31.62
+    },
+    {
+      "word": "1.",
+      "start": 31.62,
+      "end": 32.08
+    },
+    {
+      "word": "A",
+      "start": 32.56,
+      "end": 33.12
+    },
+    {
+      "word": "claimed",
+      "start": 33.12,
+      "end": 33.44
+    },
+    {
+      "word": "score",
+      "start": 33.44,
+      "end": 33.72
+    },
+    {
+      "word": "gives",
+      "start": 33.72,
+      "end": 34.14
+    },
+    {
+      "word": "you",
+      "start": 34.14,
+      "end": 34.36
+    },
+    {
+      "word": "no",
+      "start": 34.36,
+      "end": 34.64
+    },
+    {
+      "word": "way",
+      "start": 34.64,
+      "end": 34.82
+    },
+    {
+      "word": "to",
+      "start": 34.82,
+      "end": 34.94
+    },
+    {
+      "word": "check",
+      "start": 34.94,
+      "end": 35.2
+    },
+    {
+      "word": "that,",
+      "start": 35.2,
+      "end": 35.4
+    },
+    {
+      "word": "so",
+      "start": 35.54,
+      "end": 36.06
+    },
+    {
+      "word": "run",
+      "start": 36.06,
+      "end": 36.28
+    },
+    {
+      "word": "the",
+      "start": 36.28,
+      "end": 36.44
+    },
+    {
+      "word": "forward",
+      "start": 36.44,
+      "end": 36.68
+    },
+    {
+      "word": "pass",
+      "start": 36.68,
+      "end": 37.0
+    },
+    {
+      "word": "in",
+      "start": 37.0,
+      "end": 37.32
+    },
+    {
+      "word": "a",
+      "start": 37.32,
+      "end": 37.4
+    },
+    {
+      "word": "controlled",
+      "start": 37.4,
+      "end": 37.76
+    },
+    {
+      "word": "sandbox,",
+      "start": 37.76,
+      "end": 38.26
+    },
+    {
+      "word": "apply",
+      "start": 38.58,
+      "end": 39.0
+    },
+    {
+      "word": "softmax",
+      "start": 39.0,
+      "end": 39.72
+    },
+    {
+      "word": "to",
+      "start": 39.72,
+      "end": 39.94
+    },
+    {
+      "word": "the",
+      "start": 39.94,
+      "end": 40.08
+    },
+    {
+      "word": "logits,",
+      "start": 40.08,
+      "end": 40.6
+    },
+    {
+      "word": "and",
+      "start": 40.68,
+      "end": 41.08
+    },
+    {
+      "word": "check",
+      "start": 41.08,
+      "end": 41.38
+    },
+    {
+      "word": "the",
+      "start": 41.38,
+      "end": 41.56
+    },
+    {
+      "word": "total",
+      "start": 41.56,
+      "end": 41.94
+    },
+    {
+      "word": "probability",
+      "start": 41.94,
+      "end": 42.38
+    },
+    {
+      "word": "mass,",
+      "start": 42.38,
+      "end": 42.88
+    },
+    {
+      "word": "then",
+      "start": 43.1,
+      "end": 43.58
+    },
+    {
+      "word": "compute",
+      "start": 43.58,
+      "end": 43.98
+    },
+    {
+      "word": "the",
+      "start": 43.98,
+      "end": 44.26
+    },
+    {
+      "word": "loss",
+      "start": 44.26,
+      "end": 44.54
+    },
+    {
+      "word": "yourself.",
+      "start": 44.54,
+      "end": 44.94
+    },
+    {
+      "word": "Checking",
+      "start": 45.56,
+      "end": 46.12
+    },
+    {
+      "word": "the",
+      "start": 46.12,
+      "end": 46.2
+    },
+    {
+      "word": "sum",
+      "start": 46.2,
+      "end": 46.44
+    },
+    {
+      "word": "is",
+      "start": 46.44,
+      "end": 46.72
+    },
+    {
+      "word": "a",
+      "start": 46.72,
+      "end": 46.88
+    },
+    {
+      "word": "useful",
+      "start": 46.88,
+      "end": 47.26
+    },
+    {
+      "word": "guard,",
+      "start": 47.26,
+      "end": 47.74
+    },
+    {
+      "word": "but",
+      "start": 47.98,
+      "end": 48.5
+    },
+    {
+      "word": "the",
+      "start": 48.5,
+      "end": 48.56
+    },
+    {
+      "word": "score",
+      "start": 48.56,
+      "end": 48.82
+    },
+    {
+      "word": "still",
+      "start": 48.82,
+      "end": 49.12
+    },
+    {
+      "word": "has",
+      "start": 49.12,
+      "end": 49.36
+    },
+    {
+      "word": "to",
+      "start": 49.36,
+      "end": 49.48
+    },
+    {
+      "word": "come",
+      "start": 49.48,
+      "end": 49.74
+    },
+    {
+      "word": "from",
+      "start": 49.74,
+      "end": 50.02
+    },
+    {
+      "word": "the",
+      "start": 50.02,
+      "end": 50.14
+    },
+    {
+      "word": "actual",
+      "start": 50.14,
+      "end": 50.48
+    },
+    {
+      "word": "model.",
+      "start": 50.48,
+      "end": 50.84
+    }
+  ],
+  "seconds": 51.06570833333333,
+  "wpm": 173.89360276832872,
+  "target_seconds": 54.2,
+  "fit_ratio": 0.9421717404674046,
+  "normalized_word_match": 0.9899665551839465,
+  "word_changes": [
+    {
+      "action": "replace",
+      "expected": [
+        "low",
+        "jits"
+      ],
+      "observed": [
+        "logits"
+      ],
+      "observed_index": 119
+    }
+  ],
+  "peak": 0.6015625,
+  "rms": 0.06208067014813423,
+  "pitch": {
+    "median_hz": 131.14754098360655,
+    "central_range_st": 12.0
+  },
+  "pauses": [
+    {
+      "seconds": 0.34,
+      "after": "domains,",
+      "before": "too.",
+      "start": 2.26
+    },
+    {
+      "seconds": 0.44,
+      "after": "else.",
+      "before": "Paloma",
+      "start": 8.2
+    },
+    {
+      "seconds": 0.72,
+      "after": "visible.",
+      "before": "Give",
+      "start": 10.8
+    },
+    {
+      "seconds": 0.36,
+      "after": "number.",
+      "before": "There",
+      "start": 21.3
+    },
+    {
+      "seconds": 0.52,
+      "after": "probabilities,",
+      "before": "and",
+      "start": 28.66
+    },
+    {
+      "seconds": 0.48,
+      "after": "1.",
+      "before": "A",
+      "start": 32.08
+    },
+    {
+      "seconds": 0.32,
+      "after": "sandbox,",
+      "before": "apply",
+      "start": 38.26
+    },
+    {
+      "seconds": 0.62,
+      "after": "yourself.",
+      "before": "Checking",
+      "start": 44.94
+    }
+  ],
+  "script": "script_j.json"
+}

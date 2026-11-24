@@ -1,0 +1,488 @@
+{
+  "id": "k",
+  "candidate": "k",
+  "heard": "Even with the units aligned, the domains split out, and the probabilities verified, perplexity still grades the whole stream of text. A hard question often has just one spot where the answer matters. Standardized exams put that spot at the center. A known answer, automatic grading, and questions across dozens of subjects. That gives us a different ruler. For a while, the ruler gave us clear steps upward, but as the strongest models crowded toward the top, the gaps became harder to read. That's benchmark saturation.",
+  "words": [
+    {
+      "word": "Even",
+      "start": 0.0,
+      "end": 0.16
+    },
+    {
+      "word": "with",
+      "start": 0.16,
+      "end": 0.42
+    },
+    {
+      "word": "the",
+      "start": 0.42,
+      "end": 0.52
+    },
+    {
+      "word": "units",
+      "start": 0.52,
+      "end": 0.84
+    },
+    {
+      "word": "aligned,",
+      "start": 0.84,
+      "end": 1.08
+    },
+    {
+      "word": "the",
+      "start": 1.52,
+      "end": 2.0
+    },
+    {
+      "word": "domains",
+      "start": 2.0,
+      "end": 2.46
+    },
+    {
+      "word": "split",
+      "start": 2.46,
+      "end": 2.76
+    },
+    {
+      "word": "out,",
+      "start": 2.76,
+      "end": 3.14
+    },
+    {
+      "word": "and",
+      "start": 3.2,
+      "end": 3.64
+    },
+    {
+      "word": "the",
+      "start": 3.64,
+      "end": 3.7
+    },
+    {
+      "word": "probabilities",
+      "start": 3.7,
+      "end": 4.3
+    },
+    {
+      "word": "verified,",
+      "start": 4.3,
+      "end": 4.76
+    },
+    {
+      "word": "perplexity",
+      "start": 5.22,
+      "end": 6.24
+    },
+    {
+      "word": "still",
+      "start": 6.24,
+      "end": 6.52
+    },
+    {
+      "word": "grades",
+      "start": 6.52,
+      "end": 6.9
+    },
+    {
+      "word": "the",
+      "start": 6.9,
+      "end": 7.2
+    },
+    {
+      "word": "whole",
+      "start": 7.2,
+      "end": 7.48
+    },
+    {
+      "word": "stream",
+      "start": 7.48,
+      "end": 7.9
+    },
+    {
+      "word": "of",
+      "start": 7.9,
+      "end": 8.12
+    },
+    {
+      "word": "text.",
+      "start": 8.12,
+      "end": 8.36
+    },
+    {
+      "word": "A",
+      "start": 9.16,
+      "end": 9.5
+    },
+    {
+      "word": "hard",
+      "start": 9.5,
+      "end": 9.74
+    },
+    {
+      "word": "question",
+      "start": 9.74,
+      "end": 10.22
+    },
+    {
+      "word": "often",
+      "start": 10.22,
+      "end": 10.6
+    },
+    {
+      "word": "has",
+      "start": 10.6,
+      "end": 10.92
+    },
+    {
+      "word": "just",
+      "start": 10.92,
+      "end": 11.16
+    },
+    {
+      "word": "one",
+      "start": 11.16,
+      "end": 11.5
+    },
+    {
+      "word": "spot",
+      "start": 11.5,
+      "end": 11.9
+    },
+    {
+      "word": "where",
+      "start": 11.9,
+      "end": 12.28
+    },
+    {
+      "word": "the",
+      "start": 12.28,
+      "end": 12.44
+    },
+    {
+      "word": "answer",
+      "start": 12.44,
+      "end": 12.72
+    },
+    {
+      "word": "matters.",
+      "start": 12.72,
+      "end": 13.14
+    },
+    {
+      "word": "Standardized",
+      "start": 14.2,
+      "end": 14.88
+    },
+    {
+      "word": "exams",
+      "start": 14.88,
+      "end": 15.2
+    },
+    {
+      "word": "put",
+      "start": 15.2,
+      "end": 15.9
+    },
+    {
+      "word": "that",
+      "start": 15.9,
+      "end": 16.16
+    },
+    {
+      "word": "spot",
+      "start": 16.16,
+      "end": 16.44
+    },
+    {
+      "word": "at",
+      "start": 16.44,
+      "end": 16.68
+    },
+    {
+      "word": "the",
+      "start": 16.68,
+      "end": 16.72
+    },
+    {
+      "word": "center.",
+      "start": 16.72,
+      "end": 17.06
+    },
+    {
+      "word": "A",
+      "start": 17.6,
+      "end": 17.94
+    },
+    {
+      "word": "known",
+      "start": 17.94,
+      "end": 18.12
+    },
+    {
+      "word": "answer,",
+      "start": 18.12,
+      "end": 18.56
+    },
+    {
+      "word": "automatic",
+      "start": 18.76,
+      "end": 19.6
+    },
+    {
+      "word": "grading,",
+      "start": 19.6,
+      "end": 20.16
+    },
+    {
+      "word": "and",
+      "start": 20.38,
+      "end": 20.94
+    },
+    {
+      "word": "questions",
+      "start": 20.94,
+      "end": 21.42
+    },
+    {
+      "word": "across",
+      "start": 21.42,
+      "end": 21.76
+    },
+    {
+      "word": "dozens",
+      "start": 21.76,
+      "end": 22.42
+    },
+    {
+      "word": "of",
+      "start": 22.42,
+      "end": 22.8
+    },
+    {
+      "word": "subjects.",
+      "start": 22.8,
+      "end": 23.2
+    },
+    {
+      "word": "That",
+      "start": 23.5,
+      "end": 24.16
+    },
+    {
+      "word": "gives",
+      "start": 24.16,
+      "end": 24.36
+    },
+    {
+      "word": "us",
+      "start": 24.36,
+      "end": 24.58
+    },
+    {
+      "word": "a",
+      "start": 24.58,
+      "end": 24.66
+    },
+    {
+      "word": "different",
+      "start": 24.66,
+      "end": 24.88
+    },
+    {
+      "word": "ruler.",
+      "start": 24.88,
+      "end": 25.22
+    },
+    {
+      "word": "For",
+      "start": 25.22,
+      "end": 26.02
+    },
+    {
+      "word": "a",
+      "start": 26.02,
+      "end": 26.2
+    },
+    {
+      "word": "while,",
+      "start": 26.2,
+      "end": 26.62
+    },
+    {
+      "word": "the",
+      "start": 26.76,
+      "end": 27.2
+    },
+    {
+      "word": "ruler",
+      "start": 27.2,
+      "end": 27.44
+    },
+    {
+      "word": "gave",
+      "start": 27.44,
+      "end": 27.76
+    },
+    {
+      "word": "us",
+      "start": 27.76,
+      "end": 28.08
+    },
+    {
+      "word": "clear",
+      "start": 28.08,
+      "end": 28.48
+    },
+    {
+      "word": "steps",
+      "start": 28.48,
+      "end": 28.9
+    },
+    {
+      "word": "upward,",
+      "start": 28.9,
+      "end": 29.4
+    },
+    {
+      "word": "but",
+      "start": 29.56,
+      "end": 30.22
+    },
+    {
+      "word": "as",
+      "start": 30.22,
+      "end": 30.34
+    },
+    {
+      "word": "the",
+      "start": 30.34,
+      "end": 30.48
+    },
+    {
+      "word": "strongest",
+      "start": 30.48,
+      "end": 30.9
+    },
+    {
+      "word": "models",
+      "start": 30.9,
+      "end": 31.32
+    },
+    {
+      "word": "crowded",
+      "start": 31.32,
+      "end": 31.86
+    },
+    {
+      "word": "toward",
+      "start": 31.86,
+      "end": 32.28
+    },
+    {
+      "word": "the",
+      "start": 32.28,
+      "end": 32.46
+    },
+    {
+      "word": "top,",
+      "start": 32.46,
+      "end": 32.82
+    },
+    {
+      "word": "the",
+      "start": 32.92,
+      "end": 33.5
+    },
+    {
+      "word": "gaps",
+      "start": 33.5,
+      "end": 33.82
+    },
+    {
+      "word": "became",
+      "start": 33.82,
+      "end": 34.34
+    },
+    {
+      "word": "harder",
+      "start": 34.34,
+      "end": 34.96
+    },
+    {
+      "word": "to",
+      "start": 34.96,
+      "end": 35.2
+    },
+    {
+      "word": "read.",
+      "start": 35.2,
+      "end": 35.52
+    },
+    {
+      "word": "That's",
+      "start": 35.8,
+      "end": 36.58
+    },
+    {
+      "word": "benchmark",
+      "start": 36.58,
+      "end": 36.96
+    },
+    {
+      "word": "saturation.",
+      "start": 36.96,
+      "end": 37.42
+    }
+  ],
+  "seconds": 38.118458333333336,
+  "wpm": 135.3674892850467,
+  "target_seconds": 33.6,
+  "fit_ratio": 1.1344779265873017,
+  "normalized_word_match": 1.0,
+  "word_changes": [],
+  "peak": 0.73046875,
+  "rms": 0.07244407385587692,
+  "pitch": {
+    "median_hz": 133.33333333333334,
+    "central_range_st": 12.0
+  },
+  "pauses": [
+    {
+      "seconds": 0.44,
+      "after": "aligned,",
+      "before": "the",
+      "start": 1.08
+    },
+    {
+      "seconds": 0.46,
+      "after": "verified,",
+      "before": "perplexity",
+      "start": 4.76
+    },
+    {
+      "seconds": 0.8,
+      "after": "text.",
+      "before": "A",
+      "start": 8.36
+    },
+    {
+      "seconds": 1.06,
+      "after": "matters.",
+      "before": "Standardized",
+      "start": 13.14
+    },
+    {
+      "seconds": 0.54,
+      "after": "center.",
+      "before": "A",
+      "start": 17.06
+    },
+    {
+      "seconds": 0.3,
+      "after": "subjects.",
+      "before": "That",
+      "start": 23.2
+    }
+  ],
+  "script": "script_k.json"
+}

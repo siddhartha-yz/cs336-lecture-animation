@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Tuck and Point",
+    "file": "tuck-and-point.mp3",
+    "url": "https://app.sessions.blue/browse?trackId=408156",
+    "begin": 0.4,
+    "end": 55.03,
+    "rms_db": -28.5,
+    "fade_in": 0.75,
+    "fade_out": 1.12,
+    "in": 0.0
+  },
+  {
+    "title": "A Certain Lightness",
+    "file": "a-certain-lightness.mp3",
+    "url": "https://app.sessions.blue/browse?trackId=408158",
+    "begin": 56.78,
+    "end": 142.67792380706823,
+    "rms_db": -28.0,
+    "fade_in": 0.72,
+    "fade_out": 1.1,
+    "in": 0.0
+  },
+  {
+    "title": "One Little Triumph",
+    "file": "one-little-triumph.mp3",
+    "url": "https://app.sessions.blue/browse?trackId=408157",
+    "begin": 145.15294150570446,
+    "end": 223.64000000000001,
+    "rms_db": -28.6,
+    "fade_in": 0.81,
+    "fade_out": 1.38,
+    "in": 7.3
+  }
+]
