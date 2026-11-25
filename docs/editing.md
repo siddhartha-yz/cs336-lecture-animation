@@ -1,4 +1,6 @@
-# 从检查点接着剪
+# v0.1.0：从早期检查点接着剪
+
+当前中文全片的 33 镜、60 fps 工程在[这里](../editions/zh-v3/README.md)。以下命令用于此前的中英文剪辑。
 
 三个精剪版本各有自己的 `timeline.json`：`film/beats_zh` 是中文 A–F，`film/beats_final` 是英文 A–F，`film/beat2` 是英文 G–K。时间轴里的 `start`、`end` 是整段的帧号，`duration` 单位是秒；`--still` 的时间从当前镜头起算。中文比英文开头长 4.6 秒，两个时间轴不要互换。
 

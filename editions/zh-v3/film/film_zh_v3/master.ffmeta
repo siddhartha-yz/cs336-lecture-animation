@@ -1,0 +1,48 @@
+;FFMETADATA1
+title=模型评测与基准测试 · Stanford CS336 第 12 讲
+comment=旁白：Drama 3 · 用户提供参考音色。配乐：The Gran Dias / A Certain Lightness / The Silver Hatch / Tuck and Point / Vulcan Street / Balti / Denzel Sprak / One Little Triumph — Blue Dot Sessions，节选、交叉淡变、采样移调与混音；CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/)。Regina’s Tombstone — Abigail Baker and Alison Cooley, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)，裁切与局部放大。原故事对战取自 Arena Human Preference 140k，节译与重绘，CC BY 4.0。
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=52900
+title=Beat 0 · 追分数的模型
+[CHAPTER]
+TIMEBASE=1/1000
+START=52900
+END=208367
+title=Beat 1 · 给能力加一把尺
+[CHAPTER]
+TIMEBASE=1/1000
+START=208367
+END=393433
+title=Beat 2 · 平均分里的例外
+[CHAPTER]
+TIMEBASE=1/1000
+START=393433
+END=567833
+title=Beat 3 · 被考穿的试卷
+[CHAPTER]
+TIMEBASE=1/1000
+START=567833
+END=746500
+title=Beat 4 · 把一票变成胜率
+[CHAPTER]
+TIMEBASE=1/1000
+START=746500
+END=896100
+title=Beat 5 · 把补丁交给测试
+[CHAPTER]
+TIMEBASE=1/1000
+START=896100
+END=1041733
+title=Beat 6 · 把规则带到新题
+[CHAPTER]
+TIMEBASE=1/1000
+START=1041733
+END=1226267
+title=Beat 7 · 评测走出考场
+[CHAPTER]
+TIMEBASE=1/1000
+START=1226267
+END=1287933
+title=Beat 8 · 从影子回到模型

@@ -1,0 +1,13 @@
+[
+ {
+  "question": "Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.",
+  "subject": "abstract_algebra",
+  "choices": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "answer": 1
+ }
+]

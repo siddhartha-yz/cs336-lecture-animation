@@ -1,0 +1,184 @@
+{
+  "music": [
+    {
+      "start": 0.0,
+      "end": 61.22,
+      "title": "Tuck and Point",
+      "source": 0.0,
+      "purpose": "投影与追分"
+    },
+    {
+      "start": 60.48,
+      "end": 143.5,
+      "title": "A Certain Lightness",
+      "source": 0.34,
+      "purpose": "成本、投票与四把尺"
+    },
+    {
+      "start": 142.42,
+      "end": 246.2013125,
+      "title": "One Little Triumph",
+      "source": 0.2,
+      "purpose": "比较方法，再走进速训赛"
+    },
+    {
+      "start": 252.25914583333332,
+      "end": 332.62225,
+      "title": "A Certain Lightness",
+      "source": 90.0,
+      "purpose": "从等效分支到分词尺度"
+    },
+    {
+      "start": 332.00225,
+      "end": 390.7420416666667,
+      "title": "Tuck and Point",
+      "source": 57.75570833333333,
+      "purpose": "算术答案与两列语料"
+    },
+    {
+      "start": 392.09122916666666,
+      "end": 458.10577083333334,
+      "title": "One Little Triumph",
+      "source": 44.1,
+      "purpose": "六域合成与自动批改"
+    },
+    {
+      "start": 461.82416666666666,
+      "end": 539.3776875,
+      "title": "A Certain Lightness",
+      "source": 136.4,
+      "purpose": "余量、改题与检索"
+    },
+    {
+      "start": 552.7685833333334,
+      "end": 604.3061666666666,
+      "title": "Tuck and Point",
+      "source": 16.1,
+      "purpose": "专家的两道筛网"
+    },
+    {
+      "start": 609.1295,
+      "end": 661.061,
+      "title": "One Little Triumph",
+      "source": 18.2,
+      "purpose": "一票只约束一对"
+    },
+    {
+      "start": 675.4454166666667,
+      "end": 718.8918333333334,
+      "title": "A Certain Lightness",
+      "source": 28.8,
+      "purpose": "分差分出胜率，再换裁判"
+    },
+    {
+      "start": 722.0718333333333,
+      "end": 778.8087916666667,
+      "title": "Tuck and Point",
+      "source": 45.3,
+      "purpose": "位置、写法与长度"
+    },
+    {
+      "start": 782.1537708333333,
+      "end": 852.2749583333333,
+      "title": "One Little Triumph",
+      "source": 41.5,
+      "purpose": "把回复放进真正的仓库"
+    },
+    {
+      "start": 858.322375,
+      "end": 920.1445,
+      "title": "A Certain Lightness",
+      "source": 174.2,
+      "purpose": "红绿灯与重复采样"
+    },
+    {
+      "start": 923.0553541666667,
+      "end": 985.6539375,
+      "title": "Tuck and Point",
+      "source": 47.6,
+      "purpose": "工具包与无文字的网格"
+    },
+    {
+      "start": 993.1025625,
+      "end": 1057.1811458333334,
+      "title": "One Little Triumph",
+      "source": 60.8,
+      "purpose": "搜索候选，读完整回答"
+    },
+    {
+      "start": 1070.4131041666667,
+      "end": 1122.6737291666666,
+      "title": "A Certain Lightness",
+      "source": 83.9,
+      "purpose": "分开分母，观察条件"
+    },
+    {
+      "start": 1126.4355,
+      "end": 1184.8606041666667,
+      "title": "Tuck and Point",
+      "source": 68.2,
+      "purpose": "同样三张，再问外部效度"
+    },
+    {
+      "start": 1190.3666666666666,
+      "end": 1257.3770833333333,
+      "title": "A Certain Lightness",
+      "source": 123.6,
+      "purpose": "公开原序与随机排列"
+    },
+    {
+      "start": 1268.8788958333334,
+      "end": 1317.1125416666666,
+      "title": "One Little Triumph",
+      "source": 56.0,
+      "purpose": "窗口、复核与掩码"
+    },
+    {
+      "start": 1326.8203958333334,
+      "end": 1375.58425,
+      "title": "Tuck and Point",
+      "source": 64.2,
+      "purpose": "按时间出题，把尺子串起来"
+    },
+    {
+      "start": 1375.58425,
+      "end": 1415.7,
+      "title": "One Little Triumph",
+      "source": 89.52222916666666,
+      "purpose": "回到第一帧的几何体"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1-1",
+      "q": 61.20925517585543,
+      "next": 62.187936260668785,
+      "tap": 61.35925517585543
+    },
+    {
+      "id": "1-1",
+      "q": 88.55976389099483,
+      "next": 90.07539682539684,
+      "tap": 88.70976389099484
+    },
+    {
+      "id": "2-3",
+      "q": 331.3571268214387,
+      "next": 332.3822527168437,
+      "tap": 331.5071268214387
+    },
+    {
+      "id": "3-1",
+      "q": 486.5139998570605,
+      "next": 488.0487301587301,
+      "tap": 486.6639998570605
+    },
+    {
+      "id": "4-4",
+      "q": 805.251775251462,
+      "next": 806.7608616780044,
+      "tap": 805.401775251462
+    }
+  ],
+  "sfx_source": "One Little Triumph · approximately 0:00.46 · single piano attack · filtered and shortened"
+}

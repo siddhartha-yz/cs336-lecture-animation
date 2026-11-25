@@ -1,0 +1,48 @@
+;FFMETADATA1
+title=模型评测与基准测试 · Stanford CS336 第 12 讲
+comment=配乐：Tuck and Point / A Certain Lightness / One Little Triumph — Blue Dot Sessions；节选、淡变及混音。CC BY-NC 4.0：https://creativecommons.org/licenses/by-nc/4.0/
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=58300
+title=Beat 0 · 分数涨了，模型怎么反而变差了？
+[CHAPTER]
+TIMEBASE=1/1000
+START=58300
+END=228733
+title=Beat 1 · 一把尺能选出哪种模型？
+[CHAPTER]
+TIMEBASE=1/1000
+START=228733
+END=433633
+title=Beat 2 · 困惑度：平均分把什么藏起来了？
+[CHAPTER]
+TIMEBASE=1/1000
+START=433633
+END=620667
+title=Beat 3 · 考卷也会饱和
+[CHAPTER]
+TIMEBASE=1/1000
+START=620667
+END=806767
+title=Beat 4 · 没有标准答案，谁来当裁判？
+[CHAPTER]
+TIMEBASE=1/1000
+START=806767
+END=971033
+title=Beat 5 · 把补丁放回真实仓库
+[CHAPTER]
+TIMEBASE=1/1000
+START=971033
+END=1152300
+title=Beat 6 · 推理与安全：换个条件还能通过吗？
+[CHAPTER]
+TIMEBASE=1/1000
+START=1152300
+END=1347833
+title=Beat 7 · 模型在做题，还是见过答案？
+[CHAPTER]
+TIMEBASE=1/1000
+START=1347833
+END=1415700
+title=Beat 8 · 把尺子放回模型身边

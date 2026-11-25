@@ -1,0 +1,11 @@
+{
+  "source": "https://arcprize.org/blog/oai-o3-pub-breakthrough",
+  "reported": "2024-12-20",
+  "model": "o3 (preview, December 2024)",
+  "set": "ARC-AGI-1 Semi-Private Evaluation",
+  "tasks": 100,
+  "configurations": [
+    {"samples": 6, "score_percent": 75.7},
+    {"samples": 1024, "score_percent": 87.5}
+  ]
+}

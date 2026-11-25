@@ -1,0 +1,59 @@
+[
+  {
+    "repo": "ManimGL",
+    "excerpt": [
+      "permission",
+      "is",
+      "hereby",
+      "granted",
+      "free",
+      "of",
+      "charge",
+      "to",
+      "any",
+      "person",
+      "obtaining",
+      "a",
+      "copy"
+    ],
+    "url": "https://raw.githubusercontent.com/3b1b/manim/master/LICENSE.md"
+  },
+  {
+    "repo": "React",
+    "excerpt": [
+      "permission",
+      "is",
+      "hereby",
+      "granted",
+      "free",
+      "of",
+      "charge",
+      "to",
+      "any",
+      "person",
+      "obtaining",
+      "a",
+      "copy"
+    ],
+    "url": "https://raw.githubusercontent.com/facebook/react/main/LICENSE"
+  },
+  {
+    "repo": "Vue",
+    "excerpt": [
+      "permission",
+      "is",
+      "hereby",
+      "granted",
+      "free",
+      "of",
+      "charge",
+      "to",
+      "any",
+      "person",
+      "obtaining",
+      "a",
+      "copy"
+    ],
+    "url": "https://raw.githubusercontent.com/vuejs/core/main/LICENSE"
+  }
+]

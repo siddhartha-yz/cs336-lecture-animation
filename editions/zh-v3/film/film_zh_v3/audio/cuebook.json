@@ -1,0 +1,241 @@
+{
+  "edition": "v3.1-continuous",
+  "sources": [
+    "the-gran-dias",
+    "a-certain-lightness",
+    "the-silver-hatch",
+    "tuck-and-point",
+    "vulcan-street",
+    "balti",
+    "denzel-sprak",
+    "one-little-triumph"
+  ],
+  "cues": [
+    {
+      "i": 0,
+      "slug": "the-gran-dias",
+      "title": "The Gran Dias",
+      "album": "Butterstone",
+      "credit": 408386,
+      "movement": 1,
+      "start": 0.0,
+      "end": 210.02666666666667,
+      "source": 0.34,
+      "target_db": -28.1,
+      "fade_in": 0.65,
+      "fade_out": 4.0,
+      "purpose": "分数与投影"
+    },
+    {
+      "i": 1,
+      "slug": "a-certain-lightness",
+      "title": "A Certain Lightness",
+      "album": "Migration",
+      "credit": 408158,
+      "movement": 1,
+      "start": 206.02666666666667,
+      "end": 402.2833333333334,
+      "source": 6.17,
+      "target_db": -28.7,
+      "fade_in": 4.0,
+      "fade_out": 3.6,
+      "purpose": "预测词元、比较语料"
+    },
+    {
+      "i": 2,
+      "slug": "the-silver-hatch",
+      "title": "The Silver Hatch",
+      "album": "Rayling",
+      "credit": 408387,
+      "movement": 2,
+      "start": 398.6833333333334,
+      "end": 604.4266666666667,
+      "source": 2.8,
+      "target_db": -28.8,
+      "fade_in": 3.6,
+      "fade_out": 3.2,
+      "purpose": "考试与区分度"
+    },
+    {
+      "i": 3,
+      "slug": "tuck-and-point",
+      "title": "Tuck and Point",
+      "album": "Onesuch Village",
+      "credit": 408156,
+      "movement": 2,
+      "start": 601.2266666666667,
+      "end": 741.3350340136054,
+      "source": 5.38,
+      "target_db": -28.4,
+      "fade_in": 3.2,
+      "fade_out": 4.8,
+      "purpose": "投票与偏好"
+    },
+    {
+      "i": 4,
+      "slug": "vulcan-street",
+      "title": "Vulcan Street",
+      "album": "Castro",
+      "credit": 408388,
+      "movement": 3,
+      "start": 736.5350340136055,
+      "end": 932.5333333333333,
+      "source": 15.7,
+      "target_db": -28.6,
+      "fade_in": 4.8,
+      "fade_out": 3.3,
+      "purpose": "真实补丁与网格"
+    },
+    {
+      "i": 5,
+      "slug": "balti",
+      "title": "Balti",
+      "album": "K2",
+      "credit": 408395,
+      "movement": 3,
+      "start": 929.2333333333333,
+      "end": 1048.4333333333334,
+      "source": 5.3,
+      "target_db": -28.1,
+      "fade_in": 3.3,
+      "fade_out": 3.6,
+      "purpose": "推理预算与行为"
+    },
+    {
+      "i": 6,
+      "slug": "denzel-sprak",
+      "title": "Denzel Sprak",
+      "album": "CloudCover",
+      "credit": 408396,
+      "movement": 4,
+      "start": 1044.8333333333335,
+      "end": 1168.5833333333335,
+      "source": 0.31,
+      "target_db": -28.7,
+      "fade_in": 3.6,
+      "fade_out": 4.4,
+      "purpose": "真实交付、原题追踪"
+    },
+    {
+      "i": 7,
+      "slug": "one-little-triumph",
+      "title": "One Little Triumph",
+      "album": "Piano Mover",
+      "credit": 408157,
+      "movement": 4,
+      "start": 1164.1833333333334,
+      "end": 1287.9333333333332,
+      "source": 1.35,
+      "target_db": -28.0,
+      "fade_in": 4.4,
+      "fade_out": 1.05,
+      "purpose": "许可证、新题与六把尺"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1-1",
+      "take": "c01",
+      "q": 55.5711525373576,
+      "next": 56.68049874543692,
+      "tap": 55.7141525373576
+    },
+    {
+      "id": "2-3",
+      "take": "23_01",
+      "q": 302.8308739147562,
+      "next": 303.89906967908036,
+      "tap": 302.97387391475615
+    },
+    {
+      "id": "3-4",
+      "take": "34_04",
+      "q": 554.0028179756022,
+      "next": 555.342426303855,
+      "tap": 554.1458179756022
+    },
+    {
+      "id": "4-4",
+      "take": "44_05",
+      "q": 745.0034204329872,
+      "next": 746.4868480725623,
+      "tap": 745.1464204329873
+    },
+    {
+      "id": "5-4",
+      "take": "54_02",
+      "q": 886.2655763141547,
+      "next": 887.561133786848,
+      "tap": 886.4085763141547
+    },
+    {
+      "id": "7-2",
+      "take": "72_02",
+      "q": 1086.5491013319304,
+      "next": 1087.8433643285123,
+      "tap": 1086.6921013319304
+    }
+  ],
+  "sfx": {
+    "track": "The Gran Dias",
+    "time": 5.531,
+    "length": 0.365,
+    "processing": "upper harmonics, small transposition, decay"
+  },
+  "stats": [
+    {
+      "id": "1-1",
+      "take": "c01",
+      "time": 55.5711525373576,
+      "gap": 1.109346208079323,
+      "music_rms": -31.93,
+      "tone_rms": -21.7,
+      "voice_tail_rms": -120.0
+    },
+    {
+      "id": "2-3",
+      "take": "23_01",
+      "time": 302.8308739147562,
+      "gap": 1.068195764324173,
+      "music_rms": -36.1,
+      "tone_rms": -21.7,
+      "voice_tail_rms": -120.0
+    },
+    {
+      "id": "3-4",
+      "take": "34_04",
+      "time": 554.0028179756022,
+      "gap": 1.3396083282527798,
+      "music_rms": -32.57,
+      "tone_rms": -21.7,
+      "voice_tail_rms": -48.95
+    },
+    {
+      "id": "4-4",
+      "take": "44_05",
+      "time": 745.0034204329872,
+      "gap": 1.4834276395750976,
+      "music_rms": -30.82,
+      "tone_rms": -21.7,
+      "voice_tail_rms": -48.78
+    },
+    {
+      "id": "5-4",
+      "take": "54_02",
+      "time": 886.2655763141547,
+      "gap": 1.2955574726933037,
+      "music_rms": -31.96,
+      "tone_rms": -21.7,
+      "voice_tail_rms": -57.18
+    },
+    {
+      "id": "7-2",
+      "take": "72_02",
+      "time": 1086.5491013319304,
+      "gap": 1.2942629965818924,
+      "music_rms": -32.49,
+      "tone_rms": -21.7,
+      "voice_tail_rms": -120.0
+    }
+  ]
+}

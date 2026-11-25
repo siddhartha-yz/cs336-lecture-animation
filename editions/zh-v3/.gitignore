@@ -1,0 +1,22 @@
+# Keep the file-based editing clock public and recordings local.
+*.m4a
+*.aac
+*.mp3
+*.opus
+*.ogg
+*.mp4
+*.mkv
+*.mov
+*.wav
+*.flac
+*.pt
+*.npy
+*.npz
+takes/
+media/
+voice3/
+private/
+ass/
+film/film_zh_v3/edition/
+film/film_zh_v2/exports/
+!film/vendor/

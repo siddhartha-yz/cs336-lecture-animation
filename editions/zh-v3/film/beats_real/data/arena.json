@@ -1,0 +1,59 @@
+{
+  "source": "https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k",
+  "license": "CC BY 4.0",
+  "example_id": "b0333c20-7fad-45b6-9581-bb2784fdd23b",
+  "timestamp": "2025-07-11T01:08:04.031886",
+  "prompt": "run python code in one line using zsh",
+  "example_row": 17,
+  "model_a": "gpt-4.1-mini-2025-04-14",
+  "model_b": "grok-3-mini-high",
+  "winner": "model_a",
+  "a_excerpt": "python3 -c \"print('Hello, world!')\"",
+  "b_excerpt": "python -c \"your Python code here\"",
+  "overview": "https://arena.ai/how-it-works",
+  "leaderboard_url": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset",
+  "leaderboard_config": "text/latest; overall",
+  "leaderboard_date": "2026-11-22",
+  "ranked_entries": 427,
+  "leaderboard": [
+    {
+      "model_name": "Gemini 4 Carbon (High)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1538.8733656178997,
+      "rating_lower": 1529.316314120831,
+      "rating_upper": 1548.4304171149683,
+      "variance": 23.77670504381913,
+      "vote_count": 4255.0,
+      "rank": 1.0,
+      "category": "overall",
+      "leaderboard_publish_date": "2026-11-22"
+    },
+    {
+      "model_name": "Gemini 4 Argon (High)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1527.6707454486746,
+      "rating_lower": 1522.6761688503434,
+      "rating_upper": 1532.6653220470062,
+      "variance": 6.493833869105634,
+      "vote_count": 28856.0,
+      "rank": 2.0,
+      "category": "overall",
+      "leaderboard_publish_date": "2026-11-22"
+    },
+    {
+      "model_name": "GPT-6 Luna (Max)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1390.579664131676,
+      "rating_lower": 1386.639820995029,
+      "rating_upper": 1394.5195072683232,
+      "variance": 4.040747191604797,
+      "vote_count": 120692.0,
+      "rank": 176.0,
+      "category": "overall",
+      "leaderboard_publish_date": "2026-11-22"
+    }
+  ]
+}

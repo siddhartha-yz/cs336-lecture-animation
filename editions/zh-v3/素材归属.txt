@@ -1,0 +1,7 @@
+源数据与照片的项目、作者和使用方式见根目录《数据与配乐.md》；其中所有出处可直接打开。
+有声版音乐：Blue Dot Sessions — The Gran Dias, A Certain Lightness, The Silver Hatch, Tuck and Point, Vulcan Street, Balti, Denzel Sprak, One Little Triumph。MP3 节选、交叉淡变、采样移调与混音，CC BY-NC 4.0。逐曲链接、专辑和入场时码见《数据与配乐.md》。https://www.sessions.blue/licensing/ ｜ https://creativecommons.org/licenses/by-nc/4.0/
+Regina’s Tombstone：Abigail Baker and Alison Cooley，CC BY 4.0；裁切、去除非主体空间并从铭文取局部。https://commons.wikimedia.org/wiki/File:Reginas-Tombstone-a-relief-portrait-with-inscriptions-in-Latin-and-Palmyrene-Copyright.jpg
+Arena 故事片段：Arena Human Preference 140k（LMArena），CC BY 4.0，节译、按原文计数并重绘。https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k
+Sphinx 代码片段：https://github.com/sphinx-doc/sphinx/pull/8713 — Sphinx authors，BSD-2-Clause，请见同目录 licenses/Sphinx-LICENSE。
+文档公开许可与编程问题的短节选用作片内可追查的工作样本。工程未包含参考影片、其音乐或片段，也不包含参考音色文件与嵌入向量。
+Linux 便利组件：film/vendor/pango-cairo-gi 下的 x86_64 CPython 3.14 系统桥接模块来自 Ubuntu python3-gi-cairo 3.56.2-1。许可证、著作权信息和完整对应发行版源码在 licenses/pygobject/。其他系统应使用与本地 Python 匹配的官方组件。https://archive.ubuntu.com/ubuntu/pool/main/p/pygobject/

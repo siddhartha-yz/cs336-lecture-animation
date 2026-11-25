@@ -1,0 +1,14 @@
+{
+  "source": "https://github.com/LiveCodeBench/LiveCodeBench#benchmark-versions",
+  "metadata_source": "https://huggingface.co/datasets/livecodebench/code_generation_lite",
+  "start_month": "2023-05",
+  "releases": [
+    ["v1", "2024-03", 400], ["v2", "2024-05", 511], ["v3", "2024-07", 612],
+    ["v4", "2024-09", 713], ["v5", "2025-01", 880], ["v6", "2025-04", 1055]
+  ],
+  "example_cutoff": "2024-09-30",
+  "contest_examples": [
+    {"id": "abc366_f", "platform": "AtCoder", "title": "Maximum Composition", "day": "2024-08-10", "source": "https://atcoder.jp/contests/abc366/tasks/abc366_f"},
+    {"id": "abc387_b", "platform": "AtCoder", "title": "9x9 Sum", "day": "2025-01-04", "source": "https://atcoder.jp/contests/abc387/tasks/abc387_b"}
+  ]
+}
