@@ -1,0 +1,158 @@
+[
+  {
+    "slug": "mimo-v2-6-pro",
+    "name": "MiMo-V2.6-Pro",
+    "index": 29.8897833093321,
+    "cost": 0.25718036275876155
+  },
+  {
+    "slug": "claude-opus-5-5",
+    "name": "Claude Opus 5.5 (Max, Default Fallback)",
+    "index": 59.1060336078904,
+    "cost": 10.036409719512749
+  },
+  {
+    "slug": "ling-3-1-flash",
+    "name": "Ling 3.1 Flash 1019",
+    "index": 29.570119369837,
+    "cost": 3.185145018337793
+  },
+  {
+    "slug": "claude-fable-5-2",
+    "name": "Claude Fable 5.2 (Max, Default Fallback)",
+    "index": 64.563595756626,
+    "cost": 26.53855780398091
+  },
+  {
+    "slug": "grok-4-7",
+    "name": "Grok 4.7 (Xhigh)",
+    "index": 35.4850117067196,
+    "cost": 7.771539401587139
+  },
+  {
+    "slug": "kimi-k3-1-pro",
+    "name": "Kimi K3.1 Pro",
+    "index": 46.4526236744189,
+    "cost": 3.6812002895742055
+  },
+  {
+    "slug": "reflection-beam",
+    "name": "Beam 1.0",
+    "index": 17.7307282547205,
+    "cost": 0.28440671352465285
+  },
+  {
+    "slug": "gpt-6-luna",
+    "name": "GPT-6 Luna (Max)",
+    "index": 27.8552004938153,
+    "cost": 0.15195575732105837
+  },
+  {
+    "slug": "gpt-6-2-astra",
+    "name": "GPT-6.2 Astra (Max)",
+    "index": 62.1387990593969,
+    "cost": 3.9979061566801852
+  },
+  {
+    "slug": "gemini-4-neon",
+    "name": "Gemini 4 Neon (Xhigh)",
+    "index": 61.3982491392674,
+    "cost": 6.444838101104699
+  },
+  {
+    "slug": "claude-haiku-5-5",
+    "name": "Claude Haiku 5.5 (Max)",
+    "index": 36.4845435880142,
+    "cost": 0.41100741536816304
+  },
+  {
+    "slug": "gemini-4-carbon",
+    "name": "Gemini 4 Carbon (High)",
+    "index": 60.025738829526,
+    "cost": 7.755545745286556
+  },
+  {
+    "slug": "gpt-6-2-sol",
+    "name": "GPT-6.2 Sol (Max)",
+    "index": 57.2576209885477,
+    "cost": 1.014379970300768
+  },
+  {
+    "slug": "qwen3-8-27b",
+    "name": "Qwen3.8 27B (Xhigh)",
+    "index": 20.1068756031705,
+    "cost": 3.5295494751410654
+  },
+  {
+    "slug": "gpt-6-1-terra",
+    "name": "GPT-6.1 Terra (Max)",
+    "index": 51.3265188577015,
+    "cost": 0.961108031081634
+  },
+  {
+    "slug": "claude-sonnet-5-5",
+    "name": "Claude Sonnet 5.5 (Max, Default Fallback)",
+    "index": 54.54133407109,
+    "cost": 10.020621343395753
+  },
+  {
+    "slug": "glm-5-3",
+    "name": "GLM-5.3 (Max)",
+    "index": 31.653381843882,
+    "cost": 5.009264601719954
+  },
+  {
+    "slug": "tencent-hy4",
+    "name": "Tencent Hy4",
+    "index": 34.5552385392508,
+    "cost": 1.0311060706397974
+  },
+  {
+    "slug": "gemini-4-hydrogen",
+    "name": "Gemini 4 Hydrogen (Xhigh)",
+    "index": 53.9192287317542,
+    "cost": 3.1601590757006157
+  },
+  {
+    "slug": "muse-ember",
+    "name": "Muse Ember (Max)",
+    "index": 36.0212987864912,
+    "cost": 0.1359356168986363
+  },
+  {
+    "slug": "nemotron-3-5-super-vl",
+    "name": "Nemotron 3.5 Super VL",
+    "index": 13.6203422723141,
+    "cost": 0.48180884308185656
+  },
+  {
+    "slug": "inkling-2-small",
+    "name": "Inkling 2 Small",
+    "index": 30.6286781498958,
+    "cost": 1.1784281349617984
+  },
+  {
+    "slug": "mistral-large-4",
+    "name": "Mistral Large 4 (High)",
+    "index": 26.1249946754784,
+    "cost": 2.0617306268126856
+  },
+  {
+    "slug": "deepseek-v4-1-flash-1017",
+    "name": "DeepSeek V4.1 Flash 1017 (Max)",
+    "index": 32.5896393532027,
+    "cost": 0.60210514783598
+  },
+  {
+    "slug": "qwen4-max",
+    "name": "Qwen4 Max",
+    "index": 42.8914543287565,
+    "cost": 3.2681327300897323
+  },
+  {
+    "slug": "muse-wonder",
+    "name": "Muse Wonder (Max)",
+    "index": 43.5748225998431,
+    "cost": 6.9520364786062245
+  }
+]

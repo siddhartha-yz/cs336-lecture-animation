@@ -1,0 +1,19 @@
+{
+ "id": "door3",
+ "t0": 682.3,
+ "title": "三 · 考卷饱和与去饱和",
+ "groups": [],
+ "duration": 4.0,
+ "frames": 240,
+ "groups_meta": [],
+ "questions": [],
+ "starts": [],
+ "ends": [],
+ "chars": "",
+ "text": "",
+ "rests": [],
+ "hold": 4.0,
+ "speech": 0,
+ "clock_source": "Drama 3 native directed takes · ASR word times · 1.000×",
+ "caption_mode": "v6-cards"
+}

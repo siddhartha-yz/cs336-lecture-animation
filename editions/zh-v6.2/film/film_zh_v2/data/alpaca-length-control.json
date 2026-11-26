@@ -1,0 +1,9 @@
+{
+  "source": "https://arxiv.org/abs/2404.04475",
+  "figure4_leaderboard": "2024-03-19",
+  "win_rates_percent": [
+    {"label":"GPT-4 · 0613","id":"gpt4_0613","uncontrolled":15.8,"length_controlled":30.2},
+    {"label":"Mistral Medium","id":"mistral-medium","uncontrolled":21.9,"length_controlled":28.6}
+  ],
+  "figure1": {"n_arena_models":38,"spearman_raw":0.94,"spearman_length_controlled":0.98}
+}

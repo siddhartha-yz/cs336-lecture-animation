@@ -1,0 +1,37 @@
+[
+  {
+    "rank": 1.0,
+    "model_name": "Gemini 4 Carbon (High)",
+    "rating": 1538.8733656178997,
+    "rating_lower": 1529.316314120831,
+    "rating_upper": 1548.4304171149683
+  },
+  {
+    "rank": 2.0,
+    "model_name": "Gemini 4 Argon (High)",
+    "rating": 1527.6707454486746,
+    "rating_lower": 1522.6761688503434,
+    "rating_upper": 1532.6653220470062
+  },
+  {
+    "rank": 3.0,
+    "model_name": "Gemini 4 Neon (High)",
+    "rating": 1522.8896905416118,
+    "rating_lower": 1514.4615620110144,
+    "rating_upper": 1531.3178190722097
+  },
+  {
+    "rank": 4.0,
+    "model_name": "Claude Opus 5.5 (High)",
+    "rating": 1514.1182801107798,
+    "rating_lower": 1508.4813900458362,
+    "rating_upper": 1519.7551701757238
+  },
+  {
+    "rank": 5.0,
+    "model_name": "Claude Fable 5.1 (Max)",
+    "rating": 1511.7703155455783,
+    "rating_lower": 1506.5015454459635,
+    "rating_upper": 1517.0390856451932
+  }
+]

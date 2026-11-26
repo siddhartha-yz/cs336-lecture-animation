@@ -1,0 +1,19 @@
+{
+ "id": "opening",
+ "t0": 95.9,
+ "title": "片头",
+ "groups": [],
+ "duration": 5.0,
+ "frames": 300,
+ "groups_meta": [],
+ "questions": [],
+ "starts": [],
+ "ends": [],
+ "chars": "",
+ "text": "",
+ "rests": [],
+ "hold": 5.0,
+ "speech": 0,
+ "clock_source": "Drama 3 native directed takes · ASR word times · 1.000×",
+ "caption_mode": "v6-cards"
+}

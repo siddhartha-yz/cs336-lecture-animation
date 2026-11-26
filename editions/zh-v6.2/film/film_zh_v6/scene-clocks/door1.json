@@ -1,0 +1,19 @@
+{
+ "id": "door1",
+ "t0": 100.9,
+ "title": "一 · 价值的尺子与归因边界",
+ "groups": [],
+ "duration": 4.0,
+ "frames": 240,
+ "groups_meta": [],
+ "questions": [],
+ "starts": [],
+ "ends": [],
+ "chars": "",
+ "text": "",
+ "rests": [],
+ "hold": 4.0,
+ "speech": 0,
+ "clock_source": "Drama 3 native directed takes · ASR word times · 1.000×",
+ "caption_mode": "v6-cards"
+}

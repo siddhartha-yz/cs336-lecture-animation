@@ -1,0 +1,19 @@
+{
+ "id": "door4",
+ "t0": 911.4166666666666,
+ "title": "四 · 盲测天梯与裁判去偏",
+ "groups": [],
+ "duration": 4.0,
+ "frames": 240,
+ "groups_meta": [],
+ "questions": [],
+ "starts": [],
+ "ends": [],
+ "chars": "",
+ "text": "",
+ "rests": [],
+ "hold": 4.0,
+ "speech": 0,
+ "clock_source": "Drama 3 native directed takes · ASR word times · 1.000×",
+ "caption_mode": "v6-cards"
+}

@@ -1,0 +1,49 @@
+;FFMETADATA1
+title=能力的影子 · Stanford CS336 第十二讲
+artist=CS336 模型评测中文动画
+comment=The Gran Dias / A Certain Lightness / The Silver Hatch / Tuck and Point / Balti / Denzel Sprak / Vulcan Street / One Little Triumph — Blue Dot Sessions. Creative Commons Attribution-NonCommercial 4.0. Edited excerpts and mix. https://www.sessions.blue/licensing/
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=100900
+title=序 · 分数涨了，模型却退步
+[CHAPTER]
+TIMEBASE=1/1000
+START=100900
+END=353567
+title=一 · 价值的尺子与归因边界
+[CHAPTER]
+TIMEBASE=1/1000
+START=353567
+END=682300
+title=二 · 困惑度的理想与盲区
+[CHAPTER]
+TIMEBASE=1/1000
+START=682300
+END=911417
+title=三 · 考卷饱和与去饱和
+[CHAPTER]
+TIMEBASE=1/1000
+START=911417
+END=1191233
+title=四 · 盲测天梯与裁判去偏
+[CHAPTER]
+TIMEBASE=1/1000
+START=1191233
+END=1386917
+title=五 · 走出聊天框：代码沙箱与脚手架
+[CHAPTER]
+TIMEBASE=1/1000
+START=1386917
+END=1591767
+title=六 · 纯粹推理与安全底线
+[CHAPTER]
+TIMEBASE=1/1000
+START=1591767
+END=1823817
+title=七 · 生态效度与数据污染
+[CHAPTER]
+TIMEBASE=1/1000
+START=1823817
+END=1905500
+title=尾声 · 再看八十二分的影子

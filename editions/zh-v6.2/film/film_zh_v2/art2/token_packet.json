@@ -1,0 +1,163 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+  "prefix": "The room was quiet.",
+  "text": " The small cat sat on the mat.",
+  "tokens": [
+    "The",
+    "small",
+    "cat",
+    "sat",
+    "on",
+    "the",
+    "mat",
+    "."
+  ],
+  "ids": [
+    378,
+    1165,
+    2644,
+    2643,
+    335,
+    260,
+    1171,
+    30
+  ],
+  "raw_tokens": [
+    " The",
+    " small",
+    " cat",
+    " sat",
+    " on",
+    " the",
+    " mat",
+    "."
+  ],
+  "probabilities": [
+    0.11378953474621385,
+    0.003347092424704611,
+    0.0004487514375984579,
+    0.10703619476171639,
+    0.33024359595707675,
+    0.5732913319157349,
+    0.002514346381039929,
+    0.0695863254226915
+  ],
+  "alternatives": [
+    [
+      {
+        "token": "It",
+        "p": 0.053708378822250324
+      },
+      {
+        "token": "I",
+        "p": 0.04740306069927127
+      },
+      {
+        "token": "He",
+        "p": 0.04491763258197255
+      }
+    ],
+    [
+      {
+        "token": "room",
+        "p": 0.03785765600620113
+      },
+      {
+        "token": "only",
+        "p": 0.02566555736299557
+      },
+      {
+        "token": "door",
+        "p": 0.017812208026068914
+      }
+    ],
+    [
+      {
+        "token": "group",
+        "p": 0.08026966647667687
+      },
+      {
+        "token": "room",
+        "p": 0.054970067815241754
+      },
+      {
+        "token": ",",
+        "p": 0.05212249789108038
+      }
+    ],
+    [
+      {
+        "token": "was",
+        "p": 0.1256809719515616
+      },
+      {
+        "token": ",",
+        "p": 0.06796630568911317
+      },
+      {
+        "token": "had",
+        "p": 0.06051843359478026
+      }
+    ],
+    [
+      {
+        "token": "in",
+        "p": 0.10162905031418291
+      },
+      {
+        "token": "at",
+        "p": 0.058555331995065435
+      },
+      {
+        "token": "down",
+        "p": 0.051924665648646035
+      }
+    ],
+    [
+      {
+        "token": "a",
+        "p": 0.19277221566566866
+      },
+      {
+        "token": "her",
+        "p": 0.06596192607010054
+      },
+      {
+        "token": "its",
+        "p": 0.032599194598052265
+      }
+    ],
+    [
+      {
+        "token": "edge",
+        "p": 0.14459167640466006
+      },
+      {
+        "token": "bed",
+        "p": 0.12851373489461837
+      },
+      {
+        "token": "floor",
+        "p": 0.08225976814339558
+      }
+    ],
+    [
+      {
+        "token": ",",
+        "p": 0.3010792976070646
+      },
+      {
+        "token": "and",
+        "p": 0.10946463417200619
+      },
+      {
+        "token": "with",
+        "p": 0.04979488722055805
+      }
+    ]
+  ],
+  "joint": 6.059898233758261e-13,
+  "ppl": 33.666024383099405,
+  "method": "Native tokenizer, float32 CPU logits and float64 softmax, base weights, true continuation shifted one position against logits; no chat template, conditioning prefix excluded from score."
+}

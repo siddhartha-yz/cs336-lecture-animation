@@ -1,0 +1,90 @@
+[
+  {
+    "name": "GPT-6 Luna",
+    "aa_profile": "GPT-6 Luna (Max)",
+    "arena_profile": "GPT-6 Luna (Max)",
+    "or_id": "openai/gpt-6-luna-20260922",
+    "index": 27.8552004938153,
+    "cost": 0.15195575732105837,
+    "arena": 1390.579664131676,
+    "traffic_T": 1.3,
+    "arena_global_rank": 176.0,
+    "arena_ci": [
+      1386.639820995029,
+      1394.5195072683232
+    ],
+    "published": "2026-11-22",
+    "pct": [
+      0.0,
+      100.0,
+      0.0,
+      100.0
+    ]
+  },
+  {
+    "name": "Claude Opus 5.5",
+    "aa_profile": "Claude Opus 5.5 (Max, Default Fallback)",
+    "arena_profile": "Claude Opus 5.5 (High)",
+    "or_id": "anthropic/claude-opus-5.5-20260921",
+    "index": 59.1060336078904,
+    "cost": 10.036409719512749,
+    "arena": 1514.1182801107798,
+    "traffic_T": 1.01,
+    "arena_global_rank": 4.0,
+    "arena_ci": [
+      1508.4813900458362,
+      1519.7551701757238
+    ],
+    "published": "2026-11-22",
+    "pct": [
+      100.0,
+      0.0,
+      100.0,
+      66.66666666666667
+    ]
+  },
+  {
+    "name": "GLM-5.3",
+    "aa_profile": "GLM-5.3 (Max)",
+    "arena_profile": "GLM-5.3 (Max)",
+    "or_id": "z-ai/glm-5.3-20260816",
+    "index": 31.653381843882,
+    "cost": 5.009264601719954,
+    "arena": 1474.5716420587655,
+    "traffic_T": 0.59,
+    "arena_global_rank": 30.0,
+    "arena_ci": [
+      1470.059439110376,
+      1479.083845007155
+    ],
+    "published": "2026-11-22",
+    "pct": [
+      33.333333333333336,
+      33.333333333333336,
+      66.66666666666667,
+      33.333333333333336
+    ]
+  },
+  {
+    "name": "Kimi K3.1 Pro",
+    "aa_profile": "Kimi K3.1 Pro",
+    "arena_profile": "Kimi K3.1 Pro (Max)",
+    "or_id": "moonshotai/kimi-k3.1-pro-20261023",
+    "index": 46.4526236744189,
+    "cost": 3.6812002895742055,
+    "arena": 1458.934117265021,
+    "traffic_T": 0.578,
+    "arena_global_rank": 45.0,
+    "arena_ci": [
+      1451.125428167913,
+      1466.7428063621292
+    ],
+    "published": "2026-11-22",
+    "pct": [
+      66.66666666666667,
+      66.66666666666667,
+      33.333333333333336,
+      0.0
+    ]
+  }
+]

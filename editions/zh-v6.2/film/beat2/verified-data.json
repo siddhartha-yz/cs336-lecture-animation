@@ -1,0 +1,603 @@
+{
+  "opening": {
+    "model": "HuggingFaceTB/SmolLM2-135M",
+    "source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+    "prefix": "The room was quiet.",
+    "text": " The small cat sat on the mat.",
+    "tokens": [
+      "The",
+      "small",
+      "cat",
+      "sat",
+      "on",
+      "the",
+      "mat",
+      "."
+    ],
+    "ids": [
+      378,
+      1165,
+      2644,
+      2643,
+      335,
+      260,
+      1171,
+      30
+    ],
+    "raw_tokens": [
+      " The",
+      " small",
+      " cat",
+      " sat",
+      " on",
+      " the",
+      " mat",
+      "."
+    ],
+    "probabilities": [
+      0.11378953474621385,
+      0.003347092424704611,
+      0.0004487514375984579,
+      0.10703619476171639,
+      0.33024359595707675,
+      0.5732913319157349,
+      0.002514346381039929,
+      0.0695863254226915
+    ],
+    "alternatives": [
+      [
+        {
+          "token": "It",
+          "p": 0.053708378822250324
+        },
+        {
+          "token": "I",
+          "p": 0.04740306069927127
+        },
+        {
+          "token": "He",
+          "p": 0.04491763258197255
+        }
+      ],
+      [
+        {
+          "token": "room",
+          "p": 0.03785765600620113
+        },
+        {
+          "token": "only",
+          "p": 0.02566555736299557
+        },
+        {
+          "token": "door",
+          "p": 0.017812208026068914
+        }
+      ],
+      [
+        {
+          "token": "group",
+          "p": 0.08026966647667687
+        },
+        {
+          "token": "room",
+          "p": 0.054970067815241754
+        },
+        {
+          "token": ",",
+          "p": 0.05212249789108038
+        }
+      ],
+      [
+        {
+          "token": "was",
+          "p": 0.1256809719515616
+        },
+        {
+          "token": ",",
+          "p": 0.06796630568911317
+        },
+        {
+          "token": "had",
+          "p": 0.06051843359478026
+        }
+      ],
+      [
+        {
+          "token": "in",
+          "p": 0.10162905031418291
+        },
+        {
+          "token": "at",
+          "p": 0.058555331995065435
+        },
+        {
+          "token": "down",
+          "p": 0.051924665648646035
+        }
+      ],
+      [
+        {
+          "token": "a",
+          "p": 0.19277221566566866
+        },
+        {
+          "token": "her",
+          "p": 0.06596192607010054
+        },
+        {
+          "token": "its",
+          "p": 0.032599194598052265
+        }
+      ],
+      [
+        {
+          "token": "edge",
+          "p": 0.14459167640466006
+        },
+        {
+          "token": "bed",
+          "p": 0.12851373489461837
+        },
+        {
+          "token": "floor",
+          "p": 0.08225976814339558
+        }
+      ],
+      [
+        {
+          "token": ",",
+          "p": 0.3010792976070646
+        },
+        {
+          "token": "and",
+          "p": 0.10946463417200619
+        },
+        {
+          "token": "with",
+          "p": 0.04979488722055805
+        }
+      ]
+    ],
+    "joint": 6.059898233758261e-13,
+    "ppl": 33.666024383099405,
+    "method": "Native tokenizer, float32 CPU logits and float64 softmax, base weights, true continuation shifted one position against logits; no chat template, conditioning prefix excluded from score.",
+    "loss_nats": [
+      2.173404723326967,
+      5.699663242941021,
+      7.709041414604894,
+      2.234588232919135,
+      1.107924727267866,
+      0.5563612588127762,
+      5.985742397461741,
+      2.6651872047571747
+    ],
+    "mean_nats": 3.516489150261447
+  },
+  "tokenizers": {
+    "text": " Byte-level tokenizers encode naïve strings.",
+    "prefix": "Text:",
+    "bytes": 45,
+    "equal_loss_bits": 89,
+    "models": [
+      {
+        "model": "openai-community/gpt2",
+        "label": "GPT-2",
+        "raw_tokens": [
+          " Byte",
+          "-",
+          "level",
+          " token",
+          "izers",
+          " encode",
+          " naïve",
+          " strings",
+          "."
+        ],
+        "boundaries": [
+          0,
+          5,
+          6,
+          11,
+          17,
+          22,
+          29,
+          36,
+          44,
+          45
+        ],
+        "bits": [
+          13.878056781522892,
+          4.345914309262632,
+          11.126103406731884,
+          11.46897388413577,
+          7.804112030293732,
+          12.945720019823138,
+          18.18475928572804,
+          5.823303667821452,
+          3.0550111424165456
+        ],
+        "ppl": 921.5987485646032,
+        "bpb": 1.9695989895052464,
+        "ppl_equal_loss_demo": 948.0957053821857,
+        "bpb_equal_loss_demo": 1.9777777777777779
+      },
+      {
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "label": "SmolLM2",
+        "raw_tokens": [
+          " By",
+          "te",
+          "-",
+          "level",
+          " token",
+          "izers",
+          " encode",
+          " na",
+          "ïve",
+          " strings",
+          "."
+        ],
+        "boundaries": [
+          0,
+          3,
+          5,
+          6,
+          11,
+          17,
+          22,
+          29,
+          32,
+          36,
+          44,
+          45
+        ],
+        "bits": [
+          11.307512666307574,
+          5.599093659444745,
+          5.009343950166446,
+          6.564553090623375,
+          11.336944181773879,
+          5.79944108605746,
+          9.642013381838447,
+          18.659702544193305,
+          0.6806448555362857,
+          8.528226541293721,
+          5.953025681956985
+        ],
+        "ppl": 274.0371017082466,
+        "bpb": 1.9795667030931605,
+        "ppl_equal_loss_demo": 272.6505188966306,
+        "bpb_equal_loss_demo": 1.9777777777777779
+      }
+    ]
+  },
+  "gpt2_zero_shot": {
+    "model": "GPT-2 1542M",
+    "source": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+    "table": 3,
+    "ppl": {
+      "PTB": 35.76,
+      "WikiText-103": 17.48,
+      "1BW": 42.16
+    }
+  },
+  "rank_reversal": {
+    "text": "Choose one: nine minus seven is either two or three. Answer: two",
+    "prefix": "Choose one: nine minus seven is either two or three. Answer:",
+    "answer": "two",
+    "tokens": [
+      "Choose",
+      " one",
+      ":",
+      " nine",
+      " minus",
+      " seven",
+      " is",
+      " either",
+      " two",
+      " or",
+      " three",
+      ".",
+      " Answer",
+      ":",
+      " two"
+    ],
+    "token_ids": [
+      21197,
+      582,
+      42,
+      7462,
+      18253,
+      4962,
+      314,
+      2267,
+      827,
+      355,
+      1296,
+      30,
+      19842,
+      42,
+      827
+    ],
+    "bos_id": 0,
+    "answer_index": 14,
+    "sampled_lines": 335,
+    "preceding_positions_a_lower": 6,
+    "models": [
+      {
+        "model": "HuggingFaceTB/SmolLM2-135M",
+        "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+        "source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+        "name": "SmolLM2-135M · base",
+        "probabilities": [
+          4.141294375690883e-05,
+          0.040051542214363314,
+          0.045525941480353646,
+          4.858710008620065e-06,
+          0.00018474723736571175,
+          0.05862058060400757,
+          0.060323064494391725,
+          0.001001526233866638,
+          0.006672109108028376,
+          0.6967591683324494,
+          0.2726613663755481,
+          0.33903596319371976,
+          0.0014115111802040425,
+          0.5747571144179298,
+          0.14464629243134774
+        ],
+        "nll": [
+          10.091917074865123,
+          3.2175880989841015,
+          3.089472973069319,
+          12.234737585609825,
+          8.596521951613331,
+          2.8366694392106107,
+          2.808040752620796,
+          6.906230208626697,
+          5.009819260937643,
+          0.36131545399485054,
+          1.2995246699569178,
+          1.0816490911112535,
+          6.563094389505753,
+          0.553807737132847,
+          1.9334638791961352
+        ],
+        "mean_nll": 4.438923504429013,
+        "ppl": 84.68373092737599,
+        "top": [
+          {
+            "id": 1296,
+            "token": " three",
+            "p": 0.17164923298259513
+          },
+          {
+            "id": 827,
+            "token": " two",
+            "p": 0.14464629243134774
+          },
+          {
+            "id": 8696,
+            "token": " Three",
+            "p": 0.10056268535671564
+          },
+          {
+            "id": 5713,
+            "token": " Two",
+            "p": 0.08705332495929063
+          },
+          {
+            "id": 216,
+            "token": " ",
+            "p": 0.03891713825043468
+          },
+          {
+            "id": 15442,
+            "token": " ",
+            "p": 0.035196412349600255
+          },
+          {
+            "id": 198,
+            "token": "\n",
+            "p": 0.030569142696416664
+          },
+          {
+            "id": 7462,
+            "token": " nine",
+            "p": 0.026859599039443793
+          }
+        ]
+      },
+      {
+        "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+        "source": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+        "name": "SmolLM2-135M · instruct",
+        "probabilities": [
+          8.217441568805549e-06,
+          0.04506466354071306,
+          0.007981161864506548,
+          1.4231748089413024e-05,
+          0.0005628197222279643,
+          0.057992005136482734,
+          0.1114754261400757,
+          0.00019483682278055475,
+          0.009872836916465462,
+          0.29783725317582765,
+          0.14148326775208306,
+          0.408723783780393,
+          0.0015245191822325006,
+          0.8382518907659695,
+          0.25179946412555004
+        ],
+        "nll": [
+          11.709251642013719,
+          3.099656853090328,
+          4.830671281062684,
+          11.160035308051587,
+          7.4825511902890565,
+          2.8474501204113003,
+          2.1939511057346994,
+          8.543348155971891,
+          4.617968038623003,
+          1.211208071942651,
+          1.9555738179927076,
+          0.8947156963678969,
+          6.486076208976555,
+          0.1764366380272848,
+          1.379122285549095
+        ],
+        "mean_nll": 4.572534427606964,
+        "ppl": 96.7891041590709,
+        "top": [
+          {
+            "id": 827,
+            "token": " two",
+            "p": 0.25179946412555004
+          },
+          {
+            "id": 1296,
+            "token": " three",
+            "p": 0.12978595117195438
+          },
+          {
+            "id": 216,
+            "token": " ",
+            "p": 0.10411720388183235
+          },
+          {
+            "id": 198,
+            "token": "\n",
+            "p": 0.061619079544336604
+          },
+          {
+            "id": 5713,
+            "token": " Two",
+            "p": 0.05089475408109474
+          },
+          {
+            "id": 7462,
+            "token": " nine",
+            "p": 0.04050847691742064
+          },
+          {
+            "id": 8696,
+            "token": " Three",
+            "p": 0.0335539589946735
+          },
+          {
+            "id": 4962,
+            "token": " seven",
+            "p": 0.02304500723869273
+          }
+        ]
+      }
+    ],
+    "selection": "Illustrative selected continuation, not a benchmark over the models. Both orderings searched on the same set of template-generated simple arithmetic lines; require wrong numeric open argmax for lower full-line perplexity and correct open argmax for the other model.",
+    "protocol": "Same literal plain text and token IDs, common <|endoftext|> document separator as initial context, no chat template, causal teacher-forced token likelihood, float32 CPU forward and float64 log softmax, natural logarithm, all visible tokens scored, full-vocabulary top-1 next token."
+  },
+  "paloma": {
+    "benchmark": "Paloma",
+    "paper": "xLSTM: Extended Long Short-Term Memory, NeurIPS 2024",
+    "source": "https://papers.nips.cc/paper_files/paper/2024/file/c2ce2f2701c10a2b2f2ea0bfa43cfaa3-Paper-Conference.pdf",
+    "benchmark_paper": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/760b2d94398aa61468aa3bc11506d9ea-Abstract-Datasets_and_Benchmarks_Track.html",
+    "tables": [
+      "8 (C4 English)",
+      "10 (all other selected data slices)"
+    ],
+    "tokenizer": "Hugging Face GPT-2",
+    "training": "300B SlimPajama tokens",
+    "models": [
+      "Llama",
+      "Mamba"
+    ],
+    "size_class": "1.3B",
+    "params_millions": [
+      1420.4,
+      1475.3
+    ],
+    "domains": [
+      {
+        "name": "Python",
+        "id": "dolma_100_proglang_val_06_python",
+        "values": [
+          2.35,
+          2.39
+        ]
+      },
+      {
+        "name": "Math",
+        "id": "m2d2_wikipedia_unsplit_val_Mathematics_and_logic__Mathematics",
+        "values": [
+          12.9,
+          12.51
+        ]
+      },
+      {
+        "name": "arXiv",
+        "id": "redpajama_val_arxiv",
+        "values": [
+          5.15,
+          5.28
+        ]
+      },
+      {
+        "name": "WikiText",
+        "id": "wikitext_103_val",
+        "values": [
+          11.74,
+          11.76
+        ]
+      },
+      {
+        "name": "Web",
+        "id": "C4 English · aggregate, Table 8",
+        "values": [
+          13.93,
+          13.35
+        ]
+      },
+      {
+        "name": "Books",
+        "id": "dolma-v1_5_val_books",
+        "values": [
+          13.0,
+          12.44
+        ]
+      }
+    ],
+    "aggregate": {
+      "name": "Equal-domain PPL",
+      "formula": "exp(mean(log(PPL)))",
+      "values": [
+        8.3209177256078,
+        8.21926564205769
+      ],
+      "note": "Computed from the six shown rounded PPLs; equal domain weights, not official pooled score."
+    }
+  },
+  "mmlu": {
+    "dataset": "MMLU",
+    "subjects": 57,
+    "dataset_source": "https://github.com/hendrycks/test",
+    "reported_results": "https://github.com/openai/simple-evals/blob/main/README.md",
+    "protocol": "OpenAI simple-evals, assistant prompt; zero-shot chain of thought. Overall accuracy, not per-subject.",
+    "scores": [
+      {
+        "short": "GPT-4",
+        "model": "gpt-4-1106-preview",
+        "accuracy_percent": 84.7
+      },
+      {
+        "short": "GPT-4o",
+        "model": "gpt-4o-2024-08-06",
+        "accuracy_percent": 88.7
+      },
+      {
+        "short": "GPT-4.1",
+        "model": "gpt-4.1-2025-04-14",
+        "accuracy_percent": 90.2
+      }
+    ]
+  }
+}

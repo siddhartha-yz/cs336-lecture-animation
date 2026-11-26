@@ -1,0 +1,33 @@
+{
+  "mail": {
+    "row": 771,
+    "source": "https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k/viewer/default/train?row=771",
+    "prompt": [
+      "Could you please confirm with […]",
+      "to correct this POD payment invoice urgently?"
+    ],
+    "A": [
+      "请尽快核实这处差错，",
+      "并更新这张运费发票。"
+    ],
+    "B": [
+      "烦请联系相关方面，",
+      "尽快更正运费发票上的错误。"
+    ],
+    "winner": "A",
+    "models": [
+      "llama-3.3-70b-instruct",
+      "llama-4-maverick-17b-128e-instruct"
+    ],
+    "note": "Quoted excerpt omits company and route. Chinese answer excerpts translated."
+  },
+  "clinical": {
+    "dataset": "ACI-BENCH",
+    "id": "ACI001",
+    "source": "https://github.com/wyim/aci-bench/blob/main/data/src_experiment_data/train_aci_asrcorr.csv",
+    "utterance": "my left wrist and hand has been bothering me",
+    "note": "Left wrist and hand pain.",
+    "section": "CHIEF COMPLAINT",
+    "synthetic": true
+  }
+}

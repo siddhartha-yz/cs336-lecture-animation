@@ -1,0 +1,16 @@
+# Keep local recordings and generated video out of the public edit tree.
+*.m4a
+*.aac
+*.ogg
+*.opus
+*.mkv
+*.mov
+*.pt
+*.npy
+*.npz
+takes/
+media/
+voice/
+voice3/
+voice-presets/
+secrets/

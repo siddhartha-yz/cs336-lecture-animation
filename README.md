@@ -1,23 +1,30 @@
-# 模型评测：我们在量什么？
+# 能力的影子
 
-同一个模型，算答对几题、每题花多少钱、观众更喜欢哪份回答，能得到三个不同的名次。这部动画从一把只能看见投影的尺子出发，讲 [Stanford CS336 第 12 讲](https://cs336.stanford.edu/spring2025/) 的核心问题：每换一把尺，究竟多量到了什么？
+两个模型都得了 82 分。把它们转个面，才发现这个分数漏掉了什么。
+这部中文动画讲 [Stanford CS336 第 12 讲](https://stanford-cs336.github.io/spring2025/)：从困惑度、标准考卷和人类盲测，一路走到软件沙箱与训练数据污染。
 
-**当前版 v3.1.0：Beat 0–8 全片，21 分 28 秒，1080p / 60 fps。** 本次公开的是无声画面，中文字幕已印在片中。逐字稿、字级时码与本地连续配乐版一致。
+**v6.2 终版 · 31:45.5 · 1080p / 60 fps · 9 章。** 公开版带中文字幕，无音轨。
 
-[下载无声字幕全片](https://github.com/siddhartha-yz/cs336-lecture12-evaluation/releases/download/v3.1.0/cs336-l12-zh-picture-only.mp4) · [下载分镜工程（含 33 个无声镜头）](https://github.com/siddhartha-yz/cs336-lecture12-evaluation/releases/download/v3.1.0/cs336-l12-zh-editing-kit.zip) · [阅读逐字稿](editions/zh-v3/逐字稿与章节.md)
+[下载无声字幕全片](https://github.com/siddhartha-yz/cs336-lecture12-evaluation/releases/download/v6.2.0/cs336-l12-zh-picture-only.mp4) · [下载含 35 个无声镜头的复剪工程](https://github.com/siddhartha-yz/cs336-lecture12-evaluation/releases/download/v6.2.0/cs336-l12-zh-editing-kit.zip) · [查看 v6.2 发布页](https://github.com/siddhartha-yz/cs336-lecture12-evaluation/releases/tag/v6.2.0)
 
-![GPQA 镜头：物理场线、化学分子和 DNA 围绕同一道博士出题任务展开](docs/gpqa-v3.jpg)
+![两个不同的模型盒子，在金色标尺上都投下 82 分的影子](editions/zh-v6.2/film/film_zh_v6/assets/poster.jpg)
 
-## 从一个镜头继续
+## 从一镜继续
 
-在克隆的仓库里运行下列命令，可直接画出 GPQA 一帧。要接着剪全片，用上面的分镜包：里面除了相同的源码和资料，还有全部干净切片；重画哪一镜，就替换哪一镜。
+克隆仓库后，直接画一帧困惑度的问句过渡：
 
-```bash
-cd editions/zh-v3
-/usr/bin/python3 复现.py --still 3-3 28.0 --width 1280
+```sh
+cd editions/zh-v6.2
+/usr/bin/python3 复剪.py --still door2 2.35 --out build/困惑度过渡.png
 ```
 
-[编辑与装配方法](editions/zh-v3/README.md) · [逐问剪辑单与动效蓝图](editions/zh-v3/问句精简与动效蓝图.md) · [字幕](editions/zh-v3/中文字幕.srt) · [数据、图片与曲目出处](editions/zh-v3/数据与配乐.md) · [连续配乐剪辑时码](editions/zh-v3/film/film_zh_v3/audio/cuebook.json)
+要接回整条片子，用上面的复剪包。35 条无字幕切片可直接拖进编辑器，也可用 `python3 复剪.py --assemble-silent` 拼回带可切换字幕的无声全片。
+
+[复剪说明](editions/zh-v6.2/README.md) · [逐字稿与章节](editions/zh-v6.2/film/film_zh_v6/edition/CS336-L12-能力的影子-v6.2-逐字稿与章节.md) · [中文字幕](editions/zh-v6.2/film/film_zh_v6/edition/CS336-L12-能力的影子-v6.2.srt) · [数据与素材出处](editions/zh-v6.2/film/film_zh_v6/edition/CS336-L12-能力的影子-v6.2-数据与配乐.md) · [配乐时间表](editions/zh-v6.2/film/film_zh_v6/audio/cuebook.json)
+
+## 上一次全片存档 · v3.1.0
+
+21 分 28 秒，33 镜。[无声全片与分镜包](https://github.com/siddhartha-yz/cs336-lecture12-evaluation/releases/tag/v3.1.0) · [当时的工程与说明](editions/zh-v3)
 
 ## 早期版本 · v0.1.0
 

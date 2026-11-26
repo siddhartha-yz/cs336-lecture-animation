@@ -1,0 +1,392 @@
+{
+  "rate": 48000,
+  "seconds": 1905.5,
+  "source": "Blue Dot Sessions",
+  "movements": 4,
+  "passages": [
+    {
+      "id": 0,
+      "movement": 1,
+      "title": "The Gran Dias",
+      "slug": "the-gran-dias",
+      "album": "Butterstone",
+      "credit": 408386,
+      "purpose": "第一次追分与投影",
+      "start": 0,
+      "end": 225.75400000000005,
+      "source": 2.16,
+      "fade_in": 0.48,
+      "fade_out": 5.6,
+      "target_db": -26.5
+    },
+    {
+      "id": 1,
+      "movement": 1,
+      "title": "A Certain Lightness",
+      "slug": "a-certain-lightness",
+      "album": "Migration",
+      "credit": 408158,
+      "purpose": "读数与模型假设",
+      "start": 220.15400000000002,
+      "end": 487.3090000000001,
+      "source": 1.36,
+      "fade_in": 5.6,
+      "fade_out": 6.0,
+      "target_db": -27.1
+    },
+    {
+      "id": 2,
+      "movement": 1,
+      "title": "The Silver Hatch",
+      "slug": "the-silver-hatch",
+      "album": "Rayling",
+      "credit": 408387,
+      "purpose": "词元平均的反转",
+      "start": 481.3090000000001,
+      "end": 683.8369473684211,
+      "source": 7.4,
+      "fade_in": 6.0,
+      "fade_out": 5.6,
+      "target_db": -27.0
+    },
+    {
+      "id": 3,
+      "movement": 2,
+      "title": "Tuck and Point",
+      "slug": "tuck-and-point",
+      "album": "Onesuch Village",
+      "credit": 408156,
+      "purpose": "考卷拉开距离",
+      "start": 678.2369473684212,
+      "end": 816.606432748538,
+      "source": 3.32,
+      "fade_in": 5.6,
+      "fade_out": 5.0,
+      "target_db": -26.5
+    },
+    {
+      "id": 5,
+      "movement": 2,
+      "title": "Balti",
+      "slug": "balti",
+      "album": "K2",
+      "credit": 408395,
+      "purpose": "专家筛选、再到读者的一票",
+      "start": 811.606432748538,
+      "end": 977.124380952381,
+      "source": 4.65,
+      "fade_in": 5.0,
+      "fade_out": 5.8,
+      "target_db": -27.0
+    },
+    {
+      "id": 6,
+      "movement": 2,
+      "title": "Denzel Sprak",
+      "slug": "denzel-sprak",
+      "album": "CloudCover",
+      "credit": 408396,
+      "purpose": "拨动分差与胜率",
+      "start": 971.324380952381,
+      "end": 1094.337142857143,
+      "source": 1.94,
+      "fade_in": 5.8,
+      "fade_out": 5.8,
+      "target_db": -27.0
+    },
+    {
+      "id": 1,
+      "movement": 2,
+      "title": "A Certain Lightness",
+      "slug": "a-certain-lightness",
+      "album": "Migration",
+      "credit": 408158,
+      "purpose": "拿掉长度的那一份红利",
+      "start": 1088.5371428571427,
+      "end": 1191.6067708333333,
+      "source": 146.16,
+      "fade_in": 5.8,
+      "fade_out": 6.4,
+      "target_db": -27.4
+    },
+    {
+      "id": 4,
+      "movement": 3,
+      "title": "Vulcan Street",
+      "slug": "vulcan-street",
+      "album": "Castro",
+      "credit": 408388,
+      "purpose": "沙箱上电与测试时搜索",
+      "start": 1185.2067708333332,
+      "end": 1402.3854285714285,
+      "source": 16.65,
+      "fade_in": 6.4,
+      "fade_out": 5.0,
+      "target_db": -26.1
+    },
+    {
+      "id": 6,
+      "movement": 3,
+      "title": "Denzel Sprak",
+      "slug": "denzel-sprak",
+      "album": "CloudCover",
+      "credit": 408396,
+      "purpose": "给规则五秒钟",
+      "start": 1397.3854285714285,
+      "end": 1517.00144,
+      "source": 3.47,
+      "fade_in": 5.0,
+      "fade_out": 4.8,
+      "target_db": -26.6
+    },
+    {
+      "id": 5,
+      "movement": 3,
+      "title": "Balti",
+      "slug": "balti",
+      "album": "K2",
+      "credit": 408395,
+      "purpose": "从前缀回到真实行为",
+      "start": 1512.2014399999998,
+      "end": 1592.2479999999998,
+      "source": 61.17,
+      "fade_in": 4.8,
+      "fade_out": 5.6,
+      "target_db": -27.2
+    },
+    {
+      "id": 2,
+      "movement": 4,
+      "title": "The Silver Hatch",
+      "slug": "the-silver-hatch",
+      "album": "Rayling",
+      "credit": 408387,
+      "purpose": "工作文件与公开原序",
+      "start": 1586.648,
+      "end": 1715.4806666666666,
+      "source": 58.94,
+      "fade_in": 5.6,
+      "fade_out": 6.0,
+      "target_db": -27.3
+    },
+    {
+      "id": 7,
+      "movement": 4,
+      "title": "One Little Triumph",
+      "slug": "one-little-triumph",
+      "album": "Piano Mover",
+      "credit": 408157,
+      "purpose": "词窗穿过书页",
+      "start": 1709.4806666666666,
+      "end": 1825.2487142857142,
+      "source": 8.12,
+      "fade_in": 6.0,
+      "fade_out": 5.5,
+      "target_db": -26.4
+    },
+    {
+      "id": 0,
+      "movement": 4,
+      "title": "The Gran Dias",
+      "slug": "the-gran-dias",
+      "album": "Butterstone",
+      "credit": 408386,
+      "purpose": "片头动机再现、收束在同一把尺",
+      "start": 1819.7487142857142,
+      "end": 1905.5,
+      "source": 140.29871428571414,
+      "fade_in": 5.5,
+      "fade_out": 2.6,
+      "target_db": -26.7
+    }
+  ],
+  "strikes": [
+    {
+      "scene": "0-2",
+      "word_end": 95.0820634920635,
+      "hit": 95.2320634920635,
+      "actual_db": {
+        "score": -27.8,
+        "strike": -18.7,
+        "voice": -104.4
+      }
+    },
+    {
+      "scene": "1-3",
+      "word_end": 352.73172335600907,
+      "hit": 352.88172335600905,
+      "actual_db": {
+        "score": -34.6,
+        "strike": -21.1,
+        "voice": -98.5
+      }
+    },
+    {
+      "scene": "2-4",
+      "word_end": 681.4383673469388,
+      "hit": 681.5883673469388,
+      "actual_db": {
+        "score": -40.1,
+        "strike": -21.1,
+        "voice": -99.0
+      }
+    },
+    {
+      "scene": "3-4",
+      "word_end": 910.5608390022676,
+      "hit": 910.7108390022676,
+      "actual_db": {
+        "score": -36.2,
+        "strike": -21.1,
+        "voice": -104.9
+      }
+    },
+    {
+      "scene": "4-4",
+      "word_end": 1190.3684353741496,
+      "hit": 1190.5184353741497,
+      "actual_db": {
+        "score": -33.0,
+        "strike": -21.1,
+        "voice": -92.6
+      }
+    },
+    {
+      "scene": "6-2",
+      "word_end": 1590.8760770975057,
+      "hit": 1591.0260770975058,
+      "actual_db": {
+        "score": -31.1,
+        "strike": -21.1,
+        "voice": -98.8
+      }
+    }
+  ],
+  "paper_hits": [
+    118.60517006802722,
+    807.6290702947846,
+    919.0768027210884,
+    1198.0633333333333,
+    1611.2376643990929
+  ],
+  "spotting": [
+    {
+      "name": "两影同落在八十二",
+      "kind": "ruler",
+      "time": 66.65260932944607,
+      "pan": -0.13,
+      "peak": 0.123,
+      "actual_db": {
+        "score": -33.0,
+        "prop": -25.9,
+        "voice": -120.0
+      }
+    },
+    {
+      "name": "秒表停下、表盘移入时间轴",
+      "kind": "latch",
+      "time": 327.4559410430839,
+      "pan": 0.2,
+      "peak": 0.162,
+      "actual_db": {
+        "score": -65.6,
+        "prop": -27.2,
+        "voice": -120.0
+      }
+    },
+    {
+      "name": "盲投结束，原记录选票落定",
+      "kind": "ballot",
+      "time": 950.3505102040816,
+      "pan": -0.17,
+      "peak": 0.123,
+      "actual_db": {
+        "score": -34.8,
+        "prop": -29.4,
+        "voice": -18.1
+      }
+    },
+    {
+      "name": "整页落走",
+      "kind": "leave",
+      "time": 1765.8038775510204,
+      "pan": 0.11,
+      "peak": 0.113,
+      "actual_db": {
+        "score": -24.0,
+        "prop": -29.8,
+        "voice": -19.8
+      }
+    },
+    {
+      "name": "同一页退回，保住正文",
+      "kind": "return",
+      "time": 1769.5638775510204,
+      "pan": -0.06,
+      "peak": 0.106,
+      "actual_db": {
+        "score": -30.4,
+        "prop": -30.3,
+        "voice": -18.4
+      }
+    },
+    {
+      "name": "同一把尺，再读八十二",
+      "kind": "ruler",
+      "time": 1870.5784807256234,
+      "pan": -0.13,
+      "peak": 0.106,
+      "actual_db": {
+        "score": -24.3,
+        "prop": -27.2,
+        "voice": -52.7
+      }
+    }
+  ],
+  "audience_music": [
+    {
+      "name": "匿名投票",
+      "start": 945.6455102040816,
+      "end": 950.1455102040816,
+      "gain_db": -1.6,
+      "attack": 0.72,
+      "release": 0.92
+    },
+    {
+      "name": "试填第四张网格",
+      "start": 1416.1074603174604,
+      "end": 1421.1074603174604,
+      "gain_db": -1.85,
+      "attack": 0.72,
+      "release": 0.92
+    }
+  ],
+  "arrangements": [
+    {
+      "title": "Denzel Sprak",
+      "movement": 3,
+      "rule_at": 1427.6375963718822,
+      "tree_at": 1447.9450566893424,
+      "amounts": [
+        0.76,
+        0.55,
+        0.22
+      ],
+      "purpose": "先留住弦与木音的尾巴；翻出规则、展开候选树时归还拨弦的起音。"
+    }
+  ],
+  "peak_dbfs": -0.64,
+  "picture_locked_layback": {
+    "start": 1581.65,
+    "end": 1596.18,
+    "title_from": "Balti",
+    "title_to": "The Silver Hatch",
+    "reconstruction_rms": 1.761522625130656e-05,
+    "original_fade": [
+      1586.648,
+      1592.2479999999998
+    ],
+    "max_jump_old": 11.370000000000001,
+    "max_jump_new": 11.379999999999999
+  }
+}

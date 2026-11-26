@@ -1,0 +1,133 @@
+{
+  "source": "https://github.com/KellerJordan/modded-nanogpt/blob/master/README.md#world-record-history",
+  "rules": "https://github.com/KellerJordan/modded-nanogpt/blob/master/README.md#rules",
+  "timing_change": "https://github.com/KellerJordan/modded-nanogpt/blob/master/README.md#timing-change-after-record-21",
+  "fetched_local_date": "2026-11-24",
+  "dataset": "FineWeb",
+  "gpu": "8× NVIDIA H100",
+  "cross_entropy_target": 3.28,
+  "coverage": "Official short/main-track records #1–#20, stopping at the first reported sub-3-minute run and before the later timing-policy change. Minutes and dates as published in the project table; two records share 2024-10-18 and are drawn in ledger order.",
+  "metric": "Wall-clock time to reach the validation target; not the trajectory of training or validation loss within a single run.",
+  "records": [
+    {
+      "record": 1,
+      "date": "2024-05-28",
+      "minutes": 45.0,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-10-13_llmc/main.log"
+    },
+    {
+      "record": 2,
+      "date": "2024-06-06",
+      "minutes": 31.4,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-06-06_AdamW/f66d43d7-e449-4029-8adf-e8537bab49ea.log"
+    },
+    {
+      "record": 3,
+      "date": "2024-10-04",
+      "minutes": 24.9,
+      "log_url": null
+    },
+    {
+      "record": 4,
+      "date": "2024-10-11",
+      "minutes": 22.3,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-10-10_Muon/eb5659d0-fb6a-49e5-a311-f1f89412f726.txt"
+    },
+    {
+      "record": 5,
+      "date": "2024-10-14",
+      "minutes": 15.2,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-10-14_ModernArch/dabaaddd-237c-4ec9-939d-6608a9ed5e27.txt"
+    },
+    {
+      "record": 6,
+      "date": "2024-10-18",
+      "minutes": 13.1,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-10-17_DistributedMuon/22d24867-eb5a-4fcc-ae2c-263d0277dfd1.txt"
+    },
+    {
+      "record": 7,
+      "date": "2024-10-18",
+      "minutes": 12.0,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-10-18_PyTorch25/d4bfb25f-688d-4da5-8743-33926fad4842.txt"
+    },
+    {
+      "record": 8,
+      "date": "2024-11-03",
+      "minutes": 10.8,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-03_UntieEmbed/d6b50d71-f419-4d26-bb39-a60d55ae7a04.txt"
+    },
+    {
+      "record": 9,
+      "date": "2024-11-06",
+      "minutes": 8.2,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-06_ShortcutsTweaks/dd7304a6-cc43-4d5e-adb8-c070111464a1.txt"
+    },
+    {
+      "record": 10,
+      "date": "2024-11-08",
+      "minutes": 7.8,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-08_CastBf16/a833bed8-2fa8-4cfe-af05-58c1cc48bc30.txt"
+    },
+    {
+      "record": 11,
+      "date": "2024-11-10",
+      "minutes": 7.2,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-10_UNetDoubleLr/c87bb826-797b-4f37-98c7-d3a5dad2de74.txt"
+    },
+    {
+      "record": 12,
+      "date": "2024-11-19",
+      "minutes": 5.03,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-19_FlexAttention/8384493d-dba9-4991-b16b-8696953f5e6d.txt"
+    },
+    {
+      "record": 13,
+      "date": "2024-11-24",
+      "minutes": 4.66,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-11-24_WindowWarmup/cf9e4571-c5fc-4323-abf3-a98d862ec6c8.txt"
+    },
+    {
+      "record": 14,
+      "date": "2024-12-04",
+      "minutes": 4.41,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-12-04_ValueEmbed"
+    },
+    {
+      "record": 15,
+      "date": "2024-12-08",
+      "minutes": 3.95,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-12-08_UNetValueEmbedsTweaks"
+    },
+    {
+      "record": 16,
+      "date": "2024-12-10",
+      "minutes": 3.8,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-12-10_MFUTweaks"
+    },
+    {
+      "record": 17,
+      "date": "2024-12-17",
+      "minutes": 3.57,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2024-12-17_SparsifyEmbeds"
+    },
+    {
+      "record": 18,
+      "date": "2025-01-04",
+      "minutes": 3.4,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2025-01-04_SoftCap/31d6c427-f1f7-4d8a-91be-a67b5dcd13fd.txt"
+    },
+    {
+      "record": 19,
+      "date": "2025-01-13",
+      "minutes": 3.142,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2025-01-13_Fp8LmHead/c51969c2-d04c-40a7-bcea-c092c3c2d11a.txt"
+    },
+    {
+      "record": 20,
+      "date": "2025-01-16",
+      "minutes": 2.992,
+      "log_url": "https://github.com/KellerJordan/modded-nanogpt/blob/master/records/track_1_short/2025-01-16_Sub3Min/1d3bd93b-a69e-4118-aeb8-8184239d7566.txt"
+    }
+  ]
+}
