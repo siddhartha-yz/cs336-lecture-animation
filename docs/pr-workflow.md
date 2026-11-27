@@ -62,6 +62,6 @@ python3 pipeline/film_pr.py receipt owner pass /tmp/cs336-l16-R02.json
 
 `Film handoff` 读取当前 PR、实际镜表及仓库所有者的公开回执。新提交、换候选文件名或升版后，旧回执不再匹配；同版也要求本人通过晚于最后一次 Gemini 通过。草稿的待处理状态列在检查摘要，转 **Ready for review** 会重新检查；提前转 Ready 会标红。仅发评论不会触发重新检查，Draft 期间读评论即可；最后转 Ready 时会读最新回执。
 
-`Production check` 跑原来的收稿和 Remotion 实帧检查，并对本 PR 改到的其他新讲工程另查源码与项目帧门禁。它和 `Film handoff` 各负责一件事：一个验证工程，一个验证交接，均不能代替实际音画验收。两项通过后，由你合并；发布成片仍是单独一步。
+`Production check` 在 PR 新提交和更新 main 时跑收稿与 Remotion 实帧检查，并对 PR 改到的其他讲次另查源码和项目帧门禁。需要在开 PR 前跑 CI 时，可手动运行该工作流。它和 `Film handoff` 各负责一件事：一个验证工程，一个验证交接，均不能代替实际音画验收。两项通过后，由你合并；发布成片仍是单独一步。
 
 如果要由 GitHub **强制**等这两项通过再合并，在 [main 的分支保护](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)选实际跑过的 `Film handoff` 和 `source-and-render`。不勾原生「至少一人 Approve」来代替本人回执：个人仓库经常由你开 PR，再由你亲自签收。

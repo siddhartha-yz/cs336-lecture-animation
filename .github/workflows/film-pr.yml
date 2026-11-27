@@ -22,6 +22,7 @@ jobs:
           fetch-depth: 2
           persist-credentials: false
       - name: Read current PR and its conversation
+        shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
