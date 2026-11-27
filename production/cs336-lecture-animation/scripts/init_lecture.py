@@ -12,6 +12,8 @@ def main():
     ap.add_argument("project", type=Path)
     ap.add_argument("--lecture", type=int)
     ap.add_argument("--title")
+    ap.add_argument("--format", choices=("engineering", "derivation"),
+                    help="从收稿类型锁定 Remotion 正片的时长规格")
     ap.add_argument("--renderer", choices=("cairo", "remotion"), default="cairo",
                     help="新讲按技能用 remotion；不传参数保留旧 Cairo 调用")
     args = ap.parse_args()
@@ -20,6 +22,8 @@ def main():
         ap.error(f"工程目录已存在：{dest}")
     if args.lecture is not None and args.lecture < 1:
         ap.error("讲次用正整数")
+    if args.format and args.renderer != "remotion":
+        ap.error("--format 用于 Remotion 工程")
     starter = "remotion-starter" if args.renderer == "remotion" else "starter"
     shutil.copytree(SKILL / "assets" / starter, dest,
                     ignore=shutil.ignore_patterns("__pycache__", "*.pyc", "node_modules", "build"))
@@ -32,6 +36,8 @@ def main():
         plan["lecture"] = args.lecture
     if args.title:
         plan["title"] = args.title
+    if args.format:
+        plan["format"] = args.format
     cut.write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(dest)
 

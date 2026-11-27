@@ -37,7 +37,7 @@ jobs:
           sudo apt-get -qq install -y ffmpeg fontconfig
           export REMOTION_BROWSER="$(command -v google-chrome)"
           test -x "$REMOTION_BROWSER"
-          python3 production/cs336-lecture-animation/scripts/init_lecture.py "$RUNNER_TEMP/cs336-frame" --renderer remotion
+          python3 production/cs336-lecture-animation/scripts/init_lecture.py "$RUNNER_TEMP/cs336-frame" --renderer remotion --format derivation
           cd "$RUNNER_TEMP/cs336-frame"
           npm ci --no-audit --no-fund
           node scripts/lint-visuals.mjs

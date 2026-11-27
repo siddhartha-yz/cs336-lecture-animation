@@ -45,7 +45,9 @@ for(const f of walkFiles('src').filter(n=>/\.[tj]sx?$/.test(n)&&n!==FILE)){
   const name=n.name?.getText(source)?.replace(/['"]/g,'');
   if(!format&&['boxShadow','backdropFilter','box-shadow','backdrop-filter'].includes(name))fail(n,'PPT 浮层样式');
   if(!format&&name==='fontSize'&&/\b(?:interpolate|lerp|mix)\s*\(/.test((n.initializer??n.value)?.getText(source)??''))fail(n,'缩放用 transform，不插值 fontSize');
-  if(!format&&['rx','borderRadius','border-radius'].includes(name)){
+  const rectRadius=name==='rx'&&ts.isJsxAttribute(n)&&
+    n.parent.parent.tagName?.getText(source)==='rect';
+  if(!format&&(rectRadius||['borderRadius','border-radius'].includes(name))){
    const v=(n.initializer??n.value)?.getText(source)?.replace(/[{}'"px]/g,'')??'';
    if(Number(v)>=4)fail(n,'正文圆角不得达到 4px');
   }
@@ -121,7 +123,10 @@ for(const [i,r] of scenes.entries()){
   holds.push([id,(at+h.start)/fps,(at+h.start+h.frames)/fps]);
   exemptWindows.push([(at+h.start)/fps,(at+h.start+h.frames)/fps]);
  }
- for(const [key,value] of Object.entries(r.cues))guard(fpsFrame(value)&&value<r.frames,id+': 镜内 cue 超界 '+key);
+ // A recording can end exactly at the next picture's opening. Only that
+ // right-open boundary may equal the shot length; onsets need a visible frame.
+ for(const [key,value] of Object.entries(r.cues))
+  guard(fpsFrame(value)&&(key==='speechEnd'?value<=r.frames:value<r.frames),id+': 镜内 cue 超界 '+key);
  for(const {cue,wordFrame,kind} of r.beats??[]){
   guard(['number','highlight'].includes(kind)&&fpsFrame(wordFrame)&&wordFrame<r.frames&&Math.abs(r.cues[cue]-wordFrame)<=9,id+': 视觉事件距离实际词首超过 150ms：'+cue);
   audioEvents.push([id+': '+cue,(at+wordFrame)/fps]);

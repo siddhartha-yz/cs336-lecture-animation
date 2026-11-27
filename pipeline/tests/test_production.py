@@ -27,9 +27,10 @@ class IntakeTests(unittest.TestCase):
     def test_bootstrap_from_actual_kit_uses_remotion(self):
         with tempfile.TemporaryDirectory() as temp:
             dest=Path(temp)/"next"
-            lecture.script("init_lecture.py",dest,"--renderer","remotion","--lecture",17,"--title","实际新讲")
+            lecture.bootstrap({"lecture":17,"title":"实际新讲","format":"derivation"},dest)
             state=json.loads((dest/"src/data/cut.json").read_text())
-            self.assertEqual((state["lecture"],state["fps"],state["title"],state["demo"]),(17,60,"实际新讲",True))
+            self.assertEqual((state["lecture"],state["fps"],state["title"],state["demo"],state["format"]),
+                             (17,60,"实际新讲",True,"derivation"))
             self.assertTrue((dest/"VISUAL_CONSTITUTION_v2.md").is_file())
 
     def test_draft_cannot_begin_production(self):

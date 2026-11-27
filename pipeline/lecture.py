@@ -70,6 +70,11 @@ def check(ident, dir, draft_ok=False):
     return b
 
 
+def bootstrap(brief, target):
+    script("init_lecture.py",target,"--renderer","remotion","--lecture",brief["lecture"],
+           "--title",brief["title"],"--format",brief["format"])
+
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     rs=p.add_subparsers(dest="action",required=True)
@@ -98,7 +103,7 @@ def main():
         brief=check(a.id,intake)
         if a.action=="bootstrap":
             target=ROOT/"lectures"/a.id
-            script("init_lecture.py",target,"--renderer","remotion","--lecture",brief["lecture"],"--title",brief["title"])
+            bootstrap(brief,target)
             print(f"项目已生成。把示范换成本讲实际内容；{brief['format']} 成片目标 {FORMATS[brief['format']]} 分钟。")
         elif a.action=="voice-queue":
             script("prepare_narration.py",intake/"narration.json","--out",a.out)

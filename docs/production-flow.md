@@ -6,7 +6,7 @@
 
 用户把 Gemini 的 `sub` / `tts`、粗分镜、音乐方向和一手出处放到 [intake/讲次](../intake/)；先查数字、前提、单位、论文版本和朗读，再按 [视觉宪法 v2](../production/cs336-lecture-animation/references/VISUAL_CONSTITUTION_v2.md) 拆意群。事实改动在对应版本记明，语言维持原稿语感。临时图不能替代成片里的真实关系。
 
-标记 `ready` 可以开始制片，不代表成片已签收。用 `check` 验格式与送读；`bootstrap` 复制已实跑的 Remotion 模板。模板仍是 `demo: true`，未替换内容和干声前不能导出正式版。
+标记 `ready` 可以开始制片，不代表成片已签收。用 `check` 验格式与送读；`bootstrap` 复制已实跑的 Remotion 模板、带入收稿的时长类型。工程仍是 `demo: true`，未替换内容和干声前不能导出正式版。
 
 ## 2. 私有制作：人声、配乐和原生画面
 
@@ -29,6 +29,10 @@ CUDA_VISIBLE_DEVICES="$ASSIGNED_GPU" HF_HUB_OFFLINE=1 \
 ~~~
 
 `score-choices.json` 形如 `{"m1":[32301],"m2":[32501]}`，用实际试听时间和观感决定。超过单次长度上限的乐章先按画面节拍拆为同调性乐段，不能用短轨循环或默默截断。精确时长取已经锁定的成片帧号，不用预估时间反推字词。
+
+相同种子换成几分钟，调性与织体仍可能漂。长轨再查前、中、后和将被拼接的位置，只换出问题的乐段。片尾从干声最后可听字结束算余韵，把候选录音自带的尾静音也算进去。
+
+开多 lane 前用一镜测实际吞吐与内存。Linux 的 `/tmp` 若是有限额的 tmpfs，在常规磁盘上设每次独立的短 `TMPDIR`（例如 `mktemp -d -p /var/tmp cs336.XXXXXX`）；太深的路径会超过 Chromium 的 Unix socket 长度。不要清空共享临时目录。
 
 ## 3. 审片：同一版号，听和看分别诊断
 
