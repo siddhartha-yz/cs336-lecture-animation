@@ -24,6 +24,8 @@ python3 "$SKILL/scripts/drama3_takes.py" check local/queue.json
 
 准备脚本只校验、编译队列；不改 `sub`，不连服务器。保留既有 `{text,say,pronunciation,seed,…}` 队列入口。脚本能拦住若干已踩过的坑：单念“沸水”改“沸水这个词”，拒答→拒绝回答，估抖→估不准，卡在的送读改拦在，`前缀和，也就是 C U seek lens` 分清停顿，`G，V，` 别连读，π 全片写“派”。字幕写原术语，别把便读的英文字母或内部模型指令烧进片。
 
+**先留时间给观众想。** 例如推导篇上限 26 分钟、镜表留出 60 秒不说话时，用 `prepare_narration.py local/narration.json --max-minutes 26 --reserve-seconds 60`。它按展开数字的送读汉字估算 230–250 字/分会占多少时间；英文、符号和实际停连需要靠同声线小样校准。发现超长先砍重复说明，不删证明台阶或思考窗。批量生成前拿数值最多的一段试读，别选快 take 来补稿件过长。
+
 ```bash
 # 只有已授权课题组 GPU、已有 Drama 3 权重/codec/模型环境时执行。
 HF_HUB_OFFLINE=1 PYTHONPATH="$FISH_REPO" CUDA_VISIBLE_DEVICES="$ASSIGNED_GPU" \

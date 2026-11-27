@@ -8,6 +8,8 @@ import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import lecture
 import score
+sys.path.insert(0,str(lecture.KIT/"scripts"))
+from prepare_narration import voice_budget
 
 
 class IntakeTests(unittest.TestCase):
@@ -23,6 +25,15 @@ class IntakeTests(unittest.TestCase):
             rows=json.loads(queue.read_text())
             self.assertEqual(len(rows),5)
             self.assertEqual(sum(r["cue"]=="ask" for r in rows),4)
+
+    def test_native_pace_budget_excludes_reserved_time_and_duplicate_takes(self):
+        cue={"sub":"0.7","tts":"零点七","kind":"question","N":4}
+        count, capacity, (fast, slow)=voice_budget([cue],2,60)
+        self.assertEqual((count,capacity),(3,250))
+        self.assertAlmostEqual(fast,60.72)
+        self.assertAlmostEqual(slow,60+180/230)
+        with self.assertRaisesRegex(ValueError,"预留"):
+            voice_budget([cue],1,60)
 
     def test_bootstrap_from_actual_kit_uses_remotion(self):
         with tempfile.TemporaryDirectory() as temp:

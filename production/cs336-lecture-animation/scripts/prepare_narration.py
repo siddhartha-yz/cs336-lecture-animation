@@ -2,6 +2,7 @@
 """Check a v2 sub/tts cue sheet and compile local Drama 3 takes without changing the script."""
 import argparse
 import json
+import math
 from pathlib import Path
 import re
 
@@ -21,6 +22,8 @@ RISK = {
     "老实给出": "干脆给出，或老老实实给出",
     "卡在": "拦在或堵在",
 }
+HAN = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\U00020000-\U0002ffff\U00030000-\U000323af]")
+NATIVE_HAN_PER_MIN = (230, 250)
 
 def prepare(rows):
     if not isinstance(rows,list) or not rows:
@@ -63,12 +66,38 @@ def prepare(rows):
                 "top_p":r.get("top_p",0.85),"sub":sub,"cue":name,"emotion":emotion,
             }
 
+def voice_budget(rows, max_minutes, reserved_seconds):
+    limit = max_minutes * 60
+    if not (math.isfinite(limit) and math.isfinite(reserved_seconds)
+            and 0 <= reserved_seconds < limit):
+        raise ValueError("片长上限必须大于已预留的非旁白秒数，两者都用有限值")
+    # Budget the delivery text once per cue, never once per candidate.
+    count = sum(len(HAN.findall(row["tts"])) for row in rows)
+    slow, fast = NATIVE_HAN_PER_MIN
+    capacity = math.floor((limit - reserved_seconds) * fast / 60)
+    return count, capacity, (reserved_seconds + count * 60 / fast,
+                              reserved_seconds + count * 60 / slow)
+
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("script",type=Path)
     p.add_argument("--out",type=Path)
+    p.add_argument("--max-minutes",type=float,help="按 v2 原生语速估算，输入成片时长上限（分钟）")
+    p.add_argument("--reserve-seconds",type=float,help="其中留给片头、章门、净切、思考与片尾的非旁白秒数")
     a=p.parse_args()
-    rows=list(prepare(json.loads(a.script.read_text(encoding="utf-8"))))
+    if (a.max_minutes is None) != (a.reserve_seconds is None):
+        p.error("--max-minutes 与 --reserve-seconds 一起使用")
+    narration=json.loads(a.script.read_text(encoding="utf-8"))
+    rows=list(prepare(narration))
+    if a.max_minutes is not None:
+        try:
+            count, capacity, (fast, slow) = voice_budget(narration,a.max_minutes,a.reserve_seconds)
+        except ValueError as e:
+            p.error(str(e))
+        print(f"送读 {count} 汉字 · 预留 {a.reserve_seconds:g} 秒 · 230–250 字/分对应 {fast/60:.2f}–{slow/60:.2f} 分钟")
+        print(f"250 字/分时最多 {capacity} 汉字；"
+              + (f"需去掉至少 {count-capacity} 个汉字才合上限。" if count > capacity else "汉字账面在上限以内。")
+              + "仅计送读汉字，数字请先展开；实录后重算。")
     if a.out:
         a.out.parent.mkdir(parents=True,exist_ok=True)
         with a.out.open("x",encoding="utf-8") as f:
