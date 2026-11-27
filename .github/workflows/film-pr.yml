@@ -1,0 +1,37 @@
+name: Film PR
+on:
+  pull_request:
+    types: [opened, reopened, edited, synchronize, ready_for_review, converted_to_draft]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: film-handoff-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  film-handoff:
+    name: Film handoff
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Read current PR and its conversation
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" > "$RUNNER_TEMP/cs336-pr.json"
+          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments?per_page=100" \
+            --paginate | jq -s 'add // []' > "$RUNNER_TEMP/cs336-comments.json"
+      - name: Check the plan, candidate and review receipts
+        env:
+          REPO_OWNER: ${{ github.repository_owner }}
+        run: |
+          python3 pipeline/film_pr.py check --event "$GITHUB_EVENT_PATH" \
+            --pr "$RUNNER_TEMP/cs336-pr.json" --comments "$RUNNER_TEMP/cs336-comments.json" --owner "$REPO_OWNER"
