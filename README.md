@@ -1,4 +1,4 @@
-# cs336-lecture 动画
+# cs336-lecture动画
 
 把 Stanford CS336 做成可复剪的中文数学动画。正片、片源、口播和声音各有自己的入口；下一讲可以从同一套帧钟、门禁和复剪方法开工。
 
@@ -13,7 +13,7 @@
 python3 pipeline/lecture.py new l16 --title '本讲片名' --format engineering
 ~~~
 
-把 Gemini 给的字幕稿、送读稿、分镜和配乐方案放进 `intake/l16/`。整理并核完内容后：
+用[交稿模板](intake/)让 Gemini 分开给字幕、送读、分镜和配乐方案，把文件放进 `intake/l16/`。整理并核完事实、素材和源稿后，把 `brief.json` 的 `status` 改成 `ready`：
 
 ~~~bash
 python3 pipeline/lecture.py check l16
