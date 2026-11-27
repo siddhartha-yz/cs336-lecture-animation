@@ -37,6 +37,8 @@ npm run studio -- --port=3096
 
 ## 从小修到可复剪成片
 
+审片反馈只给了时间时，先用**同一版**镜表定位。`python3 "$SKILL/scripts/locate_feedback.py" src/data/cut.json 04:17.250` 报镜号、镜内帧、字幕和前后词锚；已有全片帧就传 `'#帧号'`。看过真实坏帧再改。
+
 ```bash
 npm run still -- shift build/shift.png --frame=80
 npm run render:shots -- shift --with-joins --replace

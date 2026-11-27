@@ -10,6 +10,7 @@ import lecture
 import score
 sys.path.insert(0,str(lecture.KIT/"scripts"))
 from prepare_narration import voice_budget
+from locate_feedback import to_frame, locate
 
 
 class IntakeTests(unittest.TestCase):
@@ -74,3 +75,16 @@ class ScoreTests(unittest.TestCase):
             cues[0]["prompt"]+=" More piano."
             with self.assertRaisesRegex(ValueError,"输出目录"):
                 score.remember(path,cues)
+
+
+class ReviewTests(unittest.TestCase):
+    def test_feedback_clock_uses_inclusive_start_and_exclusive_end(self):
+        cut={"fps":60, "scenes":[
+            {"id":"a","frames":60,"captions":[[0,59,"口播"]],"cues":{"move":59}},
+            {"id":"b","frames":30,"captions":[]},
+        ]}
+        self.assertEqual(to_frame("00:00.999",60),59)
+        self.assertEqual(locate(cut,59),("a",59,60,None,(59,"move"),None))
+        self.assertEqual(locate(cut,to_frame("00:01",60)),("b",0,30,None,None,None))
+        with self.assertRaisesRegex(ValueError,"超出"):
+            locate(cut,to_frame("#90",60))
