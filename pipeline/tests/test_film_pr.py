@@ -23,9 +23,12 @@ def current(status=SETUP, head=A, draft=True):
     return {"head": {"sha": head}, "draft": draft, "body": marked(gate.PR_MARK, status)}
 
 
-def receipt(role, seq, verdict="pass", actor=OWNER, **changed):
+def receipt(role, seq, verdict="pass", actor=OWNER, attached=A, state="COMMENTED", **changed):
     data = dict(role=role, verdict=verdict, candidate={**CANDIDATE, **changed})
-    return {"id": seq, "user": {"login": actor}, "body": marked(gate.REVIEW_MARK, data)}
+    return {
+        "id": seq, "user": {"login": actor}, "state": state, "commit_id": attached,
+        "submitted_at": f"2026-11-27T12:40:{seq:02d}Z", "body": marked(gate.REVIEW_MARK, data),
+    }
 
 
 class FilmPR(unittest.TestCase):
@@ -57,6 +60,10 @@ class FilmPR(unittest.TestCase):
         self.assertEqual(self.stage(r, receipt("gemini", 1), receipt("owner", 2, actor="contributor")), "owner")
         self.assertEqual(self.stage(r, receipt("gemini", 1, actor="contributor"), receipt("owner", 2)), "gemini")
         self.assertEqual(self.stage(r, receipt("owner", 1), receipt("gemini", 2)), "owner")
+        self.assertEqual(self.stage(r, receipt("gemini", 1), receipt("owner", 2, attached=B)), "owner")
+        self.assertEqual(self.stage(r, receipt("gemini", 1, state="PENDING")), "gemini")
+        self.assertEqual(self.stage(r, receipt("gemini", 1), receipt("owner", 2),
+                                    receipt("owner", 3, state="DISMISSED")), "owner")
         self.assertEqual(self.stage(r, receipt("gemini", 1), receipt("owner", 2, "changes")), "revise")
         self.assertEqual(self.stage(r, receipt("gemini", 1), receipt("owner", 2), receipt("gemini", 3, "changes")), "revise")
         self.assertEqual(self.stage(r, receipt("gemini", 1), receipt("owner", 2), receipt("gemini", 3)), "owner")

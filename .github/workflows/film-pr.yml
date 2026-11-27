@@ -2,6 +2,8 @@ name: Film PR
 on:
   pull_request:
     types: [opened, reopened, edited, synchronize, ready_for_review, converted_to_draft]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
 
 permissions:
   contents: read
@@ -21,18 +23,18 @@ jobs:
         with:
           fetch-depth: 2
           persist-credentials: false
-      - name: Read current PR and its conversation
+      - name: Read current PR and its submitted reviews
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" > "$RUNNER_TEMP/cs336-pr.json"
-          gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments?per_page=100" \
-            --paginate | jq -s 'add // []' > "$RUNNER_TEMP/cs336-comments.json"
+          gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/reviews?per_page=100" \
+            --paginate | jq -s 'add // []' > "$RUNNER_TEMP/cs336-reviews.json"
       - name: Check the plan, candidate and review receipts
         env:
           REPO_OWNER: ${{ github.repository_owner }}
         run: |
           python3 pipeline/film_pr.py check --event "$GITHUB_EVENT_PATH" \
-            --pr "$RUNNER_TEMP/cs336-pr.json" --comments "$RUNNER_TEMP/cs336-comments.json" --owner "$REPO_OWNER"
+            --pr "$RUNNER_TEMP/cs336-pr.json" --reviews "$RUNNER_TEMP/cs336-reviews.json" --owner "$REPO_OWNER"

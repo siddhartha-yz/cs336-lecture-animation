@@ -49,7 +49,9 @@ python3 pipeline/film_pr.py candidate l16 R02 '/私有目录/下集-整片审片
 
 > 先复述你实际收到的版号和文件名。只审这个视频；清楚区分实听、实帧与推测。按「必须修 / 可选」给时间码、现象、验收办法；声音、画面与数学分开。例：有轮廓书写要求时看字形的中间帧，不能把裁切擦除当 Write。不要替我批准合并或上传。
 
-将精简后的具体结果放在 PR **Conversation**。仓库所有者先贴 Gemini 回执，再亲看同版后贴本人回执。将命令输出作为新评论，代码块下可以写时间码与结论：
+仓库所有者先转录 Gemini 的回执，再亲看同版后提交本人回执，把时间码和现象写在代码块下。两份都走 **Files changed → Review changes → Comment**（或 `gh pr review <编号> --comment --body-file <回执文件>`）。`Comment` 可给自己开的 PR 交回执；普通 Conversation 留言可讨论，不算签核。
+
+用同一候选 JSON 生成两份回执，各在真实结果出来后再提交：
 
 ~~~bash
 python3 pipeline/film_pr.py receipt gemini pass /tmp/cs336-l16-R02.json
@@ -60,8 +62,8 @@ python3 pipeline/film_pr.py receipt owner pass /tmp/cs336-l16-R02.json
 
 ## 5. 只有同版通过才转 Ready
 
-`Film handoff` 读取当前 PR、实际镜表及仓库所有者的公开回执。新提交、换候选文件名或升版后，旧回执不再匹配；同版也要求本人通过晚于最后一次 Gemini 通过。草稿的待处理状态列在检查摘要，转 **Ready for review** 会重新检查；提前转 Ready 会标红。仅发评论不会触发重新检查，Draft 期间读评论即可；最后转 Ready 时会读最新回执。
+`Film handoff` 读取当前 PR、实际镜表及仓库所有者的公开回执。新提交、换候选文件名或升版后，旧回执不再匹配；同版也要求本人通过晚于最后一次 Gemini 通过。每次提交 Review 或更新 PR 都会刷新检查。草稿期间 `Film handoff` 未通过表示待办，下一步写在检查摘要；源码能否继续看 `Production check`。两份回执齐了再转 **Ready for review**。
 
 `Production check` 在 PR 新提交和更新 main 时跑收稿与 Remotion 实帧检查，并对 PR 改到的其他讲次另查源码和项目帧门禁。需要在开 PR 前跑 CI 时，可手动运行该工作流。它和 `Film handoff` 各负责一件事：一个验证工程，一个验证交接，均不能代替实际音画验收。两项通过后，由你合并；发布成片仍是单独一步。
 
-如果要由 GitHub **强制**等这两项通过再合并，在 [main 的分支保护](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)选实际跑过的 `Film handoff` 和 `source-and-render`。不勾原生「至少一人 Approve」来代替本人回执：个人仓库经常由你开 PR，再由你亲自签收。
+如果要把这两项设为 **合并必过项**，在 [main 的分支保护](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)选实际跑过的 `Film handoff` 和 `source-and-render`。不勾原生「至少一人 Approve」来代替本人回执：个人仓库经常由你开 PR，再由你亲自签收。

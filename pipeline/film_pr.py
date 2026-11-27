@@ -99,7 +99,7 @@ def review(role, verdict, candidate):
     return {"role": role, "verdict": verdict, "candidate": candidate}
 
 
-def assess(pr, comments, owner, expected_head, read_frames=cut_frames):
+def assess(pr, reviews, owner, expected_head, read_frames=cut_frames):
     plan = block(pr.get("body"), PR_MARK)
     if plan is None:
         return "plain", None
@@ -129,22 +129,28 @@ def assess(pr, comments, owner, expected_head, read_frames=cut_frames):
     # The owner relays Gemini's private media review; only that GitHub account
     # can record either decision. PR authorship alone never counts as approval.
     latest = {}
-    for comment in sorted(comments, key=lambda c: c["id"]):
-        if (comment.get("user") or {}).get("login", "").casefold() != owner.casefold():
-            continue
-        data = block(comment.get("body"), REVIEW_MARK)
+    signed = [
+        item for item in reviews
+        if item.get("state") in ("COMMENTED", "DISMISSED")
+        and item.get("commit_id") == head
+        and (item.get("user") or {}).get("login", "").casefold() == owner.casefold()
+    ]
+    for item in sorted(signed, key=lambda r: (r["submitted_at"], r["id"])):
+        data = block(item.get("body"), REVIEW_MARK)
         if data is None:
             continue
         fields(data, "role", "verdict", "candidate")
         row = review(data["role"], data["verdict"], data["candidate"])
         if row["candidate"] == candidate:
-            latest[row["role"]] = (comment["id"], row["verdict"])
+            order = (item["submitted_at"], item["id"])
+            decision = None if item["state"] == "DISMISSED" else row["verdict"]
+            latest[row["role"]] = (order, decision)
     g, o = latest.get("gemini"), latest.get("owner")
-    if not g:
+    if not g or g[1] is None:
         return "gemini", plan
     if g[1] == "changes" or (o and o[1] == "changes"):
         return "revise", plan
-    if o and o[0] > g[0]:
+    if o and o[1] == "pass" and o[0] > g[0]:
         return "approved", plan
     return "owner", plan
 
@@ -186,12 +192,12 @@ def main():
     pack.add_argument("lecture")
     pack.add_argument("version")
     pack.add_argument("video", type=Path)
-    reply = sub.add_parser("receipt", help="生成可贴到 PR Conversation 的回执")
+    reply = sub.add_parser("receipt", help="生成在 PR 中以 Comment 提交的审片回执")
     reply.add_argument("role", choices=("gemini", "owner"))
     reply.add_argument("verdict", choices=("pass", "changes"))
     reply.add_argument("candidate", type=Path, help="制作端对实际审片导出的候选 JSON")
     gate = sub.add_parser("check")
-    for name in ("event", "pr", "comments"):
+    for name in ("event", "pr", "reviews"):
         gate.add_argument(f"--{name}", required=True, type=Path)
     gate.add_argument("--owner", required=True)
     a = parser.parse_args()
@@ -203,10 +209,10 @@ def main():
             candidate = json.loads(a.candidate.read_text(encoding="utf-8"))
             emit(review(a.role, a.verdict, candidate), REVIEW_MARK)
             return
-        event, pr, comments = (json.loads(p.read_text(encoding="utf-8"))
-                               for p in (a.event, a.pr, a.comments))
-        stage, meta = assess(pr, comments, a.owner, event["pull_request"]["head"]["sha"])
-        ready = stage in ("plain", "approved") or pr["draft"]
+        event, pr, reviews = (json.loads(p.read_text(encoding="utf-8"))
+                               for p in (a.event, a.pr, a.reviews))
+        stage, meta = assess(pr, reviews, a.owner, event["pull_request"]["head"]["sha"])
+        ready = stage in ("plain", "approved")
         lines = ["## 制片 PR 交接", NEXT[stage]]
         if meta is not None:
             lines += [f"讲次：`{meta['lecture']}` · 当前提交：`{pr['head']['sha']}`"]
@@ -214,7 +220,7 @@ def main():
             if c and stage != "stale":
                 lines += [f"候选：`{c['version']}` · `{c['video']}` · {c['frames']:,} 帧"]
         if not ready:
-            lines += ["审片未完成，请保留为 Draft PR。"]
+            lines += ["等待同版验收。草稿保留为 Draft；可继续制作和提交。"]
         report = "\n\n".join(lines) + "\n"
         print(report)
         summary = os.environ.get("GITHUB_STEP_SUMMARY")
