@@ -13,6 +13,7 @@ const glyphs=new Set<string>();
 const glyph=(s:string)=>{for(const c of s.match(cjk)??[])glyphs.add(c);};
 const swatches=new Set<string>(Object.values(P));
 let clock=0,formulaAlone=0;
+const geometryErrors:string[]=[];
 function visibility(m:Mark){return m.a>=.13;}
 function transform(x:number,y:number,c?:Camera){
   return c?[c.pivot[0]+c.dx+(x-c.pivot[0])*c.scale,c.pivot[1]+c.dy+(y-c.pivot[1])*c.scale]:[x,y];
@@ -113,11 +114,19 @@ for(const row of cut.scenes){
         assert.ok(transform(x+w,y+h,pose.camera)[1]<=ART_BOTTOM,at+' 图板进了字幕缓冲');
         if(m.main&&visibility(m))put(x,y,w,h,pose.camera);
         if(m.role==='formula'&&visibility(m))hasFormula=true;
-      }else if(m.kind==='line'||m.kind==='arc'){
+      }else if(m.kind==='line'||m.kind==='arc'||m.kind==='path'||m.kind==='dot'){
         assert.ok(swatches.has(m.color),at+' 路径没有走色板');
         if(visibility(m)){
-          const y=m.kind==='line'?Math.max(m.dots[1],m.dots[3])+(m.arrow?10:0):m.y+m.r;
-          assert.ok(transform(0,y+m.st/2,pose.camera)[1]<=ART_BOTTOM,at+' 连线或圆弧侵入字幕缓冲区');
+          if(m.kind==='path'||m.kind==='line'){
+            const points=m.kind==='line'?[[m.dots[0],m.dots[1]],[m.dots[2],m.dots[3]]]:m.points;
+            for(const [x,y] of points){
+              assert.ok(Number.isFinite(x)&&Number.isFinite(y)&&transform(x,y+m.st/2+(m.kind==='line'&&m.arrow?10:0),pose.camera)[1]<=ART_BOTTOM,at+' 路径进了字幕缓冲');
+              if(m.main)put(x,y,0,0,pose.camera);
+            }
+          }else{
+            assert.ok(transform(0,m.y+m.r+(m.kind==='arc'?m.st/2:0),pose.camera)[1]<=ART_BOTTOM,at+' 点或圆弧进了字幕缓冲');
+            if(m.kind==='dot'&&m.main)put(m.x-m.r,m.y-m.r,2*m.r,2*m.r,pose.camera);
+          }
         }
         if(m.kind!=='arc'||!m.timer)continue;
         assert.ok(m.color===P.gold&&m.x===W/2&&m.y>=760&&++timer===1,at+' 需要底部中央金色圆弧');
@@ -134,8 +143,8 @@ for(const row of cut.scenes){
         assert.ok(sampleLines>=4&&!inHold,at+' 为四行以上真实样本选完整稳定帧；不要把计时弧算入构图');
       }else{
         const [x,y,X,Y]=subject,w=(X-x)/W,h=(Y-y)/ART_BOTTOM;
-        assert.ok(w>=.65&&w<=.80&&h>=.55&&h<=.75&&x>=0&&X<=W&&y>=0&&Y<=ART_BOTTOM,
-          at+` 主装置占幅宽 ${(w*100).toFixed(1)}%，高 ${(h*100).toFixed(1)}%`);
+        if(!(w>=.65&&w<=.80&&h>=.55&&h<=.75&&x>=0&&X<=W&&y>=0&&Y<=ART_BOTTOM))
+          geometryErrors.push(at+` 主装置占幅宽 ${(w*100).toFixed(1)}%，高 ${(h*100).toFixed(1)}%`);
       }
     }
   }
@@ -143,5 +152,6 @@ for(const row of cut.scenes){
   for(const [s,count] of glossary)assert.ok(count>=4*FPS,row.id+' 术语注解不足四秒：'+s);
   clock+=row.frames;
 }
+assert.equal(geometryErrors.length,0,geometryErrors.join('\n'));
 writeFileSync(process.argv[2],JSON.stringify([...glyphs]));
 console.log(`Frame contract: ${clock} frames, ${glyphs.size} distinct CJK/full-width glyphs.`);

@@ -40,6 +40,7 @@ jobs:
           python3 production/cs336-lecture-animation/scripts/init_lecture.py "$RUNNER_TEMP/cs336-frame" --renderer remotion --format derivation
           cd "$RUNNER_TEMP/cs336-frame"
           npm ci --no-audit --no-fund
+          npm run typecheck
           node scripts/lint-visuals.mjs
           npm run still -- shift build/shift.png --frame=85
           test "$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 build/shift.png)" = "1920,1080"

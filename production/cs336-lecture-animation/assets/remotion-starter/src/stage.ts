@@ -7,11 +7,14 @@ type Font='serif'|'math'|'mono';
 // Formats may supply their own ink. Body colors are checked from rendered marks.
 type Ink=string;
 type Rect={kind:'rect';box:Bounds;fill?:Ink;line?:Ink|typeof PAPER_EDGE;st:number;a:number;main?:boolean;dashed?:boolean;material?:'data'|'glass'|'paper'};
-type Line={kind:'line';dots:[number,number,number,number];color:Ink;st:number;a:number;arrow?:boolean};
+type Line={kind:'line';dots:[number,number,number,number];color:Ink;st:number;a:number;arrow?:boolean;main?:boolean;dashed?:boolean};
+type Point=[number,number];
+type Path={kind:'path';points:Point[];color:Ink;st:number;a:number;main:boolean;dashed:boolean};
+type Dot={kind:'dot';x:number;y:number;r:number;color:Ink;a:number;main:boolean};
 type Arc={kind:'arc';x:number;y:number;r:number;t:number;color:Ink;st:number;a:number;timer:boolean};
-export type Text={kind:'text';value:string;x:number;y:number;size:number;role:TextRole;color:Ink;a:number;align:'left'|'center'|'right';font:Font;rise:number};
-type Plate={kind:'plate';id:string;box:Bounds;a:number;main:boolean;role:'formula'|'source'};
-export type Mark=Rect|Line|Arc|Text|Plate;
+export type Text={kind:'text';value:string;x:number;y:number;size:number;role:TextRole;color:Ink;a:number;align:'left'|'center'|'right';font:Font;rise:number;weight:400|700};
+type Plate={kind:'plate';id:string;box:Bounds;a:number;main:boolean;role:'formula'|'source';reveal:number};
+export type Mark=Rect|Line|Path|Dot|Arc|Text|Plate;
 export type Camera={scale:number;dx:number;dy:number;pivot:[number,number]};
 export type Pose={marks:Mark[];iris?:{x:number;y:number;radius:number};camera?:Camera};
 
@@ -51,16 +54,22 @@ export class Stage {
   paper(box:Bounds,a=1){
     if(a>0)this.items.push({kind:'rect',box,fill:P.paper,line:PAPER_EDGE,st:1,a,main:true,material:'paper'});
   }
-  plate(id:string,box:Bounds,role:Plate['role'],a=1,main=false){
-    if(a>0)this.items.push({kind:'plate',id,box,a,main,role});
+  plate(id:string,box:Bounds,role:Plate['role'],a=1,main=false,reveal=1){
+    if(a>0&&reveal>0)this.items.push({kind:'plate',id,box,a,main,role,reveal:clamp(reveal)});
   }
-  line(dots:Line['dots'],color:Ink=P.axis,st=2,a=1,arrow=false){
-    if(a>0)this.items.push({kind:'line',dots,color,st,a,arrow});
+  line(dots:Line['dots'],color:Ink=P.axis,st=2,a=1,arrow=false,main=false,dashed=false){
+    if(a>0)this.items.push({kind:'line',dots,color,st,a,arrow,main,dashed});
+  }
+  path(points:Point[],color:Ink,st=2,a=1,main=false,dashed=false){
+    if(a>0&&points.length>=2)this.items.push({kind:'path',points,color,st,a,main,dashed});
+  }
+  dot(x:number,y:number,r:number,color:Ink,a=1,main=false){
+    if(a>0&&r>0)this.items.push({kind:'dot',x,y,r,color,a,main});
   }
   text(value:string,x:number,y:number,size:number,role:TextRole,
-       {color=P.white,a=1,align='center',font='serif',rise=1}:
-       Partial<Pick<Text,'color'|'a'|'align'|'font'|'rise'>>={}){
-    if(a>0&&rise>0&&value)this.items.push({kind:'text',value,x,y,size,role,color,a,align,font,rise});
+       {color=P.white,a=1,align='center',font='serif',rise=1,weight=400}:
+       Partial<Pick<Text,'color'|'a'|'align'|'font'|'rise'|'weight'>>={}){
+    if(a>0&&rise>0&&value)this.items.push({kind:'text',value,x,y,size,role,color,a,align,font,rise,weight});
   }
   countdown(frame:number,hold:Shot['hold'],y=843){
     if(!hold||frame<hold.start||frame>=hold.start+hold.frames)return;

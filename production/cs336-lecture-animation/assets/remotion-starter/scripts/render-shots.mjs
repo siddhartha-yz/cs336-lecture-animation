@@ -14,7 +14,9 @@ const root=resolve(flag('out-dir')??'build/native-shots');mkdirSync(root,{recurs
 const laneText=flag('lane')??'0/1';
 const [lane,lanes]=laneText.split('/').map(Number);
 const workers=Number(flag('workers')??8);
-if(!Number.isInteger(lane)||!Number.isInteger(lanes)||!Number.isInteger(workers)||lane<0||lane>=lanes||workers<1)throw Error('Invalid render lane/workers');
+const encoder=Number(flag('encoder-threads')??0);
+if(!Number.isInteger(lane)||!Number.isInteger(lanes)||!Number.isInteger(workers)||!Number.isInteger(encoder)||
+   lane<0||lane>=lanes||workers<1||encoder<0)throw Error('Invalid render lane/workers/encoder threads');
 const replace=args.includes('--replace');
 const selected=args.filter(x=>!x.startsWith('--'));
 const active=new Set(selected);
@@ -27,6 +29,9 @@ if(args.includes('--with-joins')){
   }
 }
 const jobs=cut.scenes.filter((r,i)=>i%lanes===lane&&(!active.size||active.has(r.id)));
+const priority=(flag('priority')??'').split(',').filter(Boolean);
+const rank=id=>{const i=priority.indexOf(id);return i<0?priority.length:i;};
+jobs.sort((a,b)=>rank(a.id)-rank(b.id));
 
 const browserExecutable=browserTools.localBrowser();
 const serveUrl=await bundle({entryPoint:resolve('src/index.ts'),enableCaching:false,onProgress:()=>{}});
@@ -59,6 +64,9 @@ try{
     await renderMedia({serveUrl,composition:comp,inputProps,puppeteerInstance:browser,outputLocation:temp,
       codec:'h264',muted:true,concurrency:workers,overwrite:true,timeoutInMilliseconds:180000,
       imageFormat:'jpeg',jpegQuality:96,crf:17,x264Preset:'veryfast',pixelFormat:'yuv420p',colorSpace:'bt709',
+      ffmpegOverride:encoder?({type,args})=>type==='pre-stitcher'
+        ?['-threads:v','1','-filter_threads','2',...args.slice(0,-1),'-threads:v',String(encoder),args.at(-1)]
+        :args:undefined,
       logLevel:'warn',onProgress:({renderedFrames})=>{
         if(renderedFrames-last>=180||renderedFrames===row.frames&&last!==row.frames){
           console.log(new Date().toISOString(),row.id,renderedFrames,'/',row.frames,

@@ -36,7 +36,7 @@ export function loadAssets(){
 function text(g:CanvasRenderingContext2D,m:Text){
   const {value,x,y,size,align,font,a,rise,color}=m;
   g.save();g.translate(x,y);g.scale(size/128,size/128);
-  g.font=`128px ${fonts[font]}`;
+  g.font=`${m.weight} 128px ${fonts[font]}`;
   g.textAlign='left';g.textBaseline='alphabetic';g.fillStyle=color;
   const line=g.measureText(value);
   const l=-line.width*({left:0,center:.5,right:1}[align]);
@@ -76,10 +76,20 @@ export function paint(g:CanvasRenderingContext2D,poses:Pose[],width:number,heigh
       if(m.kind==='plate'){
         const image=images.get(m.id);
         if(!image)throw Error('Undeclared artwork: '+m.id);
-        g.globalAlpha=clamp(m.a);g.drawImage(image,...m.box);
+        g.globalAlpha=clamp(m.a);
+        if(m.reveal<1){
+          const [x,y,w,h]=m.box;
+          g.save();g.beginPath();g.rect(x,y,w*m.reveal,h);g.clip();
+          g.drawImage(image,...m.box);g.restore();
+        }else g.drawImage(image,...m.box);
         continue;
       }
-      g.globalAlpha=clamp(m.a);g.lineWidth=m.st;
+      g.globalAlpha=clamp(m.a);
+      if(m.kind==='dot'){
+        g.beginPath();g.arc(m.x,m.y,m.r,0,2*Math.PI);
+        g.fillStyle=m.color;g.fill();continue;
+      }
+      g.lineWidth=m.st;
       if(m.kind==='rect'){
         if(m.fill){
           g.fillStyle=m.fill;
@@ -98,7 +108,11 @@ export function paint(g:CanvasRenderingContext2D,poses:Pose[],width:number,heigh
           g.moveTo(a-10*Math.cos(q-.53),b-10*Math.sin(q-.53));g.lineTo(a,b);
           g.lineTo(a-10*Math.cos(q+.53),b-10*Math.sin(q+.53));
         }
-        g.strokeStyle=m.color;g.stroke();
+        g.setLineDash(m.dashed?[11,9]:[]);g.strokeStyle=m.color;g.stroke();g.setLineDash([]);
+      }else if(m.kind==='path'){
+        g.beginPath();
+        for(const [i,[x,y]] of m.points.entries()){if(i)g.lineTo(x,y);else g.moveTo(x,y);}
+        g.setLineDash(m.dashed?[11,9]:[]);g.strokeStyle=m.color;g.stroke();g.setLineDash([]);
       }else{
         g.beginPath();g.arc(m.x,m.y,m.r,-Math.PI/2,2*Math.PI*m.t-Math.PI/2);
         g.strokeStyle=m.color;g.stroke();

@@ -32,7 +32,7 @@ CUDA_VISIBLE_DEVICES="$ASSIGNED_GPU" HF_HUB_OFFLINE=1 \
 
 相同种子换成几分钟，调性与织体仍可能漂。长轨再查前、中、后和将被拼接的位置，只换出问题的乐段。片尾从干声最后可听字结束算余韵，把候选录音自带的尾静音也算进去。
 
-开多 lane 前用一镜测实际吞吐与内存。Linux 的 `/tmp` 若是有限额的 tmpfs，在常规磁盘上设每次独立的短 `TMPDIR`（例如 `mktemp -d -p /var/tmp cs336.XXXXXX`）；太深的路径会超过 Chromium 的 Unix socket 长度。不要清空共享临时目录。
+开多 lane 前用一镜测实际吞吐与内存。需要先拿关键镜审片时，用 `render:shots -- --priority=<镜号,镜号>` 把本 lane 的关键镜提前；同机编码开始争内存时再限制 `--encoder-threads=3`，不要把浏览器并行数与编码线程数混为一谈。Linux 的 `/tmp` 若是有限额的 tmpfs，在常规磁盘上设每次独立的短 `TMPDIR`（例如 `mktemp -d -p /var/tmp cs336.XXXXXX`）；太深的路径会超过 Chromium 的 Unix socket 长度。不要清空共享临时目录。
 
 ## 3. 审片：同一版号，听和看分别诊断
 
