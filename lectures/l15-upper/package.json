@@ -1,0 +1,32 @@
+{
+  "name": "cs336-lecture15-upper",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "studio": "node scripts/studio-local.cjs",
+    "render": "remotion render src/index.ts Lecture15Upper",
+    "still": "remotion still src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "render:shots": "node scripts/render-shots.mjs",
+    "export": "node scripts/export.mjs",
+    "sidecars": "node scripts/sidecars.mjs",
+    "lint:visuals": "node scripts/lint-visuals.mjs",
+    "check:frames": "esbuild scripts/check-drawings.ts --bundle --platform=node --format=cjs --packages=external --outfile=build/check-drawings.cjs && node build/check-drawings.cjs",
+    "prerender": "npm run lint:visuals"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.534",
+    "@remotion/cli": "4.0.534",
+    "@remotion/media": "4.0.534",
+    "@remotion/renderer": "4.0.534",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.534"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "esbuild": "0.28.1",
+    "typescript": "^5.9.0"
+  }
+}

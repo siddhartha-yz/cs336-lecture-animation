@@ -1,0 +1,9 @@
+{
+  "artwork": "cover/ppo-14m41s.png",
+  "scale": 0.9,
+  "shiftX": -0.08,
+  "shiftY": 0.08,
+  "headline": "为什么 PPO 这么难跑？",
+  "subtitle": "四模型显存 · 在线采样 · 价值抖动",
+  "coral": "#FC6255"
+}

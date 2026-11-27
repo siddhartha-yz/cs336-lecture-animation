@@ -1,0 +1,10 @@
+{
+  "model": "stabilityai/stable-audio-3-medium",
+  "global_musical_key": "D minor / F major",
+  "tracks": [{
+    "id": "m1",
+    "duration_seconds": 70,
+    "preview_seeds": [32301,32311,32317],
+    "prompt": "TrackType: Music, VocalType: Instrumental, intimate felt piano and low marimba, 98 BPM, D minor, dry chamber sound, even dynamics, space for narration, no percussion or vocals."
+  }]
+}

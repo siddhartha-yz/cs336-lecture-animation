@@ -29,3 +29,21 @@ film_chunks/
 **/audio/staging*/
 
 preview-shots/
+
+# Production output stays in the working or private job directory.
+node_modules/
+local/
+.private/
+public/audio/
+*.m4a
+*.aac
+*.ogg
+*.mov
+*.mkv
+*.onnx
+*.npz
+*.pem
+*.key
+*.pt
+*.ckpt
+lectures/l15-upper/public/plates/instruct-*.png

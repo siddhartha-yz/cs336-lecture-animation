@@ -1,0 +1,27 @@
+{
+  "demo": true,
+  "lecture": null,
+  "title": "三根柱子，同一组概率",
+  "fps": 60,
+  "scenes": [
+    {
+      "id": "read",
+      "chapter": "平移前",
+      "frames": 240,
+      "cues": {"logits": 14, "distribution": 85},
+      "captions": [
+        [30, 217, "三根柱子，算出来的是右边这三个概率。"]
+      ]
+    },
+    {
+      "id": "shift",
+      "chapter": "平移后",
+      "frames": 360,
+      "cues": {"shift": 48, "same": 163},
+      "captions": [
+        [19, 142, "现在，每根柱子一起加二。"],
+        [163, 300, "右边的概率，纹丝没动。"]
+      ]
+    }
+  ]
+}

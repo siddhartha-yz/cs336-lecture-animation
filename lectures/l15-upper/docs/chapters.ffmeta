@@ -1,0 +1,27 @@
+;FFMETADATA1
+title=后训练的困局：从微调到强化学习
+[CHAPTER]
+TIMEBASE=1/60
+START=0
+END=3707
+title=开场 · 答题，还是续题
+[CHAPTER]
+TIMEBASE=1/60
+START=3707
+END=17034
+title=一 · 示范改了什么
+[CHAPTER]
+TIMEBASE=1/60
+START=17034
+END=29229
+title=二 · 代码与序列打包
+[CHAPTER]
+TIMEBASE=1/60
+START=29229
+END=46821
+title=三 · 模仿、偏好与奖励
+[CHAPTER]
+TIMEBASE=1/60
+START=46821
+END=62284
+title=四 · KL 与 PPO

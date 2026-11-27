@@ -1,0 +1,32 @@
+{
+  "formatExempt": [
+    "title",
+    "card2",
+    "card3",
+    "card4",
+    "c34"
+  ],
+  "questionLeads": [
+    "c03",
+    "c11",
+    "c18",
+    "c27"
+  ],
+  "holds": [
+    "c24",
+    "c33"
+  ],
+  "papers": [
+    "c04",
+    "c17",
+    "c29"
+  ],
+  "unrelatedResets": [
+    "c07", "c08", "c10", "c14", "c15", "c22", "c26"
+  ],
+  "minPaperSeparationSeconds": 360,
+  "maxRoomToneTailSeconds": 2.2,
+  "maxHanPerFrame": 20,
+  "maxHanInSentence": 12,
+  "minCaptionMarginPx": 40
+}

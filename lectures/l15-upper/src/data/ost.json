@@ -1,0 +1,23 @@
+{
+  "tracks": [
+    {"file":"M1_curious_opening_sft.wav","scene":"c01"},
+    {"file":"M2_engineering_packing.wav","scene":"card2"},
+    {"file":"M3_gv_gap_and_blind_test.wav","scene":"card3"},
+    {"file":"M4_reward_hacking_ppo_weight.wav","scene":"c26"},
+    {"file":"M5_cliffhanger_return.wav","scene":"c33","sourceInSeconds":24.2}
+  ],
+  "crossfadeSeconds": 2.5,
+  "opening": {"scene":"c04","removedFrames":240,"seamSeconds":0.20},
+  "mixDb": {"dialogue":1.3,"score":-14.4,"chime":-12},
+  "baseEq": {"frequency":2400,"widthOctaves":0.8300749985576875,"db":-2.5},
+  "scoreEdits": [
+    {"movement":"M2","start":["c16",-89],"end":["c18",-35],"rampSeconds":2,"db":-3.7,
+     "eq":{"type":"lowShelf","frequency":120,"db":-2}},
+    {"movement":"M4","start":["c31",494],"end":["c32",3779],"rampSeconds":2,"db":-2.5,
+     "eq":{"type":"bell","frequency":2646,"q":1,"db":-3.5}}
+  ],
+  "ducking": {"maxDb":2,"attackSeconds":0.03,"releaseSeconds":0.25},
+  "coda": {"sourceInSeconds":61,"sourceChordSeconds":63.02,"afterVoiceSeconds":0.08,
+           "crossfadeSeconds":0.44,"fadeToBlackSeconds":0.65},
+  "chime": {"file":"SFX_question_chime.wav","scenes":["c03","c11","c18","c27"]}
+}
